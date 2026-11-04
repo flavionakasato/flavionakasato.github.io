@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flavionakasato.github.io/sitemap.xml

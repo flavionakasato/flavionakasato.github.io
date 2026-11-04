@@ -1,0 +1,1461 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flávio Nakasato Cação</title>
+<meta name="description" content="Entrepreneur building AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.">
+<link rel="canonical" href="https://flavionakasato.github.io/">
+<meta name="author" content="Flávio Nakasato Cação">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Flávio Nakasato Cação">
+<meta property="og:title" content="Flávio Nakasato Cação">
+<meta property="og:description" content="Entrepreneur building AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.">
+<meta property="og:url" content="https://flavionakasato.github.io/">
+<meta property="og:image" content="https://flavionakasato.github.io/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="profile:first_name" content="Flávio">
+<meta property="profile:last_name" content="Nakasato Cação">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flávio Nakasato Cação">
+<meta name="twitter:description" content="Entrepreneur building AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.">
+<meta name="twitter:image" content="https://flavionakasato.github.io/img/og-image.jpg">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Flávio Nakasato Cação", "alternateName": ["Flávio Nakasato", "Flavio Nakasato Cacao"], "url": "https://flavionakasato.github.io/", "image": "https://flavionakasato.github.io/img/profile.jpeg", "description": "Entrepreneur building AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.", "jobTitle": "Founder & Partner", "worksFor": {"@type": "Organization", "name": "Moiru AI", "url": "https://www.moiru.ai"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of São Paulo (USP)", "url": "https://www5.usp.br/"}, "knowsAbout": ["Artificial intelligence", "Machine learning", "Natural language processing", "Environmental enforcement", "Climate change", "Data journalism"], "sameAs": ["https://www.linkedin.com/in/flavionakasato", "https://scholar.google.com.br/citations?user=bKIJHa8AAAAJ", "https://orcid.org/0000-0003-4771-6009", "https://github.com/flavionakasato", "https://flavio-nakasato.medium.com"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBFAF6; --paper-2:#F4F2EB; --card:#FFFFFF;
+  --ink:#16181B; --ink-2:#3F444B; --muted:#646A72; --faint:#8C9198;
+  --hair:#E6E2D8; --hair-2:#D4CFC2;
+  --research:#2F4F98; --impact:#1D6A4D; --industry:#8E5F17; --media:#A03558;
+  --research-t:#E8ECF6; --impact-t:#E3EFE9; --industry-t:#F3EBDD; --media-t:#F5E5EA;
+  --accent:#1D6A4D;
+  --serif:"Newsreader", "Iowan Old Style", Georgia, serif;
+  --sans:"IBM Plex Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --gut:clamp(16px, 4vw, 48px);
+  --max:1240px;
+  --cg:32px; /* column gap of the 12-column grid used by every block */
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--sans);font-feature-settings:"ss01","cv11";-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:var(--gut);top:-60px;background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:6px;z-index:100;text-decoration:none;font-weight:500}
+.skip:focus{top:12px}
+.num{font-variant-numeric:tabular-nums lining-nums}
+/* one 12-column grid for the whole page: same width, same gaps, same left edge */
+.g12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--cg)}
+@media (max-width:1000px){:root{--cg:24px}}
+@media (max-width:640px){:root{--cg:16px}}
+.lbl{font:600 11px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.top.scrolled{border-bottom-color:var(--hair)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:60px}
+.brand{font-weight:600;font-size:15px;letter-spacing:-.01em;text-decoration:none;white-space:nowrap}
+.brand span{color:var(--muted);font-weight:400}
+.nav{display:flex;gap:22px;margin-left:auto;font-size:14px}
+.nav a{text-decoration:none;color:var(--ink-2);position:relative;padding:4px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav a:hover::after,.nav a.on::after{transform:scaleX(1)}
+.nav a.on{color:var(--ink)}
+.lang{display:flex;border:1px solid var(--hair-2);border-radius:999px;padding:2px;font-size:12px;font-weight:600;letter-spacing:.04em}
+.lang button{all:unset;cursor:pointer;padding:3px 9px;border-radius:999px;color:var(--muted);transition:background .2s,color .2s}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:900px){.nav{display:none}.lang{margin-left:auto}}
+
+/* hero: portrait in columns 1-2, name in 3-8, Currently in 9-12 */
+.hero{padding-top:48px;padding-bottom:64px}
+.hero-grid{align-items:start}
+.portrait{grid-column:1/span 2;aspect-ratio:1;border-radius:3px;overflow:hidden;background:var(--paper-2);position:relative}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.04)}
+.portrait::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);border-radius:inherit}
+.intro{grid-column:3/span 6;min-width:0}
+h1.name{font:400 clamp(36px,3.6vw,52px)/1.02 var(--serif);letter-spacing:-.024em;margin:-4px 0 12px;font-variation-settings:"opsz" 72}
+.tagline{font:300 clamp(19px,1.6vw,23px)/1.32 var(--serif);color:var(--ink-2);margin:0 0 22px;font-variation-settings:"opsz" 24}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:500 14px/1 var(--sans);padding:11px 16px;border-radius:999px;text-decoration:none;border:1px solid var(--hair-2);background:var(--card);color:var(--ink);transition:transform .25s var(--ease),border-color .25s,background .25s}
+.btn:hover{border-color:var(--ink);transform:translateY(-1px)}
+.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.primary:hover{background:#000}
+.btn svg{width:14px;height:14px;flex:none}
+.now{grid-column:9/span 4;border-top:1px solid var(--ink);padding-top:12px}
+.now .lbl{margin-bottom:14px}
+.now dl{margin:0;display:grid;gap:14px}
+.now dt{font-size:12px;color:var(--muted)}
+.now dd{margin:2px 0 0;font:400 18px/1.3 var(--serif)}
+.now dd small{display:block;font:400 13.5px/1.45 var(--sans);color:var(--ink-2);margin-top:4px}
+@media (max-width:1080px){
+  .intro{grid-column:3/-1}
+  .now{grid-column:1/-1;margin-top:36px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--cg)}
+  .now .lbl{grid-column:1/-1}
+  .now dl{grid-column:1/-1;grid-template-columns:subgrid}
+  .now dl>div{grid-column:span 6}
+}
+@media (max-width:640px){
+  .hero{padding-top:28px;padding-bottom:40px}
+  .portrait{grid-column:1/span 4}
+  .intro{grid-column:1/-1;margin-top:20px}
+  .now dl{display:block}
+  .now dl>div+div{margin-top:14px}
+}
+
+/* section frame: a full-width rule, the title on the left and a quiet note on the right, the summary below */
+section.block{padding-top:104px}
+.shead{border-top:1px solid var(--ink);padding-top:14px;margin-bottom:30px}
+.shead .hl{display:flex;align-items:baseline;justify-content:space-between;gap:6px 24px;flex-wrap:wrap}
+.shead h2{font:400 clamp(28px,2.6vw,36px)/1.1 var(--serif);letter-spacing:-.016em;margin:0;font-variation-settings:"opsz" 48}
+.shead .aux{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.shead .aux a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--hair-2);display:inline-flex;align-items:center;gap:5px}
+.shead .aux a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.shead .aux svg{width:11px;height:11px}
+.shead .sub{margin:8px 0 0;color:var(--muted);font-size:15px;max-width:46em}
+@media (max-width:820px){section.block{padding-top:72px}}
+
+/* FLOW */
+#work .shead{margin-bottom:20px}
+.filters{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:14px}
+.filters .grp{display:flex;flex-wrap:wrap;gap:6px}
+.filters .lbl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-right:2px}
+.chip{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:7px;font:500 13px/1 var(--sans);padding:7px 11px;border-radius:999px;border:1px solid var(--hair-2);color:var(--ink-2);background:var(--card);transition:all .2s var(--ease);user-select:none}
+.chip:hover{border-color:var(--ink-2)}
+.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chip .sw{width:9px;height:9px;border-radius:2px;background:var(--c)}
+.chip .ct{color:var(--faint);font-weight:400}
+.chip[aria-pressed="false"]{color:var(--faint);background:transparent;border-style:dashed}
+.chip[aria-pressed="false"] .sw{background:transparent;box-shadow:inset 0 0 0 1.5px var(--c)}
+.chip.type[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip.type[aria-pressed="true"] .ct{color:#B9BDC3}
+.sep{width:1px;height:20px;background:var(--hair-2)}
+@media (max-width:640px){.sep{display:none}}
+
+.flow{position:relative;background:var(--card);border:1px solid var(--hair);border-radius:6px;padding:12px 18px 10px 0}
+.axis,.lane{display:grid;grid-template-columns:184px minmax(0,1fr)}
+.axis{height:28px;align-items:end;position:sticky;top:60px;z-index:3;background:var(--card)}
+.ticks{position:relative;height:100%}
+.tick{position:absolute;bottom:6px;transform:translateX(-1px);font:500 11.5px/1 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums;padding-left:5px;border-left:1px solid var(--hair-2);height:14px;display:flex;align-items:flex-end}
+.tick.now-t{color:var(--impact);border-left-color:var(--impact);font-weight:600}
+.lanes{position:relative}
+.lane{border-top:1px solid var(--hair);position:relative}
+.lane:first-child{border-top:0}
+.lane-name{padding:12px 16px 12px 20px;font:500 13px/1.25 var(--sans);color:var(--ink);display:flex;gap:9px;align-items:flex-start}
+.lane-name .sw{width:3px;align-self:stretch;min-height:28px;background:var(--c);border-radius:2px;flex:none}
+.lane-name small{display:block;color:var(--faint);font-weight:400;font-size:12px;margin-top:3px}
+.track{position:relative}
+.grid-lines{position:absolute;inset:0;pointer-events:none}
+.grid-lines i{position:absolute;top:0;bottom:0;width:1px;background:var(--hair);opacity:.55}
+.grid-lines i.now-l{background:var(--impact);opacity:.5;width:1px}
+.it{position:absolute;height:30px;margin:0;padding:0;border:0;background:none;cursor:pointer;font:inherit;color:inherit;text-align:left;transition:opacity .35s var(--ease),filter .35s}
+.it .lab{position:absolute;left:0;right:0;top:2px;text-align:left;font:500 11.5px/1.2 var(--sans);color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.005em;pointer-events:none}
+.it .bar{position:absolute;left:0;right:0;bottom:6px;height:7px;border-radius:4px;background:var(--c);transform-origin:left center;transition:height .25s var(--ease),bottom .25s var(--ease),box-shadow .25s}
+.it.pending .bar{background:repeating-linear-gradient(-45deg,var(--c) 0 4px,color-mix(in srgb,var(--c) 45%,white) 4px 7px)}
+.it.pending-end .bar{background:linear-gradient(90deg,var(--c) 0 82%,transparent 82%),repeating-linear-gradient(-45deg,var(--c) 0 4px,color-mix(in srgb,var(--c) 40%,white) 4px 7px)}
+.it.fade-l .bar{-webkit-mask-image:linear-gradient(90deg,transparent,#000 40%);mask-image:linear-gradient(90deg,transparent,#000 40%)}
+.it.open-r .bar{border-top-right-radius:0;border-bottom-right-radius:0}
+.it.open-r .bar::after{content:"";position:absolute;right:-1px;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;background:var(--c);box-shadow:0 0 0 3px color-mix(in srgb,var(--c) 22%,transparent)}
+.it.pt{width:18px;margin-left:-9px}
+.it.pt .plab{position:absolute;left:17px;bottom:4px;font:500 11px/1 var(--sans);color:var(--muted);white-space:nowrap;pointer-events:none;letter-spacing:-.005em}
+.it.pt:hover .plab,.it.pt.sel .plab{color:var(--ink)}
+.it.pt .dot{position:absolute;left:4px;bottom:4px;width:10px;height:10px;border-radius:50%;background:var(--card);box-shadow:inset 0 0 0 2.5px var(--c);transition:transform .25s var(--ease),background .25s}
+.it.pt[data-type="paper"] .dot{border-radius:2px;transform:rotate(45deg) scale(.86)}
+.it.pt[data-type="honor"] .dot{background:var(--c)}
+.it.pt.pending .dot{box-shadow:inset 0 0 0 2px var(--c);background:repeating-linear-gradient(-45deg,var(--c) 0 2px,transparent 2px 4px)}
+.it:hover .bar,.it:focus-visible .bar,.it.sel .bar{height:11px;bottom:4px;box-shadow:0 2px 10px -2px color-mix(in srgb,var(--c) 55%,transparent)}
+.it:hover .dot,.it:focus-visible .dot,.it.sel .dot{background:var(--c);transform:scale(1.25)}
+.it.pt[data-type="paper"]:hover .dot,.it.pt[data-type="paper"].sel .dot,.it.pt[data-type="paper"]:focus-visible .dot{transform:rotate(45deg) scale(1.1)}
+.it:hover .lab,.it.sel .lab{color:var(--ink)}
+.it:focus-visible{outline-offset:1px}
+.flow.hovering .it:not(.hot){opacity:.28}
+.it.off{opacity:.1!important;filter:grayscale(1);pointer-events:none}
+.links-svg{position:absolute;inset:0;pointer-events:none;overflow:visible;z-index:2}
+.links-svg path{fill:none;stroke-width:1.2;stroke-linecap:round}
+.links-svg path.story{stroke:var(--ink);opacity:.22;stroke-dasharray:2 4}
+.links-svg path.live{stroke:var(--ink);opacity:.75;stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw .6s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.flow-foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:12px 20px 2px;border-top:1px solid var(--hair);margin-top:4px;font-size:12px;color:var(--muted)}
+.key{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.key span{display:inline-flex;align-items:center;gap:6px}
+.key i{display:inline-block}
+.k-bar{width:18px;height:6px;border-radius:3px;background:var(--ink-2)}
+.k-dot{width:9px;height:9px;border-radius:50%;box-shadow:inset 0 0 0 2px var(--ink-2)}
+.k-dia{width:8px;height:8px;border-radius:1px;box-shadow:inset 0 0 0 2px var(--ink-2);transform:rotate(45deg)}
+.k-pend{width:18px;height:6px;border-radius:3px;background:repeating-linear-gradient(-45deg,var(--ink-2) 0 3px,#ccc 3px 5px)}
+.k-link{width:18px;height:0;border-top:1.5px dotted var(--ink-2)}
+
+.tip{position:absolute;z-index:20;pointer-events:none;background:var(--ink);color:var(--paper);border-radius:6px;padding:9px 12px 10px;max-width:280px;font-size:12.5px;line-height:1.35;opacity:0;transform:translateY(4px);transition:opacity .18s,transform .18s var(--ease);box-shadow:0 10px 30px -10px rgba(0,0,0,.35)}
+.tip.show{opacity:1;transform:none}
+.tip .d{font-variant-numeric:tabular-nums;color:#B8BCC2;font-size:11.5px;margin-bottom:3px;display:flex;gap:8px;align-items:center}
+.tip .d i{width:7px;height:7px;border-radius:2px;background:var(--c)}
+.tip b{display:block;font:500 15px/1.25 var(--serif);margin-bottom:2px}
+.tip .o{color:#D3D6DA}
+.tip .h{margin-top:6px;color:#9EA3AA;font-size:11px}
+.tip .pc{color:#F0C98A}
+
+/* mobile list */
+.mflow{display:none}
+@media (max-width:860px){
+  .flow{display:none}
+  .mflow{display:block;position:relative;padding-left:2px}
+}
+.myear{position:sticky;top:60px;z-index:2;background:var(--paper);font:500 13px/1 var(--sans);font-variant-numeric:tabular-nums;color:var(--ink);padding:14px 0 8px 32px;letter-spacing:.04em}
+.mlist{list-style:none;margin:0;padding:0;position:relative}
+.mflow::before{content:"";position:absolute;left:11px;top:0;bottom:0;width:1px;background:var(--hair-2)}
+.mitem{all:unset;box-sizing:border-box;display:grid;grid-template-columns:24px 1fr;gap:8px;width:100%;padding:9px 0;cursor:pointer;position:relative}
+.mitem:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mitem .mk{width:11px;height:11px;margin:5px 0 0 6px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 2.5px var(--c);position:relative;z-index:1}
+.mitem.span .mk{background:var(--c);border-radius:3px;height:16px;width:7px;margin-left:8px}
+.mitem[data-type="paper"] .mk{border-radius:2px;transform:rotate(45deg) scale(.85)}
+.mitem .mt{font:450 17px/1.25 var(--serif);display:block}
+.mitem .mo{display:block;font-size:13.5px;color:var(--ink-2);margin-top:2px}
+.mitem .md{display:block;font-size:12px;color:var(--muted);margin-top:3px;font-variant-numeric:tabular-nums}
+.mitem.hide{display:none}
+.mlist li{border-bottom:1px solid var(--hair)}
+.mlist li:last-child{border-bottom:0}
+
+/* panel */
+.scrim{position:fixed;inset:0;background:rgba(20,22,25,.22);opacity:0;pointer-events:none;transition:opacity .3s;z-index:60}
+.scrim.show{opacity:1;pointer-events:auto}
+.panel{position:fixed;top:0;right:0;bottom:0;width:min(460px,100%);background:var(--paper);z-index:61;transform:translateX(102%);transition:transform .45s var(--ease);display:flex;flex-direction:column;box-shadow:-20px 0 60px -30px rgba(0,0,0,.35);border-left:1px solid var(--hair)}
+.panel.show{transform:none}
+.panel[hidden]{display:none}
+.panel .pbar{height:4px;background:var(--c)}
+.panel .phead{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid var(--hair);font-size:12px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.panel .phead .tg{display:flex;align-items:center;gap:8px;color:var(--ink);font-weight:500}
+.panel .phead .tg i{width:8px;height:8px;border-radius:2px;background:var(--c)}
+.iconbtn{all:unset;cursor:pointer;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--hair-2);color:var(--ink);transition:background .2s}
+.iconbtn:hover{background:var(--paper-2)}
+.iconbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.iconbtn svg{width:15px;height:15px}
+.pbody{padding:26px 26px 30px;overflow:auto;flex:1}
+.pdate{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;margin-bottom:10px}
+.ptitle{font:400 32px/1.08 var(--serif);letter-spacing:-.018em;margin:0 0 10px;font-variation-settings:"opsz" 60}
+.porg{font-size:15px;color:var(--ink-2);margin:0 0 22px}
+.porg span{color:var(--muted)}
+.porg .pnote{display:block;font-size:13.5px;margin-top:4px}
+.pdesc{font:400 18px/1.5 var(--serif);margin:0 0 24px;color:var(--ink)}
+.pfacts{margin:0 0 24px;border-top:1px solid var(--hair)}
+.pfacts div{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:11px 0;border-bottom:1px solid var(--hair);font-size:14px}
+.pfacts dt{color:var(--muted);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+.pfacts dd{margin:0}
+.pfacts .res{font:500 17px/1.3 var(--serif)}
+.plinks{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.pconf{display:inline-flex;gap:6px;align-items:center;font-size:12px;color:#7A5A12;background:#FBF1DA;border-radius:4px;padding:4px 8px;margin-bottom:18px}
+.prel h3{font:600 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.prel ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.prel button{all:unset;cursor:pointer;display:flex;gap:8px;align-items:center;font-size:14px;color:var(--ink-2)}
+.prel button i{width:7px;height:7px;border-radius:2px;background:var(--c);flex:none}
+.prel button:hover{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.prel button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pfoot{display:flex;justify-content:space-between;align-items:center;padding:12px 22px;border-top:1px solid var(--hair);font-size:13px;color:var(--muted)}
+.pfoot .navs{display:flex;gap:8px}
+@media (max-width:640px){
+  .panel{top:auto;left:0;width:100%;max-height:86vh;border-radius:14px 14px 0 0;transform:translateY(102%);border-left:0;border-top:1px solid var(--hair)}
+  .panel .pbar{border-radius:14px 14px 0 0}
+  .ptitle{font-size:27px}
+}
+
+/* cards: projects and press (Variation 2, card grid) */
+.cgrid{display:grid;gap:var(--cg)}
+.c{--t:var(--paper-2);background:var(--card);border:1px solid var(--hair);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;position:relative;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s}
+.c:hover{transform:translateY(-3px);box-shadow:0 18px 40px -26px rgba(20,24,30,.35);border-color:var(--hair-2)}
+.c:has(:focus-visible){outline:2px solid var(--accent);outline-offset:4px}
+.c .th{position:relative;margin:0;aspect-ratio:16/9;overflow:hidden;border-bottom:1px solid var(--hair);background:#fff;flex:none}
+.th img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.c:hover .th img{transform:scale(1.025)}
+.th.top img{object-position:50% 0}
+.th.left img{object-position:0 0}
+.th.fit img{object-fit:contain;padding:4% 5%;background:#fff}
+.th .tag{position:absolute;left:8px;bottom:8px;font:500 10.5px/1 var(--sans);letter-spacing:.02em;color:var(--ink-2);background:rgba(255,255,255,.92);border:1px solid var(--hair);padding:4px 6px;border-radius:3px}
+.th .credit{position:absolute;right:0;bottom:0;font:400 10.5px/1 var(--sans);color:rgba(255,255,255,.9);background:linear-gradient(90deg,transparent,rgba(0,0,0,.45) 22%);padding:6px 8px 6px 26px}
+/* typographic thumbnail, for work with no open image */
+.typo{display:grid;place-content:center;text-align:center;background:var(--t);color:var(--c);height:100%;padding:6% 10%}
+.typo b{font:400 clamp(24px,2.2vw,31px)/1.08 var(--serif);letter-spacing:.005em;font-variation-settings:"opsz" 60;text-wrap:balance}
+.typo span{display:block;font:500 10.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-top:10px;opacity:.85;font-variant-numeric:tabular-nums}
+.typo i{display:block;width:28px;height:1px;background:currentColor;margin:12px auto 0;opacity:.5}
+.c .bd{padding:18px 22px 20px;display:flex;flex-direction:column;flex:1}
+.c .tg{font:500 11px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--c);display:flex;flex-wrap:wrap;align-items:center;gap:4px 7px;margin:0 0 10px}
+.c .tg span,.c .tg em{white-space:nowrap}
+.c .tg i{width:7px;height:7px;border-radius:2px;background:var(--c)}
+.c .tg em{font-style:normal;color:var(--faint);letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.c .ttl{font:400 21px/1.2 var(--serif);letter-spacing:-.01em;margin:0 0 6px}
+.c .ttl a{text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .4s var(--ease)}
+.c .ttl a:hover,.c .ttl a:focus-visible{background-size:100% 1px}
+.c .ttl a::after{content:"";position:absolute;inset:0;z-index:1}
+.c .ttl a:focus-visible{outline:none}
+.c .meta{font-size:13.5px;color:var(--muted);margin:0 0 16px}
+.c .desc{font:400 17px/1.5 var(--serif);color:var(--ink-2);margin:0 0 18px;max-width:34em}
+.c .fig{margin-top:auto;border-top:1px solid var(--hair);padding-top:12px}
+.c .n{font:300 40px/1 var(--serif);letter-spacing:-.03em;font-variant-numeric:lining-nums;color:var(--ink)}
+.c .n sup{font-size:.42em;vertical-align:.95em;margin-left:2px;letter-spacing:0}
+.c .nl{font-size:13.5px;color:var(--ink-2);margin:5px 0 0;line-height:1.4}
+.c .fig.txt .nl{margin:0;font:400 16.5px/1.45 var(--serif);color:var(--ink-2)}
+.c .foot{padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:6px 12px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+.c .foot b{font-weight:500;color:var(--ink-2)}
+.c .foot a,.c .foot button{position:relative;z-index:2}
+.prgrid .foot{margin-top:auto}
+.c .lnk{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-weight:500;white-space:nowrap;font-size:12.5px}
+.c .lnk svg{width:12px;height:12px}
+.c .lnk:hover{text-decoration:underline;text-underline-offset:3px}
+.showin{all:unset;cursor:pointer;font-size:12px;color:var(--muted);border-bottom:1px dotted var(--hair-2)}
+.showin:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.showin:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.badge{font:500 11px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;border-radius:999px;border:1px solid var(--hair-2);color:var(--ink-2);white-space:nowrap;display:inline-block}
+.badge.conf{border-color:var(--research);color:var(--research)}
+.badge.ws{border-style:dashed}
+.badge.jr{background:var(--research-t);border-color:transparent;color:var(--research)}
+.badge.ths{background:var(--paper-2);border-color:transparent;color:var(--ink-2)}
+.badge.co{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* projects grid: Sumaúma across the top, then three columns on the same 12-column grid.
+   The wide card's divider falls exactly on the left edge of the third card below it. */
+.pgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.c.wide{grid-column:1/-1;display:grid;grid-template-columns:calc((100% + 2px - 2 * var(--cg)) * 2 / 3 + 2 * var(--cg)) minmax(0,1fr)}
+.c.wide .th{border-bottom:0;border-right:1px solid var(--hair);aspect-ratio:auto;height:100%;min-height:0;background:#D9DED8}
+.c.wide .th img{object-fit:cover;object-position:50% 50%}
+.c.wide .bd{padding:24px 22px 20px}
+.c.wide .ttl{font-size:clamp(28px,2.5vw,34px);letter-spacing:-.018em}
+.c.wide .desc{font-size:16.5px;margin-bottom:16px}
+.c.wide .n{font-size:56px}
+/* cards in the same row share row tracks, so the rules above the numbers line up */
+@media (min-width:641px){
+  .pgrid>.c:not(.wide){display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0}
+  .pgrid>.c:not(.wide) .bd{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0}
+  .pgrid>.c:not(.wide) .fig{margin-top:0;align-self:start}
+}
+.pmore{display:flex;align-items:center;gap:16px;margin-top:var(--cg)}
+#pgrid-more{margin-top:var(--cg)}
+#pgrid-more[hidden]{display:none}
+/* press grid: two larger stories on top, three below */
+.prgrid{grid-template-columns:repeat(6,minmax(0,1fr))}
+.prgrid .c{grid-column:span 2}
+.prgrid .c.feat{grid-column:span 3}
+.c.feat .ttl{font-size:clamp(23px,2vw,28px);line-height:1.16;letter-spacing:-.014em}
+.c.feat .meta{font-size:14.5px;color:var(--ink-2)}
+.c .src{font:500 12px/1.3 var(--sans);color:var(--ink);margin:0 0 4px}
+@media (max-width:1000px){
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .prgrid .c{grid-column:span 3}
+  /* the odd card out takes the whole row, image beside the text */
+  #pgrid>.c:last-child:nth-child(even),.prgrid>.c:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  #pgrid>.c:last-child:nth-child(even) .th,.prgrid>.c:last-child:nth-child(odd) .th{border-bottom:0;border-right:1px solid var(--hair);aspect-ratio:auto;height:100%;min-height:200px}
+}
+@media (max-width:1000px){
+  .c.wide{display:flex}
+  .c.wide .th{border-right:0;border-bottom:1px solid var(--hair);aspect-ratio:16/9;height:auto;min-height:0}
+  .c.wide .bd{padding:18px 18px 18px}
+  .c.wide .n{font-size:48px}
+}
+@media (max-width:640px){
+  .pgrid,.prgrid{grid-template-columns:1fr}
+  .prgrid .c,.prgrid .c.feat{grid-column:auto}
+  #pgrid>.c:last-child:nth-child(even),.prgrid>.c:last-child:nth-child(odd){grid-column:auto;display:flex}
+  #pgrid>.c:last-child:nth-child(even) .th,.prgrid>.c:last-child:nth-child(odd) .th{border-right:0;border-bottom:1px solid var(--hair);aspect-ratio:16/9;height:auto;min-height:0}
+  .c .bd{padding:16px 18px 18px}
+  .c .ttl{font-size:19.5px}
+  .pgrid .th.ty{aspect-ratio:12/5}
+}
+
+/* publications (Variation 3, list with a figure pane) */
+.pubs{align-items:start}
+.pubs>div{grid-column:1/span 7;min-width:0}
+.ppane{grid-column:8/span 5}
+.plist{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair)}
+.pr{border-bottom:1px solid var(--hair)}
+.pr .hd{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:18px;padding:14px 12px 14px 0;align-items:center;position:relative;transition:background .25s}
+.pr .th{margin:0;aspect-ratio:4/3;border:1px solid var(--hair-2);border-radius:3px;overflow:hidden;background:#fff;--c:var(--research);--t:var(--research-t)}
+.pr .th .typo b{font-size:17px}
+.pr .th .typo span{font-size:9px;margin-top:6px}
+.pr .th .typo i{display:none}
+.pr .t{font:400 18px/1.25 var(--serif);letter-spacing:-.006em;margin:0}
+.pr .t a{text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .4s var(--ease)}
+.pr .t a::after{content:"";position:absolute;inset:0;z-index:1}
+.pr .t a:focus-visible{outline:none}
+.pr .hd:focus-within{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.pr .ven{display:block;font:500 13.5px/1.35 var(--sans);color:var(--ink);margin:7px 0 0;letter-spacing:-.003em}
+.pr .ven small{font:400 12.5px/1.35 var(--sans);color:var(--muted);letter-spacing:0}
+.pr .au{display:block;font-size:13px;color:var(--muted);margin:2px 0 0}
+.pr .au b{font-weight:500;color:var(--ink-2)}
+.pr .aside{display:flex;flex-direction:column;align-items:flex-end;gap:7px;text-align:right}
+.cites{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.cites b{font-weight:500;color:var(--ink-2)}
+.pr .acc{display:none}
+.pr .det{display:none}
+.plist .pr.more{display:none}
+.plist.all .pr.more{display:block}
+.pubmore{display:flex;align-items:center;gap:16px;margin-top:18px;flex-wrap:wrap}
+.btn .chev{transition:transform .3s var(--ease)}
+.btn[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.ppane{position:sticky;top:84px;height:calc(100vh - 108px);max-height:860px;display:flex;flex-direction:column}
+.ppane .th{margin:0;aspect-ratio:16/9;background:#fff;border-radius:6px;border:1px solid var(--hair-2);box-shadow:0 22px 50px -30px rgba(20,24,30,.45);flex:none;--c:var(--research);--t:var(--research-t)}
+.ppane .th .typo b{font-size:40px}
+.ppane .cap{font-size:11.5px;color:var(--faint);margin:7px 0 0}
+.ppane h3{font:400 18px/1.28 var(--serif);letter-spacing:-.006em;margin:14px 0 4px}
+.ppane .pv{font-size:13px;color:var(--muted);margin:0 0 12px}
+.ppane .go{align-self:flex-start;display:inline-flex;align-items:center;gap:7px;font:500 13.5px/1 var(--sans);color:var(--ink);text-decoration:none;padding:9px 13px;border:1px solid var(--ink);border-radius:999px;transition:background .2s,color .2s;flex:none}
+.ppane .go:hover{background:var(--ink);color:var(--paper)}
+.ppane .go svg,.det .go svg{width:12px;height:12px}
+.abh{font:600 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:16px 0 7px}
+.ppane .ab{font-size:13.5px;line-height:1.56;color:var(--ink-2);margin:0;overflow:auto;min-height:0;flex:1 1 auto;padding-right:6px}
+.ppane .none{font-size:13px;color:var(--muted);margin:16px 0 0}
+.ppane .in{display:flex;flex-direction:column;min-height:0;flex:1 1 auto;animation:paneIn .28s var(--ease)}
+@keyframes paneIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (min-width:901px){
+  .pr .hd:hover,.pr.on .hd{background:linear-gradient(90deg,var(--paper-2),var(--paper-2) 82%,transparent)}
+  .pr .hd:hover .t a,.pr.on .t a{background-size:100% 1px}
+  .pr.on .hd{box-shadow:inset 2px 0 0 var(--research)}
+}
+@media (max-width:900px){
+  .pubs>div{grid-column:1/-1}
+  .ppane{display:none}
+  .pr .t a{pointer-events:none}
+  .pr .t a::after{display:none}
+  .pr .acc{display:block;all:unset;position:absolute;inset:0;z-index:1;cursor:pointer;border-radius:4px}
+  .pr .acc:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .pr .hd{padding-right:30px}
+  .pr .hd::after{content:"";position:absolute;right:8px;top:50%;width:8px;height:8px;margin-top:-6px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(45deg);transition:transform .3s var(--ease)}
+  .pr.open .hd::after{transform:rotate(-135deg);margin-top:-2px}
+  .pr.open .det{display:block;padding:2px 0 20px}
+  .det .th{aspect-ratio:16/9;border-radius:5px;border:1px solid var(--hair-2);overflow:hidden;margin:0;--c:var(--research);--t:var(--research-t)}
+  .det .go{display:inline-flex;align-items:center;gap:7px;font:500 14px/1 var(--sans);color:var(--ink);text-decoration:none;padding:11px 14px;border:1px solid var(--ink);border-radius:999px;margin:14px 0 2px}
+  .det .ab{font-size:14px;line-height:1.58;color:var(--ink-2);margin:0}
+}
+@media (max-width:640px){
+  .pr .hd{grid-template-columns:84px minmax(0,1fr);gap:4px 14px}
+  .pr .aside{grid-column:2;flex-direction:row;align-items:center;gap:10px;margin-top:6px;text-align:left}
+  .pr .t{font-size:17px}
+}
+
+/* lists (teaching, honors, experience): years in columns 1-2, text from column 3 */
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair)}
+.row{padding:18px 0;border-bottom:1px solid var(--hair);align-items:baseline;position:relative}
+.row .y{grid-column:1/span 2;font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.row>div{grid-column:3/span 8}
+.row .t{font:400 20px/1.25 var(--serif);letter-spacing:-.008em;margin:0}
+.row .s{font-size:14px;color:var(--ink-2);margin:5px 0 0}
+.row .badge{grid-column:11/span 2;justify-self:end}
+.xp .row{padding:16px 0}
+.xp .o{grid-column:3/span 4}
+.xp .r{grid-column:7/span 6}
+.xp b{display:block;font-weight:400}
+.xp .o b{font:400 20px/1.25 var(--serif);letter-spacing:-.008em}
+.xp .r b{font:500 14.5px/1.4 var(--sans);color:var(--ink);padding-top:3px}
+.xp .o span,.xp .r span{display:block;font-size:14px;line-height:1.45;color:var(--ink-2);margin-top:3px}
+.xp .o span{color:var(--muted)}
+.wr .t a{text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .4s var(--ease)}
+.wr .t a::after{content:"";position:absolute;inset:0}
+.wr .t a:hover,.wr .t a:focus-visible{background-size:100% 1px}
+.wr .t a:focus-visible{outline:none}
+.wr:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.wr .badge{display:inline-flex;align-items:center;gap:5px}
+.wr .badge svg{width:10px;height:10px}
+.tc{display:inline-block;font:500 10.5px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:#7A5A12;background:#FBF1DA;padding:3px 6px;border-radius:3px;vertical-align:2px;margin-left:6px;font-style:normal}
+@media (max-width:820px){
+  .xp .o{grid-column:3/-1}
+  .xp .r{grid-column:3/-1;margin-top:8px}
+}
+@media (max-width:700px){
+  .row{display:block}
+  .row .y{display:block;margin-bottom:4px}
+  .row .badge{margin-top:8px}
+  .row .t,.xp .o b{font-size:18.5px}
+  .xp .r{margin-top:6px}
+}
+
+/* about: one rule across all 12 columns; text in columns 1-7, Elsewhere in 9-12 (under Currently) */
+.about{border-top:1px solid var(--ink);padding-top:12px;align-items:start}
+.bio{grid-column:1/span 7}
+.bio .lbl,.side .lbl{margin-bottom:14px}
+.bio p{font:400 21px/1.56 var(--serif);margin:0;color:var(--ink);letter-spacing:-.003em;max-width:29.5em}
+.side{grid-column:9/span 4}
+.side ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair)}
+.side li{border-bottom:1px solid var(--hair)}
+.side li a{display:grid;grid-template-columns:18px auto minmax(0,1fr);align-items:center;gap:10px;padding:10px 0;text-decoration:none;font-size:15px;color:var(--ink);transition:color .2s}
+.side li a .v{color:var(--muted);font-size:13px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.side .ic{width:16px;height:16px;color:var(--muted);transition:color .2s}
+.side li a:hover,.side li a:hover .ic{color:var(--accent)}
+@media (max-width:1080px){.bio{grid-column:1/span 8}.side{grid-column:1/span 8;margin-top:40px}}
+@media (max-width:820px){.bio{grid-column:1/-1}}
+@media (max-width:640px){.bio,.side{grid-column:1/-1}.bio p{font-size:18px;line-height:1.6}}
+footer{margin-top:90px;border-top:1px solid var(--hair);padding:26px 0 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{text-decoration:none;color:var(--ink-2)}
+footer a:hover{color:var(--ink)}
+.ptnote{display:none;font-size:12px;color:var(--muted);margin:10px 0 0}
+html[lang="pt"] .ptnote{display:block}
+
+/* motion */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.flow.pre .bar{transform:scaleX(0)}
+.flow.pre .dot{transform:scale(0)}
+.flow.pre .lab,.flow.pre .plab{opacity:0}
+.flow.go .bar{transition:transform .7s var(--ease) var(--d),height .25s,bottom .25s,box-shadow .25s}
+.flow.go .dot{transition:transform .4s var(--ease) var(--d),background .25s}
+.flow.go .lab,.flow.go .plab{transition:opacity .5s var(--ease) var(--d)}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .flow.pre .bar,.flow.pre .dot{transform:none}.flow.pre .lab{opacity:1}
+  .pulse::after{animation:none}
+  .c,.btn,.panel,.links-svg path.live,.ppane .in{transition:none;animation:none}
+  .links-svg path.live{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#main">Flávio Nakasato Cação</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about" data-i18n="nAbout">About</a>
+      <a href="#work" data-i18n="nWork">Work</a>
+      <a href="#projects" data-i18n="nProjects">Projects</a>
+      <a href="#experience" data-i18n="nExp">Experience</a>
+      <a href="#publications" data-i18n="nPubs">Publications</a>
+      <a href="#writing" data-i18n="nWriting">Writing</a>
+      <a href="#press" data-i18n="nPress">Press</a>
+      <a href="#teaching" data-i18n="nTeach">Teaching</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap hero">
+    <div class="g12 hero-grid">
+      <div class="portrait"><img src="img/profile.jpeg" alt="Portrait of Flávio Nakasato Cação" width="328" height="328"></div>
+      <div class="intro">
+        <h1 class="name">Flávio Nakasato Cação</h1>
+        <p class="tagline" data-i18n="tagline">Entrepreneur building AI for the public interest.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://sumauma.app" target="_blank" rel="noopener">Sumaúma <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+          <a class="btn" href="files/resume-flavio-nakasato.pdf" download><span data-i18n="resume">Resume</span> <span style="color:var(--muted)">PDF</span> <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3v8M4.5 7.5 8 11l3.5-3.5M3 13.5h10"/></svg></a>
+          <a class="btn" href="mailto:flavio.nakasato@gmail.com"><span data-i18n="contact">Contact</span> <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="1.5"/><path d="m2.5 4.5 5.5 4 5.5-4"/></svg></a>
+        </div>
+        <p class="ptnote" data-i18n="ptnote">Os textos detalhados deste site estão em inglês.</p>
+      </div>
+      <aside class="now" aria-labelledby="now-h">
+        <h2 class="lbl" id="now-h" data-i18n="now">Currently</h2>
+        <dl>
+          <div><dt data-i18n="nowLead">Project Lead</dt><dd>Sumaúma<small data-i18n="nowSum">In real use by four municipal environmental departments in Pará since August 2026. Built with Imazon.</small></dd></div>
+          <div><dt data-i18n="nowFounder">Founder &amp; Partner</dt><dd>Moiru AI<small data-i18n="nowMoiru">The company that designed and built Sumaúma with Imazon.</small></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+
+  <section class="wrap about-sec" id="about" aria-labelledby="about-h">
+    <div class="g12 about rv">
+      <div class="bio">
+        <h2 class="lbl" id="about-h" data-i18n="nAbout">About</h2>
+        <p>Flávio Nakasato Cação has worked with data and AI for about ten years. He is the founder and a partner of Moiru AI and leads Sumaúma, an open-source AI platform for environmental enforcement in the Amazon rainforest, developed with the research institute Imazon. Since August 2026, four municipal environmental departments in Pará, including Altamira and Paragominas, have used it in real enforcement cases. He holds a degree in Physics and a master's in Machine Learning from the University of São Paulo (USP), with papers at ACM CIKM, BRACIS and PROPOR and at climate workshops at ICML and IJCAI-ECAI. At Itaú Unibanco, Brazil's largest bank, he was part of the first team assigned to bring generative AI into the bank. He has also led AI projects for the climate policy think tank Instituto Talanoa, the Brazilian Biodiversity Fund (Funbio) and World Animal Protection, and done political data analysis for most of Brazil's major news outlets through Novelo Data.</p>
+      </div>
+      <div class="side">
+        <h3 class="lbl" data-i18n="elsewhere">Elsewhere</h3>
+        <ul>
+          <li><a href="mailto:flavio.nakasato@gmail.com"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.6 6.6 8.4 6.1 8.4-6.1"/></svg><span>Email</span><span class="v">flavio.nakasato@gmail.com</span></a></li>
+          <li><a href="https://www.linkedin.com/in/flavionakasato" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5v6M12 16.5v-6M12 13.2c0-1.7 1.1-2.7 2.5-2.7s2.5 1 2.5 2.7v3.3"/><circle cx="8" cy="7.6" r=".6" fill="currentColor"/></svg><span>LinkedIn</span><span class="v">in/flavionakasato</span></a></li>
+          <li><a href="https://scholar.google.com.br/citations?user=bKIJHa8AAAAJ" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 12 4.5l9.5 5-9.5 5z"/><path d="M6.5 11.9v4.3c1.5 1.4 3.4 2.2 5.5 2.2s4-.8 5.5-2.2v-4.3M21.5 9.5v5"/></svg><span>Google Scholar</span><span class="v" data-i18n="mCitV">82 citations</span></a></li>
+          <li><a href="https://orcid.org/0000-0003-4771-6009" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8.5 10.5v6M11.5 10.5v6h2a3 3 0 0 0 0-6z"/><circle cx="8.5" cy="7.7" r=".6" fill="currentColor"/></svg><span>ORCID</span><span class="v">0000-0003-4771-6009</span></a></li>
+          <li><a href="https://github.com/flavionakasato" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>GitHub</span><span class="v">flavionakasato</span></a></li>
+          <li><a href="https://flavio-nakasato.medium.com" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="12" r="5"/><ellipse cx="16.2" cy="12" rx="2.4" ry="4.8"/><path d="M21 7.6v8.8"/></svg><span>Medium</span><span class="v">flavio-nakasato</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="wrap block" id="work" aria-labelledby="work-h">
+    <div class="shead">
+      <div class="hl"><h2 id="work-h" data-i18n="flowTitle">The last ten years</h2><span class="aux num">2016–2026</span></div>
+      <p class="sub" data-i18n="flowSub">Four tracks of work over the same decade. Bars are roles and projects; marks are papers, press and events. Hover or focus to preview, click to open.</p>
+    </div>
+    <div class="filters" id="filters">
+      <div class="grp" id="f-tracks" role="group" aria-label="Filter by track"></div>
+      <span class="sep" aria-hidden="true"></span>
+      <div class="grp" id="f-types" role="group" aria-label="Filter by type"></div>
+    </div>
+    <a class="skip" href="#projects" data-i18n="skipFlow">Skip the timeline</a>
+    <div class="flow" id="flow">
+      <div class="axis" aria-hidden="true"><div></div><div class="ticks" id="ticks"></div></div>
+      <div class="lanes" id="lanes"><svg class="links-svg" id="links" aria-hidden="true"></svg></div>
+      <div class="flow-foot">
+        <div class="key" aria-hidden="true">
+          <span><i class="k-bar"></i><span data-i18n="kSpan">Role or project</span></span>
+          <span><i class="k-dia"></i><span data-i18n="kPaper">Paper</span></span>
+          <span><i class="k-dot"></i><span data-i18n="kEvent">Press or event</span></span>
+          <span><i class="k-pend"></i><span data-i18n="kPend">Date to confirm</span></span>
+          <span><i class="k-link"></i><span data-i18n="kLink">Led to</span></span>
+        </div>
+        <span data-i18n="kKeys">Arrow keys move through the timeline in order.</span>
+      </div>
+      <div class="tip" id="tip" role="tooltip"></div>
+    </div>
+    <div class="mflow" id="mflow"></div>
+  </section>
+
+  <section class="wrap block" id="projects" aria-labelledby="proj-h">
+    <div class="shead rv">
+      <div class="hl"><h2 id="proj-h" data-i18n="projTitle">Selected projects</h2><span class="aux" data-i18n="projAux">10 projects</span></div>
+      <p class="sub" data-i18n="projSub">The role, the outcome in one number, and where to read more.</p>
+    </div>
+    <!-- The Sumaúma card image is <img id="sumauma-img"> (object-fit: cover, centered); to change it, swap only its src in PROJ. -->
+    <div class="cgrid pgrid" id="pgrid"><article class="c rv wide" style="--c:var(--impact);--t:var(--impact-t);transition-delay:0ms"><figure class="th"><img id="sumauma-img" class="sumauma-shot" src="img/thumbs/sumauma-composicao.webp" alt="Sumaúma's web dashboard with the week's deforestation alerts and a map, next to the field app's map screen." width="1600" height="900" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2026</em></p><h3 class="ttl"><a href="https://sumauma.app" target="_blank" rel="noopener">Sumaúma</a></h3><p class="meta">Moiru AI with Imazon</p><p class="desc">Open-source AI for environmental enforcement in the Amazon rainforest, built with four municipal departments in Pará.</p></div><div class="fig"><div class="n">4</div><p class="nl">municipal environmental departments in Pará using it in real enforcement cases since August 2026.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Project Lead</b></span><a class="lnk" href="https://sumauma.app" target="_blank" rel="noopener">sumauma.app <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"></path></svg></a><button type="button" class="showin" data-show="sumauma" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--media);--t:var(--media-t);transition-delay:60ms"><figure class="th"><img src="img/thumbs/proj-radar-169.webp" alt="Home page of the Anti-Gender Radar: the title Radar Antigênero over a collage of video frames in orange, green and violet." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_media">Media &amp; data journalism</span> <em>2024</em></p><h3 class="ttl"><a href="https://radar.org.br" target="_blank" rel="noopener">Anti-Gender Radar</a></h3><p class="meta">Gênero e Número, with JournalismAI (LSE and Google News Initiative)</p></div><div class="fig"><div class="n">20,000<sup>+</sup></div><p class="nl">videos from 7,700+ channels analyzed.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI lead</b></span><button type="button" class="showin" data-show="radar" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--impact);--t:var(--impact-t);transition-delay:120ms"><figure class="th top"><img src="img/thumbs/proj-talanoa-169.webp" alt="Política por Inteiro, Instituto Talanoa's climate policy website, on the page of its monitor of public acts." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2023–2024</em></p><h3 class="ttl"><a href="#" data-open="talanoa">Climate Policy Analysis</a></h3><p class="meta">Instituto Talanoa, a climate policy think tank</p></div><div class="fig"><div class="n">60<sup>%</sup></div><p class="nl">less research time, across 10,000+ climate policy documents.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI project lead</b></span><a class="lnk" href="https://www.climatechange.ai/papers/icml2021/35" target="_blank" rel="noopener">Related paper <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"></path></svg></a><button type="button" class="showin" data-show="talanoa" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--media);--t:var(--media-t);transition-delay:0ms"><figure class="th top"><img src="img/thumbs/proj-bannon-169.webp" alt="Chart from the Agência Pública story: the days, from September 2021 to August 2022, when Steve Bannon's podcast mentioned Brazil." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_media">Media &amp; data journalism</span> <em>2022</em></p><h3 class="ttl"><a href="https://apublica.org/sentinela/2022/09/ameaca-da-china-e-ataque-ao-stf-o-que-o-podcast-de-steve-bannon-diz-sobre-o-brasil/" target="_blank" rel="noopener">Steve Bannon's podcast and Brazil</a></h3><p class="meta">Agência Pública, an investigative journalism agency</p></div><div class="fig"><div class="n">923</div><p class="nl">podcast episodes analyzed with topic modeling.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Co-author</b></span><button type="button" class="showin" data-show="bannon" data-i18n="showIn">Show in timeline</button></div></div></article></div>
+    <div class="cgrid pgrid" id="pgrid-more" hidden><article class="c rv in" style="--c:var(--media);--t:var(--media-t);transition-delay:0ms"><figure class="th top"><img src="img/thumbs/proj-piaui-169.webp" alt="Chart from the piauí visual analysis: mentions critical of Brazil's Supreme Court and Electoral Court on Jovem Pan, 2018 to 2022." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_media">Media &amp; data journalism</span> <em>2022</em></p><h3 class="ttl"><a href="https://piaui.folha.uol.com.br/materia/jovem-pan-e-o-golpe" target="_blank" rel="noopener">Political discourse on YouTube</a></h3><p class="meta">piauí, a Brazilian monthly magazine</p></div><div class="fig"><div class="n">1,000<sup>+</sup></div><p class="nl">episodes of Jovem Pan analyzed. Among the magazine's most-read pieces of the 2022 election.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Data analysis, with Novelo Data</b></span><button type="button" class="showin" data-show="piaui" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--impact);--t:var(--impact-t);transition-delay:60ms"><figure class="th ty"><div class="typo" role="img" aria-label="Funbio, 2020–2021"><b>Funbio</b><span>2020–2021</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2020–2021</em></p><h3 class="ttl"><a href="#" data-open="funbio">Environmental News Monitoring</a></h3><p class="meta">Funbio, the Brazilian Biodiversity Fund</p></div><div class="fig"><div class="n">10,000<sup>+</sup></div><p class="nl">news articles a month from 8+ sources, monitored to track environmental threats.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI project lead</b></span><button type="button" class="showin" data-show="funbio" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--impact);--t:var(--impact-t);transition-delay:120ms"><figure class="th ty"><div class="typo" role="img" aria-label="World Animal Protection, 2024"><b>World Animal Protection</b><span>2024</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2024</em></p><h3 class="ttl"><a href="#" data-open="wap">Animal rights discourse analysis</a></h3><p class="meta">World Animal Protection</p></div><div class="fig txt"><p class="nl">Discourse analysis on animal rights.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI project lead</b></span><button type="button" class="showin" data-show="wap" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--industry);--t:var(--industry-t);transition-delay:0ms"><figure class="th ty"><div class="typo" role="img" aria-label="Itaú Unibanco, 2022–2024"><b>Itaú Unibanco</b><span>2022–2024</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_industry">Industry</span> <em>2022–2024</em></p><h3 class="ttl"><a href="#" data-open="itau">First generative AI task force</a></h3><p class="meta">Itaú Unibanco, Brazil's largest bank</p></div><div class="fig txt"><p class="nl">Member of the first team assigned to bring generative AI into the bank.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Data Scientist</b></span><button type="button" class="showin" data-show="itau" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--industry);--t:var(--industry-t);transition-delay:60ms"><figure class="th ty"><div class="typo" role="img" aria-label="Mira Educação, 2017–2019"><b>Mira Educação</b><span>2017–2019</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_industry">Industry</span> <em>2017–2019</em></p><h3 class="ttl"><a href="#" data-open="mira">Data and impact studies</a></h3><p class="meta">Mira Educação, an education startup</p></div><div class="fig txt"><p class="nl">Data infrastructure and impact studies as the company grew from two pilot schools to nearly one million users.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Lead &amp; Senior Data Scientist</b></span><button type="button" class="showin" data-show="mira" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--impact);--t:var(--impact-t);transition-delay:120ms"><figure class="th ty"><div class="typo" role="img" aria-label="AmazoniaHack, 2026"><b>AmazoniaHack</b><span>2026</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2026</em></p><h3 class="ttl"><a href="https://www.instagram.com/p/De-qx10DXY7/" target="_blank" rel="noopener">International edition, organizing team</a></h3><p class="meta">AmazoniaHack</p></div><div class="fig"><div class="n">7</div><p class="nl">countries and 10 solutions in the 2026 international edition.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Organizing team</b></span><button type="button" class="showin" data-show="ah26" data-i18n="showIn">Show in timeline</button></div></div></article></div>
+    <div class="pmore"><button type="button" class="btn" id="projbtn" aria-expanded="false" aria-controls="pgrid-more"><span data-i18n="projMore">Show more projects</span> <svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></button></div>
+  </section>
+
+  <section class="wrap block" id="experience" aria-labelledby="exp-h">
+    <div class="shead rv">
+      <div class="hl"><h2 id="exp-h" data-i18n="expTitle">Experience</h2><span class="aux num" data-i18n="expAux">2016 to now</span></div>
+      <p class="sub" data-i18n="expSub">Where I have worked, what each place is and what I did there.</p>
+    </div>
+    <ol class="rows xp rv">
+      <li class="g12 row"><span class="y">2024–now</span><div class="o"><b>Moiru AI</b><span>Company that builds open-source AI tools for environmental enforcement</span></div><div class="r"><b>Founder &amp; Partner</b><span>Designed and built Sumaúma with Imazon.</span></div></li>
+      <li class="g12 row"><span class="y">2022–2025</span><div class="o"><b>Novelo Data</b><span>Data analysis company for newsrooms, NGOs and companies</span></div><div class="r"><b>Partner</b><span>Political data analysis for most of Brazil's major news outlets; AI lead of the Anti-Gender Radar.</span></div></li>
+      <li class="g12 row"><span class="y">2025</span><div class="o"><b>ADP (Automatic Data Processing)</b><span>US multinational in payroll and HR solutions</span></div><div class="r"><b>Data Scientist</b><span>Theme detection in tens of thousands of survey responses.</span></div></li>
+      <li class="g12 row"><span class="y">2022–2024</span><div class="o"><b>Itaú Unibanco</b><span>Brazil's largest bank</span></div><div class="r"><b>Data Scientist</b><span>Part of the first task force created to bring generative AI to the bank.</span></div></li>
+      <li class="g12 row"><span class="y">2020–2023</span><div class="o"><b>C2D and C4AI, University of São Paulo (USP)</b><span>USP's Center for Data Science and the IBM/USP Center for Artificial Intelligence</span></div><div class="r"><b>Machine Learning Researcher</b><span>Language technologies for environmental and ocean data; the research behind the publications.</span></div></li>
+      <li class="g12 row"><span class="y">2020</span><div class="o"><b>Ada</b><span>Technology education company</span></div><div class="r"><b>Coding Teacher (part-time)</b><span>Python, databases, cloud computing and neural networks.</span></div></li>
+      <li class="g12 row"><span class="y">2019–2020</span><div class="o"><b>C6 Bank</b><span>Brazilian digital bank</span></div><div class="r"><b>Senior Data Engineer</b><span>Integration of critical databases across cloud providers.</span></div></li>
+      <li class="g12 row"><span class="y">2018–2019</span><div class="o"><b>Cognitivo.AI</b><span>Brazilian data and AI company</span></div><div class="r"><b>Data Science Consultant</b><span>Data infrastructure and predictive models for client companies.</span></div></li>
+      <li class="g12 row"><span class="y">2017–2019</span><div class="o"><b>Mira Educação</b><span>Education technology startup</span></div><div class="r"><b>Lead &amp; Senior Data Scientist</b><span>Data infrastructure and impact studies as it grew from two pilot schools to nearly one million users.</span></div></li>
+      <li class="g12 row"><span class="y">2016–2017</span><div class="o"><b>Vá de Táxi</b><span>Taxi app from the insurer Porto Seguro</span></div><div class="r"><b>BI Analyst &amp; Data Scientist</b><span>Business indicators and fraud pattern analysis.</span></div></li>
+    </ol>
+  </section>
+
+  <section class="wrap block" id="publications" aria-labelledby="pub-h">
+    <!-- Google Scholar lists more entries than the 10 below. The others are duplicates of these
+         papers (preprint and repeated records), proceedings volumes, and a dissertation by another
+         person that Scholar attached to this profile. Only the 10 unique works are listed here.
+         Abstracts are copied from arXiv, SBC (ENIAC), climatechange.ai (DeepPolicyTracker),
+         OpenAlex (Aroeira, Springer) and the USP thesis repository. -->
+    <div class="shead rv">
+      <div class="hl"><h2 id="pub-h" data-i18n="pubTitle">Publications</h2><span class="aux"><span><span class="num">82</span> <span data-i18n="mCit">citations</span></span><span class="num">h-index 4</span><span class="num">i10-index 3</span><a href="https://scholar.google.com.br/citations?user=bKIJHa8AAAAJ" target="_blank" rel="noopener">Google Scholar <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a></span></div>
+      <p class="sub" data-i18n="pubSub">Mostly from the research at USP's Center for Data Science and C4AI, on question answering, Portuguese language resources and environmental data. Sorted by Google Scholar citations (November 2026); select a paper to read its abstract.</p>
+    </div>
+    <div class="g12 pubs rv">
+      <div>
+        <ol class="plist" id="plist"><li class="pr on" data-id="pira"><div class="hd"><figure class="th"><img src="img/thumbs/pub-pira-43.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://dl.acm.org/doi/10.1145/3459637.3482012" target="_blank" rel="noopener">Pirá: A Bilingual Portuguese-English Dataset for Question-Answering about the Ocean</a></h3><span class="ven">ACM CIKM 2021</span><span class="au">Paschoal, Pirozelli, Freire, Delgado, Peres, José, <b>Cação</b> et al.</span></div><div class="aside"><span class="badge conf">Conference</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>35</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-pira"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: Pirá: A Bilingual Portuguese-English Dataset for Question-Answering about the Ocean</span></button></div><div class="det" id="det-pira"></div></li><li class="pr" data-id="pira2"><div class="hd"><figure class="th"><img src="img/thumbs/pub-pira2-43.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://doi.org/10.1162/dint_a_00245" target="_blank" rel="noopener">Benchmarks for Pirá 2.0, a Reading Comprehension Dataset about the Ocean, the Brazilian Coast, and Climate Change</a></h3><span class="ven">Data Intelligence, 2024</span><span class="au">Pirozelli, José, Silveira, <b>Cação</b> et al.</span></div><div class="aside"><span class="badge jr">Journal</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>17</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-pira2"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: Benchmarks for Pirá 2.0, a Reading Comprehension Dataset about the Ocean, the Brazilian Coast, and Climate Change</span></button></div><div class="det" id="det-pira2"></div></li><li class="pr" data-id="deepage"><div class="hd"><figure class="th"><img src="img/thumbs/pub-deepage-43.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://doi.org/10.1007/978-3-030-91699-2_29" target="_blank" rel="noopener">DEEPAGÉ: Answering Questions in Portuguese about the Brazilian Environment</a></h3><span class="ven">BRACIS 2021</span><span class="au"><b>Cação</b> et al.</span></div><div class="aside"><span class="badge conf">Conference</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>12</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-deepage"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: DEEPAGÉ: Answering Questions in Portuguese about the Brazilian Environment</span></button></div><div class="det" id="det-deepage"></div></li><li class="pr" data-id="aroeira"><div class="hd"><figure class="th"><img src="img/thumbs/pub-aroeira-figura.webp" alt="" width="1513" height="605" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://doi.org/10.1007/978-3-031-79029-4_13" target="_blank" rel="noopener">Aroeira: A Curated Corpus for the Portuguese Language with a Large Number of Tokens</a></h3><span class="ven">BRACIS 2024</span><span class="au">Lira, <b>Cação</b> et al.</span></div><div class="aside"><span class="badge conf">Conference</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>4</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-aroeira"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: Aroeira: A Curated Corpus for the Portuguese Language with a Large Number of Tokens</span></button></div><div class="det" id="det-aroeira"></div></li><li class="pr" data-id="dpt"><div class="hd"><figure class="th"><img src="img/thumbs/pub-dpt-43.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://www.climatechange.ai/papers/icml2021/35" target="_blank" rel="noopener">DeepPolicyTracker: Tracking Changes in Environmental Policy in the Brazilian Federal Official Gazette with Deep Learning</a></h3><span class="ven">ICML 2021 workshop</span><span class="au"><b>Cação</b> et al.</span></div><div class="aside"><span class="badge ws">Workshop</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>4</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-dpt"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: DeepPolicyTracker: Tracking Changes in Environmental Policy in the Brazilian Federal Official Gazette with Deep Learning</span></button></div><div class="det" id="det-dpt"></div></li><li class="pr" data-id="blab"><div class="hd"><figure class="th"><img src="img/thumbs/pub-blab-43.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://arxiv.org/abs/2209.07928" target="_blank" rel="noopener">The BLue Amazon Brain (BLAB): A Modular Architecture of Services about the Brazilian Maritime Territory</a></h3><span class="ven">IJCAI-ECAI 2022 workshop</span><span class="au">Pirozelli, Castro, de Oliveira, Oliveira, <b>Cação</b> et al.</span></div><div class="aside"><span class="badge ws">Workshop</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>3</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-blab"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: The BLue Amazon Brain (BLAB): A Modular Architecture of Services about the Brazilian Maritime Territory</span></button></div><div class="det" id="det-blab"></div></li><li class="pr more" data-id="qarl"><div class="hd"><figure class="th"><img src="img/thumbs/pub-qa-rl-43.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://arxiv.org/abs/2407.04858" target="_blank" rel="noopener">Question Answering with Texts and Tables through Deep Reinforcement Learning</a></h3><span class="ven">BRACIS 2024</span><span class="au">José, <b>Cação</b> et al.</span></div><div class="aside"><span class="badge conf">Conference</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>2</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-qarl"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: Question Answering with Texts and Tables through Deep Reinforcement Learning</span></button></div><div class="det" id="det-qarl"></div></li><li class="pr more" data-id="propor"><div class="hd"><figure class="th"><img src="img/thumbs/pub-propor-43.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://arxiv.org/abs/2202.10221" target="_blank" rel="noopener">Tracking Environmental Policy Changes in the Brazilian Federal Official Gazette</a></h3><span class="ven">PROPOR 2022</span><span class="au"><b>Cação</b> et al.</span></div><div class="aside"><span class="badge conf">Conference</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>2</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-propor"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: Tracking Environmental Policy Changes in the Brazilian Federal Official Gazette</span></button></div><div class="det" id="det-propor"></div></li><li class="pr more" data-id="eniac"><div class="hd"><figure class="th"><img src="img/thumbs/pub-eniac-43.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://doi.org/10.5753/eniac.2021.18302" target="_blank" rel="noopener">Interpretability of Attention Mechanisms in a Portuguese-Based Question Answering System about the Blue Amazon</a></h3><span class="ven">ENIAC 2021</span><span class="au">Spindola, José, Oliveira, <b>Cação</b> et al.</span></div><div class="aside"><span class="badge conf">Conference</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>2</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-eniac"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: Interpretability of Attention Mechanisms in a Portuguese-Based Question Answering System about the Blue Amazon</span></button></div><div class="det" id="det-eniac"></div></li><li class="pr more" data-id="thesis"><div class="hd"><figure class="th"><img src="img/thumbs/pub-thesis-43.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></figure><div><h3 class="t"><a href="https://doi.org/10.11606/d.3.2023.tde-10012024-092904" target="_blank" rel="noopener">A Deep Reinforcement Learning Approach to Complex Open-Domain Question Answering</a></h3><span class="ven">MSc dissertation, USP, 2023</span><span class="au"><b>Cação</b></span></div><div class="aside"><span class="badge ths">Thesis</span><span class="cites"><span data-i18n="citedBy">Cited by</span> <b>1</b></span></div><button type="button" class="acc" aria-expanded="false" aria-controls="det-thesis"><span class="sr"><span data-i18n="showAbs">Show abstract</span>: A Deep Reinforcement Learning Approach to Complex Open-Domain Question Answering</span></button></div><div class="det" id="det-thesis"></div></li></ol>
+        <div class="pubmore"><button type="button" class="btn" id="pubbtn" aria-expanded="false" aria-controls="plist"><span data-i18n="pubMore">Show all 10</span> <svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></button></div>
+      </div>
+      <aside class="ppane" id="ppane" aria-label="Selected paper" aria-live="polite"><div class="in"><figure class="th"><img src="img/thumbs/pub-pira-169.webp" alt="Diagram from the paper of how the Pirá dataset was built, in three phases: corpora, question creation and assessment." width="1200" height="675" decoding="async"></figure><p class="cap" data-i18n="figCap">Figure from the paper</p><h3>Pirá: A Bilingual Portuguese-English Dataset for Question-Answering about the Ocean</h3><p class="pv"><b style="font-weight:500;color:var(--ink)">ACM CIKM 2021</b>, Conference on Information and Knowledge Management</p><a class="go" href="https://dl.acm.org/doi/10.1145/3459637.3482012" target="_blank" rel="noopener"><span data-i18n="official">Official page</span> <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"></path></svg></a><p class="abh" data-i18n="abstract">Abstract</p><p class="ab">Current research in natural language processing is highly dependent on carefully produced corpora. Most existing resources focus on English; some resources focus on languages such as Chinese and French; few resources deal with more than one language. This paper presents the Pirá dataset, a large set of questions and answers about the ocean and the Brazilian coast both in Portuguese and English. Pirá is, to the best of our knowledge, the first QA dataset with supporting texts in Portuguese, and, perhaps more importantly, the first bilingual QA dataset that includes this language. The Pirá dataset consists of 2261 properly curated question/answer (QA) sets in both languages. The QA sets were manually created based on two corpora: abstracts related to the Brazilian coast and excerpts of United Nation reports about the ocean. The QA sets were validated in a peer-review process with the dataset contributors. We discuss some of the advantages as well as limitations of Pirá, as this new resource can support a set of tasks in NLP such as question-answering, information retrieval, and machine translation.</p></div></aside>
+    </div>
+  </section>
+
+  <section class="wrap block" id="writing" aria-labelledby="writing-h">
+    <div class="shead rv">
+      <div class="hl"><h2 id="writing-h" data-i18n="writingTitle">Writing</h2><span class="aux"><a href="https://flavio-nakasato.medium.com" target="_blank" rel="noopener">Medium <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a></span></div>
+      <p class="sub" data-i18n="writingSub">Explainers on machine learning, in Portuguese.</p>
+    </div>
+    <ul class="rows rv">
+      <li class="g12 row wr"><time class="y" datetime="2021-07-20">20 Jul 2021</time><div><p class="t" lang="pt"><a href="https://flavio-nakasato.medium.com/como-machine-learning-pode-ajudar-no-combate-%C3%A0s-mudan%C3%A7as-clim%C3%A1ticas-dcf53edeaad9" target="_blank" rel="noopener">Como Machine Learning Pode Ajudar no Combate às Mudanças Climáticas?</a></p><p class="s">How machine learning can help address climate change.</p></div><span class="badge">Medium <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span></li>
+      <li class="g12 row wr"><time class="y" datetime="2021-06-05">5 Jun 2021</time><div><p class="t" lang="pt"><a href="https://flavio-nakasato.medium.com/das-redes-recorrentes-aos-transformers-o-desafio-de-projetar-m%C3%A1quinas-que-leiam-como-humanos-1e78af8e83e2" target="_blank" rel="noopener">Das Redes Recorrentes Aos Transformers: O Desafio De Projetar Máquinas Que Leiam Como Humanos</a></p><p class="s">From recurrent networks to Transformers, and the challenge of building machines that read like humans.</p></div><span class="badge">Medium <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span></li>
+      <li class="g12 row wr"><time class="y" datetime="2021-03-31">31 Mar 2021</time><div><p class="t" lang="pt"><a href="https://flavio-nakasato.medium.com/expandindo-a-mem%C3%B3ria-de-modelos-de-linguagem-pr%C3%A9-treinados-com-retrieval-augmented-generation-rag-798fc7a96c52" target="_blank" rel="noopener">Expandindo a memória de modelos de linguagem pré-treinados com Retrieval-Augmented Generation (RAG)</a></p><p class="s">An explainer on retrieval-augmented generation (RAG) for pre-trained language models.</p></div><span class="badge">Medium <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span></li>
+    </ul>
+  </section>
+
+  <section class="wrap block" id="press" aria-labelledby="press-h">
+    <div class="shead rv">
+      <div class="hl"><h2 id="press-h" data-i18n="pressTitle">Press</h2><span class="aux num" data-i18n="pressAux">5 stories, 2022–2025</span></div>
+      <p class="sub" data-i18n="pressSub">Reporting I co-authored and stories where I was interviewed. Headlines in Portuguese, with a short English summary.</p>
+    </div>
+    <div class="cgrid prgrid" id="prgrid"><article class="c rv feat" style="--c:var(--media);transition-delay:0ms"><figure class="th"><img src="img/thumbs/press-folha-ia-brasileira-foto.webp" alt="Photo from the Folha story: a group of officials and guests at a meeting at the Ministry of Science, Technology and Innovation, in front of a Brazilian government logo." width="1024" height="683" style="object-position:50% 42%" loading="lazy" decoding="async"><span class="credit" data-i18n="photoCredit">Photo: Folha de S.Paulo / reproduction</span></figure><div class="bd"><p class="tg"><i></i><span>Folha de S.Paulo</span> <em>25 Aug 2024</em></p><h3 class="ttl" lang="pt"><a href="https://www1.folha.uol.com.br/mercado/2024/08/especialistas-contestam-originalidade-de-ia-brasileira-no-radar-de-lula.shtml" target="_blank" rel="noopener">Especialistas contestam originalidade de IA 'brasileira' no radar de Lula</a></h3><p class="meta">Experts question the originality of a "Brazilian" AI model. Comment on fine-tuning.</p><div class="foot"><span class="badge">Quoted</span></div></div></article><article class="c rv feat" style="--c:var(--media);transition-delay:60ms"><figure class="th"><img src="img/thumbs/press-bannon-169.webp" alt="Share image of the Agência Pública story: Steve Bannon in close-up over a collage, with the Pública logo on a yellow band." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><p class="tg"><i></i><span>Agência Pública</span> <em>29 Sep 2022</em></p><h3 class="ttl" lang="pt"><a href="https://apublica.org/sentinela/2022/09/ameaca-da-china-e-ataque-ao-stf-o-que-o-podcast-de-steve-bannon-diz-sobre-o-brasil/" target="_blank" rel="noopener">Ameaça da China e ataque ao STF: o que o podcast de Steve Bannon diz sobre o Brasil</a></h3><p class="meta">What Steve Bannon's podcast says about Brazil, from 923 episodes. With Laura Scofield, Natalia Viana, David Nemer and Christina Xiao.</p><div class="foot"><span class="badge co">Co-author</span></div></div></article><article class="c rv" style="--c:var(--media);transition-delay:120ms"><figure class="th top"><img src="img/thumbs/press-artigo19-169.webp" alt="Top of the ARTIGO 19 Brasil story, with the headline Gênero e Número e Novelo Data lançam Radar Antigênero." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><p class="tg"><i></i><span>ARTIGO 19 Brasil</span> <em>11 Sep 2025</em></p><h3 class="ttl" lang="pt"><a href="https://artigo19.org/2025/09/11/genero-e-numero-e-novelo-data-lancam-radar-antigenero/" target="_blank" rel="noopener">Gênero e Número e Novelo Data lançam Radar Antigênero</a></h3><p class="meta">Launch of the Anti-Gender Radar, built by Gênero e Número and Novelo Data.</p><div class="foot"><span class="badge">Quoted</span></div></div></article><article class="c rv" style="--c:var(--media);transition-delay:0ms"><figure class="th top"><img src="img/thumbs/press-gn-169.webp" alt="Top of the Gênero e Número story, with its headline and the Radar's illustration of video frames." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><p class="tg"><i></i><span>Gênero e Número</span> <em>4 Sep 2025</em></p><h3 class="ttl" lang="pt"><a href="https://www.generonumero.media/artigos/lancamento-radar-antigenero/" target="_blank" rel="noopener">Lançamento do Radar Antigênero</a></h3><p class="meta">Public launch of the Anti-Gender Radar, where I led the AI work.</p><div class="foot"><span class="badge">Quoted</span></div></div></article><article class="c rv" style="--c:var(--media);transition-delay:60ms"><figure class="th"><img src="img/thumbs/press-folha2-169.webp" alt="Illustration from the Folha story: two hands typing on a laptop over a red background." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><p class="tg"><i></i><span>Folha de S.Paulo</span> <em>21 Oct 2024</em></p><h3 class="ttl" lang="pt"><a href="https://www1.folha.uol.com.br/tec/2024/10/agentes-de-ia-chegam-a-empresas-que-investem-em-fabricas-proprias-de-funcionarios-digitais.shtml" target="_blank" rel="noopener">Agentes de IA chegam a empresas, que investem em fábricas próprias de funcionários digitais</a></h3><p class="meta">On AI agents arriving at companies.</p><div class="foot"><span class="badge">Quoted</span></div></div></article></div>
+  </section>
+
+  <section class="wrap block" id="teaching" aria-labelledby="teach-h">
+    <div class="shead rv">
+      <div class="hl"><h2 id="teach-h" data-i18n="teachTitle">Teaching and talks</h2><span class="aux num">2020–2024</span></div>
+    </div>
+    <ul class="rows rv">
+      <li class="g12 row"><span class="y">2024</span><div><p class="t">Mentor, AmazoniaHack</p><p class="s">Mentor at the 2024 edition, after winning in 2023.</p></div><span class="badge">Mentoring</span></li>
+      <li class="g12 row"><span class="y">2022</span><div><p class="t">Graduate mini-course on Deep Reinforcement Learning</p><p class="s">"Introduction to Deep Reinforcement Learning with Applications", co-taught with Marcos Menon José for the Electrical Engineering graduate program at Poli-USP (PPGEE) and data scientists at Itaú Unibanco.</p></div><span class="badge">Graduate course</span></li>
+      <li class="g12 row"><span class="y">2020</span><div><p class="t">Coding Teacher, Ada</p><p class="s">Part-time teaching of Python, databases, cloud computing and neural networks.</p></div><span class="badge">Teaching</span></li>
+    </ul>
+  </section>
+
+  <section class="wrap block" id="honors" aria-labelledby="hon-h">
+    <div class="shead rv">
+      <div class="hl"><h2 id="hon-h" data-i18n="honTitle">Honors and recognition</h2><span class="aux num">2018–2026</span></div>
+    </div>
+    <ul class="rows rv">
+      <li class="g12 row"><span class="y">2026</span><div><p class="t">Organizing team, AmazoniaHack international edition</p><p class="s">Participants from 7 countries and 10 solutions. Also a mentor at the 2024 edition.</p></div><span class="badge">Hackathon</span></li>
+      <li class="g12 row"><span class="y">2024</span><div><p class="t">Climate Change AI Summer School</p><p class="s">Mila, Montreal. The only participant selected from Brazil in that cohort.</p></div><span class="badge">Selection</span></li>
+      <li class="g12 row"><span class="y">2023</span><div><p class="t">1st place, AmazoniaHack 2023</p><p class="s">Winning team of the 2023 edition.</p></div><span class="badge">Hackathon</span></li>
+      <li class="g12 row"><span class="y">2021</span><div><p class="t">Honorable mention, WPGEC-USP'21</p><p class="s">Master's research project, Computer Engineering graduate program at USP.</p></div><span class="badge">Research</span></li>
+      <li class="g12 row"><span class="y">Since 2021</span><div><p class="t">Member, Youth Climate Leaders</p><p class="s">Youth Climate Leaders network.</p></div><span class="badge">Network</span></li>
+      <li class="g12 row"><span class="y">2018</span><div><p class="t">Finalist, Itaú Batalha de Dados</p><p class="s">Data competition at Itaú Unibanco.</p></div><span class="badge">Competition</span></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Flávio Nakasato Cação, 2026</span>
+    <span><a href="mailto:flavio.nakasato@gmail.com">flavio.nakasato@gmail.com</a></span>
+    <span data-i18n="updated">Updated November 2026</span>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="ptitle" hidden>
+  <div class="pbar"></div>
+  <div class="phead"><span class="tg"><i></i><span id="ptrack"></span></span><button class="iconbtn" id="pclose" type="button" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"/></svg></button></div>
+  <div class="pbody" id="pbody"></div>
+  <div class="pfoot"><span id="ppos" class="num"></span><span class="navs"><button class="iconbtn" id="pprev" type="button" aria-label="Previous item"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 4.5"/></svg></button><button class="iconbtn" id="pnext" type="button" aria-label="Next item"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5"/></svg></button></span></div>
+</aside>
+
+<script>
+// Flow data, derived from dossie-flavio/linha-do-tempo.yaml (Nov 2026).
+// track: research | impact | industry | media
+// type: role | project | paper | press | teaching | education | honor
+// start/end: "YYYY", "YYYY-MM" or "YYYY-MM-DD"; end "now" for current; no end = single event.
+const ITEMS = [
+  {id:"bsc", track:"research", type:"education", start:"2011", end:"2016-06", short:"Physics, USP",
+   title:"BSc in Physics", org:"University of São Paulo (USP)", note:"Institute of Physics",
+   desc:"Undergraduate degree in Physics at the Institute of Physics, University of São Paulo (USP)."},
+  {id:"vadetaxi", track:"industry", type:"role", start:"2016-03", end:"2017-01", short:"Vá de Táxi",
+   title:"BI Analyst & Data Scientist", org:"Vá de Táxi", note:"a startup of the insurer Porto Seguro",
+   desc:"Business indicators, fraud pattern analysis and a research partnership with academia."},
+  {id:"mira", track:"industry", type:"role", start:"2017-01", end:"2019-03", short:"Mira Educação",
+   title:"Lead & Senior Data Scientist", org:"Mira Educação", note:"an education startup",
+   desc:"Data infrastructure and impact studies as the company grew from two pilot schools to nearly one million users.",
+   result:"From 2 pilot schools to nearly 1 million users"},
+  {id:"cognitivo", track:"industry", type:"role", start:"2018-12", end:"2019-08", short:"Cognitivo.AI",
+   title:"Data Science Consultant", org:"Cognitivo.AI",
+   desc:"Data infrastructure and predictive models for client companies."},
+  {id:"c6", track:"industry", type:"role", start:"2019-12", end:"2020-02", short:"C6 Bank",
+   title:"Senior Data Engineer", org:"C6 Bank", note:"a Brazilian digital bank",
+   desc:"Integration of critical databases across cloud providers."},
+  {id:"ada", track:"research", type:"teaching", start:"2020-01", end:"2020-12", short:"Ada",
+   title:"Coding Teacher (part-time)", org:"Ada", note:"a technology education company",
+   desc:"Taught Python, databases, cloud computing and neural networks."},
+  {id:"funbio", track:"impact", type:"project", start:"2020-01", end:"2021-12", short:"Funbio",
+   title:"Environmental News Monitoring", org:"Funbio", note:"the Brazilian Biodiversity Fund",
+   desc:"Automated monitoring of 10k+ news articles a month from 8+ sources to track environmental threats.",
+   result:"10k+ articles monitored a month"},
+  {id:"c2d", track:"research", type:"role", start:"2020-02", end:"2023-06", short:"C2D and C4AI, USP",
+   title:"Machine Learning Researcher", org:"C2D and C4AI, USP", note:"the Center for Data Science and the IBM/USP Center for Artificial Intelligence",
+   desc:"Language technologies for environmental and ocean data. This is the research behind the papers on this page."},
+  {id:"msc", track:"research", type:"education", start:"2020-02", end:"2023-06", short:"MSc, Poli-USP",
+   title:"MSc in Computer Engineering (Machine Learning)", org:"Polytechnic School, USP",
+   desc:"Master's degree in Machine Learning at the Polytechnic School of the University of São Paulo (Poli-USP). Honorable mention at WPGEC-USP'21."},
+  {id:"dpt", track:"research", type:"paper", start:"2021-07", short:"ICML workshop",
+   title:"DeepPolicyTracker", org:"Tackling Climate Change with ML workshop, ICML 2021", venue:"Workshop",
+   desc:"Deep learning to track changes in environmental policy in Brazil's Federal Official Gazette. Built with Política por Inteiro, a project of the think tank Instituto Talanoa.",
+   link:"https://www.climatechange.ai/papers/icml2021/35", linkLabel:"Read the paper"},
+  {id:"pira", track:"research", type:"paper", start:"2021-11", short:"CIKM",
+   title:"Pirá: a bilingual QA dataset about the ocean", org:"ACM CIKM 2021", venue:"Conference",
+   desc:"A Portuguese-English dataset for question answering about the ocean.",
+   link:"https://dl.acm.org/doi/10.1145/3459637.3482012", linkLabel:"Read the paper"},
+  {id:"deepage", track:"research", type:"paper", start:"2021-11-20", short:"BRACIS",
+   title:"DEEPAGÉ: QA about the Brazilian environment", org:"BRACIS 2021", venue:"Conference",
+   desc:"Answering questions in Portuguese about the Brazilian environment.",
+   link:"https://link.springer.com/chapter/10.1007%2F978-3-030-91699-2_29", linkLabel:"Read the paper"},
+  {id:"propor", track:"research", type:"paper", start:"2022-03", short:"PROPOR",
+   title:"Tracking Changes in Environmental Policy", org:"PROPOR 2022", venue:"Conference",
+   desc:"Tracking changes in environmental policy in the Brazilian Federal Official Gazette.",
+   link:"https://dl.acm.org/doi/10.1007/978-3-030-98305-5_24", linkLabel:"Read the paper"},
+  {id:"eniac", track:"research", type:"paper", start:"2021-11-29", short:"ENIAC",
+   title:"Interpretability of attention in a QA system about the Blue Amazon", org:"ENIAC 2021", venue:"Conference",
+   desc:"How attention mechanisms behave in a Portuguese question answering system about the Brazilian coast and ocean.",
+   link:"https://doi.org/10.5753/eniac.2021.18302", linkLabel:"Read the paper"},
+  {id:"itau", track:"industry", type:"role", start:"2022-03", end:"2024-05", short:"Itaú Unibanco",
+   title:"Data Scientist", org:"Itaú Unibanco", note:"Brazil's largest bank",
+   desc:"Member of the first task force created to bring generative AI to Brazil's largest bank."},
+  {id:"novelo", track:"media", type:"role", start:"2022-03", end:"2025-07", short:"Novelo Data",
+   title:"Partner", org:"Novelo Data", note:"a data analysis company",
+   desc:"Political data analysis for nearly all of Brazil's major news outlets, including Folha de S.Paulo, Estadão, O Globo, Agência Pública and piauí.",
+   confirm:"End date to confirm"},
+  {id:"piaui", track:"media", type:"project", start:"2022-06", end:"2022-08", short:"piauí",
+   title:"Political Discourse on YouTube", org:"piauí", note:"a Brazilian monthly magazine",
+   desc:"Analysis of 1k+ episodes of a political YouTube channel, Jovem Pan. Among the magazine's most-read pieces of the 2022 election.",
+   result:"1,000+ episodes analyzed",
+   link:"https://piaui.folha.uol.com.br/materia/jovem-pan-e-o-golpe", linkLabel:"Read the article",
+   link2:"https://piaui.folha.uol.com.br/radicalizacao-da-jovem-pan-uma-analise-visual", link2Label:"Visual analysis"},
+  {id:"blab", track:"research", type:"paper", start:"2022-07", short:"IJCAI-ECAI workshop",
+   title:"The BLue Amazon Brain (BLAB)", org:"AI: Modeling Oceans and Climate Change workshop, IJCAI-ECAI 2022", venue:"Workshop",
+   desc:"The BLue Amazon Brain project at C4AI, USP, presented at a climate and ocean workshop.",
+   link:"https://oceania.inria.cl/assets/pdfs/aimocc22/paper-05.pdf", linkLabel:"Read the paper"},
+  {id:"minicourse", track:"research", type:"teaching", start:"2022-07", end:"2022-08", short:"Mini-course",
+   title:"Graduate mini-course on Deep Reinforcement Learning", org:"PPGEE Poli-USP and Itaú data scientists",
+   desc:"Introduction to deep reinforcement learning with applications, co-taught with Marcos Menon José for USP engineering graduate students and Itaú data scientists."},
+  {id:"bannon", track:"media", type:"press", start:"2022-09-29", short:"Agência Pública",
+   title:"What Steve Bannon's podcast says about Brazil", org:"Agência Pública", note:"an investigative journalism agency",
+   role:"Co-author, with Laura Scofield, Natalia Viana, David Nemer and Christina Xiao",
+   desc:"Topic modeling of 923 episodes of Steve Bannon's podcast to find what it says about Brazil.",
+   result:"923 episodes analyzed",
+   link:"https://apublica.org/sentinela/2022/09/ameaca-da-china-e-ataque-ao-stf-o-que-o-podcast-de-steve-bannon-diz-sobre-o-brasil/", linkLabel:"Read the investigation"},
+  {id:"thesis", track:"research", type:"paper", start:"2023-06-20", short:"MSc thesis",
+   title:"MSc dissertation: deep reinforcement learning for complex open-domain QA", org:"Polytechnic School, USP", venue:"Thesis",
+   desc:"Master's dissertation on a deep reinforcement learning approach to complex open-domain question answering, advised by Anna Helena Reali Costa.",
+   link:"https://doi.org/10.11606/d.3.2023.tde-10012024-092904", linkLabel:"Read the dissertation"},
+  {id:"talanoa", track:"impact", type:"project", start:"2023-03", end:"2024-12", short:"Instituto Talanoa",
+   title:"Climate Policy Analysis", org:"Instituto Talanoa", note:"a climate policy think tank",
+   desc:"AI platform to query 10,000+ climate policy documents. Research time went down 60%.",
+   result:"Research time down 60%"},
+  {id:"ibama", track:"impact", type:"project", start:"2023-06", end:"2023-07", short:"IBAMA",
+   title:"Environmental inspection prototypes", org:"IBAMA enforcement team", note:"Brazil's federal environmental agency",
+   desc:"Early AI prototypes for field inspection reports and images, developed in conversations with IBAMA's enforcement team. The starting point for Sumaúma."},
+  {id:"ah23", track:"impact", type:"honor", start:"2023", short:"AmazoniaHack",
+   title:"1st place, AmazoniaHack 2023", org:"AmazoniaHack",
+   desc:"Winning team at AmazoniaHack 2023."},
+  {id:"radar", track:"media", type:"project", start:"2024-02", end:"2024-10", short:"Anti-Gender Radar",
+   title:"Anti-Gender Radar", org:"Gênero e Número, with JournalismAI", note:"JournalismAI is a London School of Economics program supported by the Google News Initiative",
+   role:"AI lead",
+   desc:"AI analysis of 20,000+ videos from 7,700+ channels, built with Gênero e Número, a data journalism outlet on gender.",
+   result:"20,000+ videos from 7,700+ channels",
+   link:"https://radar.org.br", linkLabel:"Visit the Radar"},
+  {id:"moiru", track:"impact", type:"role", start:"2024-03", end:"now", short:"Moiru AI",
+   title:"Founder & Partner", org:"Moiru AI",
+   desc:"Started as the climate and environment branch of Novelo Data. Moiru designed and built Sumaúma with Imazon.",
+   link:"https://www.moiru.ai", linkLabel:"moiru.ai"},
+  {id:"wap", track:"impact", type:"project", start:"2024-04", end:"2024-06", short:"WAP",
+   title:"Animal Rights Discourse Analysis", org:"World Animal Protection",
+   desc:"Discourse analysis on animal rights for World Animal Protection."},
+  {id:"pira2", track:"research", type:"paper", start:"2024", short:"Journal",
+   title:"Benchmarks for Pirá 2.0", org:"Data Intelligence (journal), 2024", venue:"Journal",
+   desc:"Benchmarks for Pirá 2.0, a follow-up to the Pirá dataset.",
+   link:"https://doi.org/10.1162/dint_a_00245", linkLabel:"Read the paper"},
+  {id:"qarl", track:"research", type:"paper", start:"2024-11-17", short:"BRACIS",
+   title:"QA with texts and tables through deep RL", org:"BRACIS 2024", venue:"Conference",
+   desc:"Question answering over texts and tables with deep reinforcement learning. Second author.",
+   link:"https://arxiv.org/abs/2407.04858", linkLabel:"Read the paper"},
+  {id:"aroeira", track:"research", type:"paper", start:"2024-11-18", short:"BRACIS",
+   title:"Aroeira: a curated corpus for Portuguese", org:"BRACIS 2024", venue:"Conference",
+   desc:"A large curated corpus for training language models in Portuguese. Second author.",
+   link:"https://doi.org/10.1007/978-3-031-79029-4_13", linkLabel:"Read the paper"},
+  {id:"folha1", track:"media", type:"press", start:"2024-08-25", short:"Folha",
+   title:"Quoted on the originality of a \"Brazilian\" AI model", org:"Folha de S.Paulo", note:"a major Brazilian daily newspaper",
+   role:"Quoted as an expert",
+   desc:"Expert comment on fine-tuning, in a story on an AI model presented as Brazilian.",
+   link:"https://www1.folha.uol.com.br/mercado/2024/08/especialistas-contestam-originalidade-de-ia-brasileira-no-radar-de-lula.shtml", linkLabel:"Read the story"},
+  {id:"folha2", track:"media", type:"press", start:"2024-10-21", short:"Folha",
+   title:"Quoted on how AI agents work", org:"Folha de S.Paulo", note:"a major Brazilian daily newspaper",
+   role:"Quoted as an expert",
+   desc:"Expert comment in a story on companies building their own AI agents.",
+   link:"https://www1.folha.uol.com.br/tec/2024/10/agentes-de-ia-chegam-a-empresas-que-investem-em-fabricas-proprias-de-funcionarios-digitais.shtml", linkLabel:"Read the story"},
+  {id:"adp", track:"industry", type:"role", start:"2025-04", end:"2025-07", short:"ADP",
+   title:"Data Scientist", org:"ADP",
+   desc:"A theme detection system for tens of thousands of survey responses."},
+  {id:"radarlaunch", track:"media", type:"press", start:"2025-09-04", short:"Radar launch",
+   title:"Anti-Gender Radar launch", org:"Gênero e Número and ARTIGO 19 Brasil",
+   role:"Quoted in the launch coverage",
+   desc:"Public launch of the Anti-Gender Radar, covered by Gênero e Número and by ARTIGO 19 Brasil, the Brazilian office of the free expression organization.",
+   link:"https://www.generonumero.media/artigos/lancamento-radar-antigenero/", linkLabel:"Gênero e Número",
+   link2:"https://artigo19.org/2025/09/11/genero-e-numero-e-novelo-data-lancam-radar-antigenero/", link2Label:"ARTIGO 19"},
+  {id:"sumauma", track:"impact", type:"project", start:"2026-05", end:"now", short:"Sumaúma",
+   title:"Sumaúma", org:"Moiru AI with Imazon", note:"Imazon is a research institute that has studied the Amazon since 1990",
+   role:"Project Lead",
+   desc:"Open-source AI platform for environmental enforcement in the Amazon rainforest. Inspectors record evidence in the field even without signal, Imazon's deforestation risk model helps teams decide where to go, and AI drafts the technical reports behind fines, embargoes and court cases.",
+   result:"In real use by 4 municipal environmental departments in Pará since August 2026",
+   link:"https://sumauma.app", linkLabel:"sumauma.app"},
+  {id:"ah26", track:"impact", type:"honor", start:"2026-09", short:"AmazoniaHack",
+   title:"Organizing team, AmazoniaHack international edition", org:"AmazoniaHack",
+   desc:"Participants from 7 countries and 10 solutions.",
+   link:"https://www.instagram.com/p/De-qx10DXY7/", linkLabel:"Event post"}
+];
+const LINKS = [["ibama","sumauma"],["moiru","sumauma"],["dpt","talanoa"],["c2d","dpt"],["c2d","pira"],["c2d","deepage"],["c2d","propor"],["c2d","blab"],["pira","pira2"],["c2d","eniac"],["msc","thesis"],["c2d","qarl"],["msc","c2d"],["novelo","piaui"],["novelo","bannon"],["novelo","radar"],["radar","radarlaunch"],["itau","minicourse"],["ah23","ah26"]];
+const STORY = [["ibama","sumauma"],["dpt","talanoa"],["moiru","sumauma"]];
+
+
+const TRACKS = [
+  {id:"industry", name:"Industry", sub:"Startups and banks", c:"var(--industry)"},
+  {id:"impact", name:"Public-interest impact", sub:"Climate, Amazon, NGOs", c:"var(--impact)"},
+  {id:"research", name:"Research & teaching", sub:"USP, papers, courses", c:"var(--research)"},
+  {id:"media", name:"Media & data journalism", sub:"Newsrooms and press", c:"var(--media)"}
+];
+const TYPES = [
+  {id:"all", name:"All"},
+  {id:"role", name:"Roles"},
+  {id:"project", name:"Projects"},
+  {id:"paper", name:"Papers"},
+  {id:"press", name:"Press"},
+  {id:"teaching", name:"Teaching"},
+  {id:"eduhonor", name:"Education & honors"}
+];
+const T0 = 2016, T1 = 2027, NOW = 2026 + 10.2/12;
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const byId = Object.fromEntries(ITEMS.map(i => [i.id, i]));
+const trackOf = id => TRACKS.find(t => t.id === id);
+const typeGroup = t => (t === "education" || t === "honor") ? "eduhonor" : t;
+
+function tv(s, isEnd){
+  if (s === "now") return NOW;
+  const p = s.split("-").map(Number);
+  if (p.length === 1) return p[0] + (isEnd ? 1 : .5);
+  if (p.length === 2) return p[0] + (p[1]-1)/12 + (isEnd ? 1/12 : 0);
+  return p[0] + (p[1]-1)/12 + (p[2]-1)/365;
+}
+function fd(s){
+  if (s === "now") return "now";
+  const p = s.split("-").map(Number);
+  if (p.length === 1) return String(p[0]);
+  if (p.length === 2) return MON[p[1]-1] + " " + p[0];
+  return p[2] + " " + MON[p[1]-1] + " " + p[0];
+}
+function range(i){
+  if (!i.end) return fd(i.start);
+  if (i.id === "bsc") return "2011 – 2016";
+  return fd(i.start) + " – " + fd(i.end);
+}
+const pct = v => ((Math.max(T0, Math.min(T1, v)) - T0) / (T1 - T0)) * 100;
+const isSpan = i => !!i.end;
+const chrono = [...ITEMS].sort((a,b) => tv(a.start) - tv(b.start));
+ITEMS.forEach(i => { i.s = tv(i.start); i.e = i.end ? tv(i.end, true) : i.s; });
+
+const state = { tracks: new Set(TRACKS.map(t => t.id)), type: "all", open: null };
+const matches = i => state.tracks.has(i.track) && (state.type === "all" || typeGroup(i.type) === state.type);
+const ext = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg>';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---------- desktop flow ---------- */
+const flow = document.getElementById("flow"), lanesEl = document.getElementById("lanes"), tip = document.getElementById("tip"), svg = document.getElementById("links");
+const ticks = document.getElementById("ticks");
+for (let y = T0; y < T1; y++){
+  const t = document.createElement("span"); t.className = "tick"; t.style.left = pct(y) + "%"; t.textContent = y; ticks.appendChild(t);
+}
+{ const t = document.createElement("span"); t.className = "tick now-t"; t.style.left = pct(NOW) + "%"; t.textContent = "Now"; t.dataset.i18n = "nowTick"; ticks.appendChild(t); }
+
+const btns = {};
+const ROWH = 32;
+TRACKS.forEach(tr => {
+  const lane = document.createElement("div"); lane.className = "lane"; lane.style.setProperty("--c", tr.c);
+  const name = document.createElement("div"); name.className = "lane-name";
+  name.innerHTML = '<i class="sw"></i><span><span data-i18n="tr_' + tr.id + '">' + tr.name + '</span><small data-i18n="trs_' + tr.id + '">' + tr.sub + '</small></span>';
+  const track = document.createElement("div"); track.className = "track";
+  const gl = document.createElement("div"); gl.className = "grid-lines";
+  for (let y = T0; y < T1; y++){ const i = document.createElement("i"); i.style.left = pct(y) + "%"; gl.appendChild(i); }
+  const nl = document.createElement("i"); nl.className = "now-l"; nl.style.left = pct(NOW) + "%"; gl.appendChild(nl);
+  track.appendChild(gl);
+  // greedy packing; spans first, then points
+  const items = ITEMS.filter(i => i.track === tr.id).sort((a,b) => (isSpan(b) - isSpan(a)) || (a.s - b.s));
+  const rows = [];
+  items.forEach(i => {
+    const a = pct(i.s), b = isSpan(i) ? pct(i.e) : a;
+    const lo = isSpan(i) ? a : a - 1.1, hi = isSpan(i) ? b + .4 : a + 1.1;
+    let r = 0;
+    while (rows[r] && rows[r].some(([x,y]) => lo < y && hi > x)) r++;
+    (rows[r] = rows[r] || []).push([lo, hi]);
+    const el = document.createElement("button");
+    el.type = "button"; el.className = "it " + (isSpan(i) ? "span" : "pt");
+    el.dataset.id = i.id; el.dataset.type = i.type;
+    el.style.setProperty("--c", tr.c);
+    el.style.setProperty("--d", (((i.s - T0) / (T1 - T0)) * 550 | 0) + "ms");
+    el.style.top = (6 + r * ROWH) + "px";
+    el.style.left = a + "%";
+    if (isSpan(i)) el.style.width = Math.max(b - a, .55) + "%";
+    if (i.confirm) el.classList.add(/^End/.test(i.confirm) ? "pending-end" : "pending");
+    if (i.end === "now") el.classList.add("open-r");
+    if (i.id === "bsc") el.classList.add("fade-l");
+    el.setAttribute("aria-label", i.title + ", " + i.org + ", " + range(i) + (i.confirm ? ", " + i.confirm.toLowerCase() : ""));
+    el.innerHTML = isSpan(i) ? '<span class="lab">' + esc(i.short) + '</span><span class="bar"></span>' : '<span class="dot"></span><span class="plab">' + esc(i.short) + '</span>';
+    track.appendChild(el);
+    btns[i.id] = el;
+  });
+  track.style.height = (rows.length * ROWH + 12) + "px";
+  lane.append(name, track);
+  lanesEl.appendChild(lane);
+});
+
+/* label fit: hide labels that do not fit their bar */
+/* label layout: each label takes the free room in its row, to the right first, then to the left */
+function fitLabels(){
+  if (!flow.offsetWidth) return;
+  document.querySelectorAll(".track").forEach(tr => {
+    const W = tr.offsetWidth, rows = {};
+    tr.querySelectorAll(".it").forEach(e => (rows[e.style.top] = rows[e.style.top] || []).push(e));
+    Object.values(rows).forEach(row => {
+      row.sort((a,b) => a.offsetLeft - b.offsetLeft);
+      let edge = -Infinity;
+      row.forEach((el, k) => {
+        const pt = el.classList.contains("pt"), lab = el.querySelector(pt ? ".plab" : ".lab");
+        lab.style.visibility = "visible"; lab.style.right = "auto"; lab.style.width = "auto"; lab.style.left = pt ? "17px" : "0px";
+        const w = Math.ceil(lab.scrollWidth) + 1, x0 = el.offsetLeft, bw = el.offsetWidth;
+        const next = row[k+1] ? row[k+1].offsetLeft : W;
+        const start = pt ? x0 + 17 : x0;
+        const leftStart = pt ? x0 - w - 1 : x0 + bw - w;
+        if (start + w + 6 <= next){ lab.style.width = w + "px"; edge = Math.max(x0 + bw, start + w); }
+        else if (leftStart >= Math.max(edge + 8, 0)){ lab.style.left = (leftStart - x0) + "px"; lab.style.width = w + "px"; edge = Math.max(x0 + bw, start); }
+        else if (!pt && next - x0 - 6 >= 40){ lab.style.width = (next - x0 - 6) + "px"; edge = x0 + bw; }
+        else { lab.style.visibility = "hidden"; edge = x0 + bw; }
+      });
+    });
+  });
+}
+
+/* connections */
+function anchor(id, side){
+  const el = btns[id]; const r = el.getBoundingClientRect(), base = lanesEl.getBoundingClientRect();
+  const y = r.bottom - base.top - (isSpan(byId[id]) ? 9.5 : 9);
+  if (!isSpan(byId[id])) return [r.left + r.width/2 - base.left, y];
+  return [side === "out" ? r.right - base.left : r.left - base.left, y];
+}
+function pathFor(a, b){
+  const [x1,y1] = anchor(a, "out"), [x2,y2] = anchor(b, "in");
+  const xa = Math.min(x1, x2 - 6), dx = Math.max(30, (x2 - xa) * .5);
+  const sx = isSpan(byId[a]) && x1 > x2 ? anchor(a,"in")[0] + 8 : xa;
+  return "M" + sx + "," + y1 + " C" + (sx + dx) + "," + y1 + " " + (x2 - dx) + "," + y2 + " " + x2 + "," + y2;
+}
+function drawLinks(hot){
+  const w = lanesEl.offsetWidth, h = lanesEl.offsetHeight;
+  svg.setAttribute("viewBox", "0 0 " + w + " " + h); svg.setAttribute("width", w); svg.setAttribute("height", h);
+  let out = "";
+  if (!hot){
+    STORY.forEach(([a,b]) => { if (matches(byId[a]) && matches(byId[b])) out += '<path class="story" d="' + pathFor(a,b) + '"/>'; });
+  } else {
+    LINKS.filter(l => l.includes(hot)).forEach(([a,b]) => { out += '<path class="live" d="' + pathFor(a,b) + '"/>'; });
+  }
+  svg.innerHTML = out;
+  svg.querySelectorAll("path.live").forEach(p => p.style.setProperty("--len", Math.ceil(p.getTotalLength())));
+}
+const related = id => LINKS.filter(l => l.includes(id)).map(l => l[0] === id ? l[1] : l[0]);
+
+/* hover and tooltip */
+function showTip(el){
+  const i = byId[el.dataset.id], tr = trackOf(i.track);
+  tip.style.setProperty("--c", tr.c);
+  tip.innerHTML = '<div class="d"><i></i>' + range(i) + (i.confirm ? ' <span class="pc">' + i.confirm + '</span>' : '') + '</div><b>' + esc(i.title) + '</b><span class="o">' + esc(i.org) + '</span><div class="h" data-i18n="tipHint">' + T("tipHint") + '</div>';
+  const fr = flow.getBoundingClientRect(), r = el.getBoundingClientRect();
+  tip.classList.add("show");
+  const tw = tip.offsetWidth, th = tip.offsetHeight;
+  let x = r.left - fr.left + (isSpan(i) ? Math.min(r.width/2, 60) : r.width/2) - tw/2;
+  x = Math.max(8, Math.min(fr.width - tw - 8, x));
+  let y = r.top - fr.top - th - 6;
+  if (y < 30) y = r.bottom - fr.top + 6;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+  flow.classList.add("hovering");
+  document.querySelectorAll(".it.hot").forEach(e => e.classList.remove("hot"));
+  [i.id, ...related(i.id)].forEach(id => btns[id].classList.add("hot"));
+  drawLinks(i.id);
+}
+function hideTip(){
+  tip.classList.remove("show"); flow.classList.remove("hovering");
+  document.querySelectorAll(".it.hot").forEach(e => e.classList.remove("hot"));
+  drawLinks(null);
+}
+Object.values(btns).forEach(el => {
+  el.addEventListener("mouseenter", () => showTip(el));
+  el.addEventListener("mouseleave", hideTip);
+  el.addEventListener("focus", () => showTip(el));
+  el.addEventListener("blur", hideTip);
+  el.addEventListener("click", () => openPanel(el.dataset.id, el));
+  el.addEventListener("keydown", e => {
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    e.preventDefault();
+    const vis = chrono.filter(matches); const k = vis.findIndex(x => x.id === el.dataset.id);
+    const n = vis[(k + (e.key === "ArrowRight" ? 1 : -1) + vis.length) % vis.length];
+    btns[n.id].focus();
+  });
+});
+
+/* ---------- mobile list ---------- */
+const mflow = document.getElementById("mflow");
+const mbtns = {};
+function buildMobile(){
+  const years = {};
+  [...chrono].reverse().forEach(i => { const y = i.id === "bsc" ? 2016 : Math.floor(i.s); (years[y] = years[y] || []).push(i); });
+  Object.keys(years).sort((a,b) => b - a).forEach(y => {
+    const h = document.createElement("div"); h.className = "myear"; h.textContent = y; h.dataset.year = y;
+    const ul = document.createElement("ul"); ul.className = "mlist";
+    years[y].forEach(i => {
+      const li = document.createElement("li");
+      const b = document.createElement("button"); b.type = "button";
+      b.className = "mitem" + (isSpan(i) ? " span" : ""); b.dataset.type = i.type; b.dataset.id = i.id;
+      b.style.setProperty("--c", trackOf(i.track).c);
+      b.innerHTML = '<span class="mk" aria-hidden="true"></span><span><span class="mt">' + esc(i.title) + (i.confirm ? '<span class="tc">' + i.confirm + '</span>' : '') + '</span><span class="mo">' + esc(i.org) + '</span><span class="md">' + range(i) + '</span></span>';
+      b.addEventListener("click", () => openPanel(i.id, b));
+      li.appendChild(b); ul.appendChild(li); mbtns[i.id] = li;
+    });
+    mflow.append(h, ul);
+  });
+}
+buildMobile();
+
+/* ---------- filters ---------- */
+const fT = document.getElementById("f-tracks"), fY = document.getElementById("f-types");
+TRACKS.forEach(tr => {
+  const b = document.createElement("button"); b.type = "button"; b.className = "chip"; b.setAttribute("aria-pressed", "true");
+  b.style.setProperty("--c", tr.c);
+  b.innerHTML = '<i class="sw"></i><span data-i18n="tr_' + tr.id + '">' + tr.name + '</span> <span class="ct">' + ITEMS.filter(i => i.track === tr.id).length + '</span>';
+  b.addEventListener("click", () => {
+    if (state.tracks.has(tr.id) && state.tracks.size === 1){ TRACKS.forEach(t => state.tracks.add(t.id)); }
+    else if (state.tracks.size === TRACKS.length){ state.tracks = new Set([tr.id]); }
+    else state.tracks.has(tr.id) ? state.tracks.delete(tr.id) : state.tracks.add(tr.id);
+    applyFilters();
+  });
+  b.dataset.track = tr.id; fT.appendChild(b);
+});
+TYPES.forEach(ty => {
+  const b = document.createElement("button"); b.type = "button"; b.className = "chip type"; b.dataset.type = ty.id;
+  b.setAttribute("aria-pressed", ty.id === "all" ? "true" : "false");
+  const n = ty.id === "all" ? ITEMS.length : ITEMS.filter(i => typeGroup(i.type) === ty.id).length;
+  b.innerHTML = '<span data-i18n="ty_' + ty.id + '">' + ty.name + '</span> <span class="ct">' + n + '</span>';
+  b.addEventListener("click", () => { state.type = ty.id; applyFilters(); });
+  fY.appendChild(b);
+});
+function applyFilters(){
+  fT.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", state.tracks.has(b.dataset.track)));
+  fY.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.type === state.type));
+  ITEMS.forEach(i => {
+    const ok = matches(i);
+    btns[i.id].classList.toggle("off", !ok); btns[i.id].tabIndex = ok ? 0 : -1;
+    mbtns[i.id].style.display = ok ? "" : "none";
+  });
+  mflow.querySelectorAll(".myear").forEach(h => {
+    const ul = h.nextElementSibling; const any = [...ul.children].some(li => li.style.display !== "none");
+    h.style.display = ul.style.display = any ? "" : "none";
+  });
+  drawLinks(null);
+}
+
+/* ---------- panel ---------- */
+const panel = document.getElementById("panel"), scrim = document.getElementById("scrim"), pbody = document.getElementById("pbody");
+let lastFocus = null;
+function openPanel(id, from){
+  const i = byId[id], tr = trackOf(i.track);
+  if (!state.open) lastFocus = from || document.activeElement;
+  state.open = id;
+  panel.style.setProperty("--c", tr.c);
+  document.getElementById("ptrack").textContent = T("tr_" + tr.id) + "  /  " + T("ty1_" + i.type);
+  let h = '<div class="pdate">' + range(i) + '</div>';
+  if (i.confirm) h += '<div class="pconf">' + i.confirm + '</div>';
+  h += '<h2 class="ptitle" id="ptitle">' + esc(i.title) + '</h2>';
+  const sent = i.note && /^[A-Z]/.test(i.note) && / is /.test(i.note);
+  h += '<p class="porg">' + esc(i.org) + (i.note ? (sent ? '<span class="pnote">' + esc(i.note) + '.</span>' : '<span>, ' + esc(i.note) + '</span>') : '') + '</p>';
+  h += '<p class="pdesc">' + esc(i.desc) + '</p>';
+  const facts = [];
+  const roleTxt = i.role || ({role:i.title, paper:"Co-author", teaching:"Teacher"})[i.type];
+  if (roleTxt) facts.push(['<span data-i18n="fRole">' + T("fRole") + '</span>', esc(roleTxt)]);
+  if (i.venue) facts.push(["Venue", esc(i.venue) + ", " + esc(i.org)]);
+  if (i.result) facts.push(['<span data-i18n="fResult">' + T("fResult") + '</span>', '<span class="res">' + esc(i.result) + '</span>']);
+  if (facts.length) h += '<dl class="pfacts">' + facts.map(f => '<div><dt>' + f[0] + '</dt><dd>' + f[1] + '</dd></div>').join("") + '</dl>';
+  if (i.link){
+    h += '<div class="plinks"><a class="btn primary" href="' + i.link + '" target="_blank" rel="noopener">' + esc(i.linkLabel) + ' ' + ext + '</a>';
+    if (i.link2) h += '<a class="btn" href="' + i.link2 + '" target="_blank" rel="noopener">' + esc(i.link2Label) + ' ' + ext + '</a>';
+    h += '</div>';
+  }
+  const rel = related(id);
+  if (rel.length){
+    h += '<div class="prel"><h3 data-i18n="connected">' + T("connected") + '</h3><ul>' + rel.map(r => '<li><button type="button" data-go="' + r + '" style="--c:' + trackOf(byId[r].track).c + '"><i></i>' + esc(byId[r].title) + ', ' + esc(byId[r].org) + '</button></li>').join("") + '</ul></div>';
+  }
+  pbody.innerHTML = h; pbody.scrollTop = 0;
+  pbody.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => openPanel(b.dataset.go)));
+  const k = chrono.findIndex(x => x.id === id);
+  document.getElementById("ppos").textContent = (k + 1) + " / " + chrono.length;
+  document.querySelectorAll(".it.sel").forEach(e => e.classList.remove("sel")); btns[id].classList.add("sel");
+  panel.hidden = false;
+  requestAnimationFrame(() => { panel.classList.add("show"); scrim.classList.add("show"); });
+  document.getElementById("pclose").focus({preventScroll:true});
+}
+function closePanel(){
+  if (!state.open) return;
+  panel.classList.remove("show"); scrim.classList.remove("show");
+  document.querySelectorAll(".it.sel").forEach(e => e.classList.remove("sel"));
+  state.open = null;
+  setTimeout(() => { if (!state.open) panel.hidden = true; }, 460);
+  if (lastFocus && lastFocus.focus) lastFocus.focus({preventScroll:true});
+}
+function step(d){ const k = chrono.findIndex(x => x.id === state.open); openPanel(chrono[(k + d + chrono.length) % chrono.length].id); }
+document.getElementById("pclose").addEventListener("click", closePanel);
+document.getElementById("pprev").addEventListener("click", () => step(-1));
+document.getElementById("pnext").addEventListener("click", () => step(1));
+scrim.addEventListener("click", closePanel);
+document.addEventListener("keydown", e => {
+  if (!state.open) return;
+  if (e.key === "Escape") closePanel();
+  if (e.key === "Tab"){
+    const f = [...panel.querySelectorAll("a,button")].filter(x => x.offsetParent);
+    if (e.shiftKey && document.activeElement === f[0]){ e.preventDefault(); f[f.length-1].focus(); }
+    else if (!e.shiftKey && document.activeElement === f[f.length-1]){ e.preventDefault(); f[0].focus(); }
+  }
+});
+
+/* ---------- i18n dictionary (interface only; content stays in English) ---------- */
+const DICT = {
+  en:{skip:"Skip to content",skipFlow:"Skip the timeline",nWork:"Work",nProjects:"Projects",nPubs:"Publications",nPress:"Press",nTeach:"Teaching",nAbout:"About",nExp:"Experience",nWriting:"Writing",writingTitle:"Writing",writingSub:"Explainers on machine learning, in Portuguese.",expTitle:"Experience",expAux:"2016 to now",expSub:"Where I have worked, what each place is and what I did there.",projAux:"10 projects",projMore:"Show more projects",projLess:"Show fewer projects",pressAux:"5 stories, 2022–2025",place:"São Paulo, Brazil",
+    tagline:"Entrepreneur building AI for the public interest.",
+    resume:"Resume",contact:"Contact",now:"Currently",nowLead:"Project Lead",nowFounder:"Founder & Partner",
+    nowSum:"In real use by four municipal environmental departments in Pará since August 2026. Built with Imazon.",nowMoiru:"The company that designed and built Sumaúma with Imazon.",
+    flowTitle:"The last ten years",flowSub:"Four tracks of work over the same decade. Bars are roles and projects; marks are papers, press and events. Hover or focus to preview, click to open.",
+    kSpan:"Role or project",kPaper:"Paper",kEvent:"Press or event",kPend:"Date to confirm",kLink:"Led to",kKeys:"Arrow keys move through the timeline in order.",nowTick:"Now",
+    tr_research:"Research & teaching",tr_impact:"Public-interest impact",tr_industry:"Industry",tr_media:"Media & data journalism",
+    trs_research:"USP, papers, courses",trs_impact:"Climate, Amazon, NGOs",trs_industry:"Startups and banks",trs_media:"Newsrooms and press",
+    ty_all:"All",ty_role:"Roles",ty_project:"Projects",ty_paper:"Papers",ty_press:"Press",ty_teaching:"Teaching",ty_eduhonor:"Education & honors",
+    ty1_role:"Role",ty1_project:"Project",ty1_paper:"Paper",ty1_press:"Press",ty1_teaching:"Teaching",ty1_education:"Education",ty1_honor:"Honor",
+    projTitle:"Selected projects",projSub:"The role, the outcome in one number, and where to read more.",pubTitle:"Publications",pubSub:"Mostly from the research at USP's Center for Data Science and C4AI, on question answering, Portuguese language resources and environmental data. Sorted by Google Scholar citations (November 2026); select a paper to read its abstract.",pubMore:"Show all 10",pubLess:"Show fewer",mCit:"citations",mSrc:"Google Scholar, November 2026",citedBy:"Cited by",
+    pressTitle:"Press",pressSub:"Reporting I co-authored and stories where I was interviewed. Headlines in Portuguese, with a short English summary.",teachTitle:"Teaching and talks",
+    mCitV:"82 citations",official:"Official page",arxiv:"Read on arXiv",abstract:"Abstract",showAbs:"Show abstract",figCap:"Figure from the paper",noFig:"No open figure available",photoCredit:"Photo: Folha de S.Paulo / reproduction",
+    elsewhere:"Elsewhere",honors:"Honors",honTitle:"Honors and recognition",updated:"Updated November 2026",fRole:"Role",fResult:"Result",connected:"Connected",tipHint:"Click to open",showIn:"Show in timeline",ptnote:""},
+  pt:{skip:"Pular para o conteúdo",skipFlow:"Pular a linha do tempo",nWork:"Trajetória",nProjects:"Projetos",nPubs:"Publicações",nPress:"Imprensa",nTeach:"Ensino",nAbout:"Sobre",nExp:"Experiência",nWriting:"Textos",writingTitle:"Textos",writingSub:"Textos de divulgação sobre aprendizado de máquina, em português.",expTitle:"Experiência",expAux:"De 2016 até hoje",expSub:"Onde trabalhei, o que é cada lugar e o que fiz lá.",projAux:"10 projetos",projMore:"Ver mais projetos",projLess:"Ver menos projetos",pressAux:"5 matérias, 2022–2025",place:"São Paulo, Brasil",
+    tagline:"Empreendedor que faz IA de interesse público.",
+    resume:"Currículo",contact:"Contato",now:"Atualmente",nowLead:"Coordenador do projeto",nowFounder:"Fundador e sócio",
+    nowSum:"Em uso real por quatro secretarias municipais de meio ambiente do Pará desde agosto de 2026. Feito com o Imazon.",nowMoiru:"A empresa que desenhou e construiu o Sumaúma com o Imazon.",
+    flowTitle:"Os últimos dez anos",flowSub:"Quatro trilhas na mesma década. Barras são cargos e projetos; marcas são artigos, imprensa e eventos. Passe o mouse para ver, clique para abrir.",
+    kSpan:"Cargo ou projeto",kPaper:"Artigo",kEvent:"Imprensa ou evento",kPend:"Data a confirmar",kLink:"Deu origem a",kKeys:"As setas do teclado percorrem a linha do tempo em ordem.",nowTick:"Hoje",
+    tr_research:"Pesquisa e ensino",tr_impact:"Impacto de interesse público",tr_industry:"Indústria",tr_media:"Mídia e jornalismo de dados",
+    trs_research:"USP, artigos, cursos",trs_impact:"Clima, Amazônia, ONGs",trs_industry:"Startups e bancos",trs_media:"Redações e imprensa",
+    ty_all:"Tudo",ty_role:"Cargos",ty_project:"Projetos",ty_paper:"Artigos",ty_press:"Imprensa",ty_teaching:"Ensino",ty_eduhonor:"Formação e prêmios",
+    ty1_role:"Cargo",ty1_project:"Projeto",ty1_paper:"Artigo",ty1_press:"Imprensa",ty1_teaching:"Ensino",ty1_education:"Formação",ty1_honor:"Prêmio",
+    projTitle:"Projetos em destaque",projSub:"O papel, o resultado em um número e onde ler mais.",pubTitle:"Publicações",pubSub:"Em sua maioria da pesquisa no Centro de Ciência de Dados da USP e no C4AI, sobre resposta a perguntas, recursos de língua portuguesa e dados ambientais. Em ordem de citações no Google Scholar (novembro de 2026); escolha um artigo para ler o resumo.",pubMore:"Ver os 10",pubLess:"Ver menos",mCit:"citações",mSrc:"Google Scholar, novembro de 2026",citedBy:"Citado por",
+    pressTitle:"Imprensa",pressSub:"Reportagens que escrevi junto e matérias em que fui entrevistado.",teachTitle:"Ensino e palestras",
+    mCitV:"82 citações",official:"Página oficial",arxiv:"Ler no arXiv",abstract:"Resumo",showAbs:"Ver resumo",figCap:"Figura do artigo",noFig:"Sem figura aberta disponível",photoCredit:"Foto: Folha de S.Paulo / reprodução",
+    elsewhere:"Links",honors:"Prêmios",honTitle:"Prêmios e reconhecimento",updated:"Atualizado em novembro de 2026",fRole:"Papel",fResult:"Resultado",connected:"Ligado a",tipHint:"Clique para abrir",showIn:"Ver na linha do tempo",ptnote:"Os textos detalhados deste site estão em inglês."}
+};
+let LANG = "en";
+const T = k => (DICT[LANG][k] ?? DICT.en[k] ?? k);
+
+/* ---------- projects (card grid) ---------- */
+const TINT = {research:"var(--research-t)", impact:"var(--impact-t)", industry:"var(--industry-t)", media:"var(--media-t)"};
+const yrs = i => { const a = Math.floor(i.s), b = i.end ? (i.end === "now" ? 2026 : Math.floor(tv(i.end))) : a; return a === b ? String(a) : a + "–" + b; };
+const numHtml = n => n.endsWith("+") ? n.slice(0,-1) + "<sup>+</sup>" : n.endsWith("%") ? n.slice(0,-1) + "<sup>%</sup>" : n;
+// The first four show by default; the rest open under "Show more projects".
+const PROJ_MAIN = 4;
+const PROJ = [
+  {id:"sumauma", wide:true, img:"img/thumbs/sumauma-composicao.webp", w:1600, h:900,
+   alt:"Sumaúma's web dashboard with the week's deforestation alerts and a map, next to the field app's map screen.",
+   title:"Sumaúma", org:"Moiru AI with Imazon",
+   desc:"Open-source AI for environmental enforcement in the Amazon rainforest, built with four municipal departments in Pará.",
+   n:"4", nl:"municipal environmental departments in Pará using it in real enforcement cases since August 2026.", role:"Project Lead", link:"https://sumauma.app", ll:"sumauma.app"},
+  {id:"radar", img:"img/thumbs/proj-radar-169.webp",
+   alt:"Home page of the Anti-Gender Radar: the title Radar Antigênero over a collage of video frames in orange, green and violet.",
+   title:"Anti-Gender Radar", org:"Gênero e Número, with JournalismAI (LSE and Google News Initiative)", n:"20,000+", nl:"videos from 7,700+ channels analyzed.", role:"AI lead", link:"https://radar.org.br"},
+  {id:"talanoa", img:"img/thumbs/proj-talanoa-169.webp", pos:"top",
+   alt:"Política por Inteiro, Instituto Talanoa's climate policy website, on the page of its monitor of public acts.",
+   title:"Climate Policy Analysis", org:"Instituto Talanoa, a climate policy think tank", n:"60%", nl:"less research time, across 10,000+ climate policy documents.", role:"AI project lead", extra:"https://www.climatechange.ai/papers/icml2021/35", el:"Related paper"},
+  {id:"bannon", img:"img/thumbs/proj-bannon-169.webp", pos:"top",
+   alt:"Chart from the Agência Pública story: the days, from September 2021 to August 2022, when Steve Bannon's podcast mentioned Brazil.",
+   title:"Steve Bannon's podcast and Brazil", org:"Agência Pública, an investigative journalism agency", n:"923", nl:"podcast episodes analyzed with topic modeling.", role:"Co-author", link:byId.bannon.link},
+  {id:"piaui", img:"img/thumbs/proj-piaui-169.webp", pos:"top",
+   alt:"Chart from the piauí visual analysis: mentions critical of Brazil's Supreme Court and Electoral Court on Jovem Pan, 2018 to 2022.",
+   title:"Political discourse on YouTube", org:"piauí, a Brazilian monthly magazine", n:"1,000+", nl:"episodes of Jovem Pan analyzed. Among the magazine's most-read pieces of the 2022 election.", role:"Data analysis, with Novelo Data", link:byId.piaui.link},
+  {id:"funbio", typo:"Funbio",
+   title:"Environmental News Monitoring", org:"Funbio, the Brazilian Biodiversity Fund", n:"10,000+", nl:"news articles a month from 8+ sources, monitored to track environmental threats.", role:"AI project lead"},
+  {id:"wap", typo:"World Animal Protection",
+   title:"Animal rights discourse analysis", org:"World Animal Protection", txt:"Discourse analysis on animal rights.", role:"AI project lead"},
+  {id:"itau", typo:"Itaú Unibanco",
+   title:"First generative AI task force", org:"Itaú Unibanco, Brazil's largest bank", txt:"Member of the first team assigned to bring generative AI into the bank.", role:"Data Scientist"},
+  {id:"mira", typo:"Mira Educação",
+   title:"Data and impact studies", org:"Mira Educação, an education startup", txt:"Data infrastructure and impact studies as the company grew from two pilot schools to nearly one million users.", role:"Lead & Senior Data Scientist"},
+  {id:"ah26", typo:"AmazoniaHack",
+   title:"International edition, organizing team", org:"AmazoniaHack", n:"7", nl:"countries and 10 solutions in the 2026 international edition.", role:"Organizing team", link:"https://www.instagram.com/p/De-qx10DXY7/", extra:"https://www.instagram.com/p/De-qx10DXY7/", el:"Event post"}
+];
+const pgrid = document.getElementById("pgrid"), pgridMore = document.getElementById("pgrid-more");
+const card = (p, k) => {
+  const i = byId[p.id], tr = trackOf(i.track), y = yrs(i);
+  const fig = p.img
+    ? '<figure class="th' + (p.pos ? " " + p.pos : "") + '"><img' + (p.wide ? ' id="sumauma-img" class="sumauma-shot"' : '') + ' src="' + p.img + '" alt="' + esc(p.alt) + '" width="' + (p.w || 1200) + '" height="' + (p.h || 675) + '"' + (p.wide ? '' : ' loading="lazy"') + ' decoding="async"></figure>'
+    : '<figure class="th ty"><div class="typo" role="img" aria-label="' + esc(p.typo) + ', ' + y + '"><b>' + esc(p.typo) + '</b><span>' + y + '</span><i></i></div></figure>';
+  const ttl = p.link
+    ? '<a href="' + p.link + '" target="_blank" rel="noopener">' + esc(p.title) + '</a>'
+    : '<a href="#" data-open="' + p.id + '">' + esc(p.title) + '</a>';
+  const figb = p.n
+    ? '<div class="fig"><div class="n">' + numHtml(p.n) + '</div><p class="nl">' + esc(p.nl) + '</p></div>'
+    : '<div class="fig txt"><p class="nl">' + esc(p.txt) + '</p></div>';
+  const ext2 = p.wide ? '<a class="lnk" href="' + p.link + '" target="_blank" rel="noopener">' + p.ll + ' ' + ext + '</a>'
+    : p.extra && p.extra !== p.link ? '<a class="lnk" href="' + p.extra + '" target="_blank" rel="noopener">' + p.el + ' ' + ext + '</a>' : '';
+  return '<article class="c rv' + (p.wide ? " wide" : "") + '" style="--c:' + tr.c + ';--t:' + TINT[tr.id] + ';transition-delay:' + ((k % 3) * 60) + 'ms">' + fig +
+    '<div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_' + tr.id + '">' + T("tr_" + tr.id) + '</span> <em>' + y + '</em></p>' +
+    '<h3 class="ttl">' + ttl + '</h3><p class="meta">' + esc(p.org) + '</p>' + (p.desc ? '<p class="desc">' + esc(p.desc) + '</p>' : '') + '</div>' + figb +
+    '<div class="foot"><span><span data-i18n="fRole">' + T("fRole") + '</span>: <b>' + esc(p.role) + '</b></span>' + ext2 +
+    '<button type="button" class="showin" data-show="' + p.id + '" data-i18n="showIn">' + T("showIn") + '</button></div></div></article>';
+};
+pgrid.innerHTML = PROJ.slice(0, PROJ_MAIN).map(card).join("");
+pgridMore.innerHTML = PROJ.slice(PROJ_MAIN).map(card).join("");
+(() => {
+  const b = document.getElementById("projbtn");
+  b.addEventListener("click", () => {
+    const open = pgridMore.hidden; pgridMore.hidden = !open;
+    b.setAttribute("aria-expanded", open);
+    b.firstElementChild.dataset.i18n = open ? "projLess" : "projMore"; b.firstElementChild.textContent = T(open ? "projLess" : "projMore");
+    pgridMore.querySelectorAll(".rv").forEach(el => el.classList.add("in"));
+    if (open){ const f = pgridMore.querySelector(".ttl a"); if (f) f.focus({preventScroll:true}); }
+  });
+})();
+document.getElementById("projects").addEventListener("click", e => {
+  const s = e.target.closest("[data-show]"), o = e.target.closest("[data-open]");
+  if (o){ e.preventDefault(); openPanel(o.dataset.open, o); }
+  if (s){
+    const target = window.matchMedia("(max-width:860px)").matches ? mbtns[s.dataset.show] : btns[s.dataset.show];
+    target.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block:"center"});
+    setTimeout(() => openPanel(s.dataset.show, s), 450);
+  }
+});
+
+/* ---------- publications (list with figure, link and abstract) ---------- */
+// The 10 unique works, sorted by Google Scholar citations (November 2026).
+const PUBS = [
+  {id:"pira", t:"Pirá: A Bilingual Portuguese-English Dataset for Question-Answering about the Ocean",
+   au:["Paschoal","Pirozelli","Freire","Delgado","Peres","José","Cação"], etal:true, ven:"ACM CIKM 2021", vf:"Conference on Information and Knowledge Management", kind:"Conference", cls:"conf", cites:35,
+   link:"https://dl.acm.org/doi/10.1145/3459637.3482012", lk:"official", fig:"pira", alt:"Diagram from the paper of how the Pirá dataset was built, in three phases: corpora, question creation and assessment.",
+   ab:"Current research in natural language processing is highly dependent on carefully produced corpora. Most existing resources focus on English; some resources focus on languages such as Chinese and French; few resources deal with more than one language. This paper presents the Pirá dataset, a large set of questions and answers about the ocean and the Brazilian coast both in Portuguese and English. Pirá is, to the best of our knowledge, the first QA dataset with supporting texts in Portuguese, and, perhaps more importantly, the first bilingual QA dataset that includes this language. The Pirá dataset consists of 2261 properly curated question/answer (QA) sets in both languages. The QA sets were manually created based on two corpora: abstracts related to the Brazilian coast and excerpts of United Nation reports about the ocean. The QA sets were validated in a peer-review process with the dataset contributors. We discuss some of the advantages as well as limitations of Pirá, as this new resource can support a set of tasks in NLP such as question-answering, information retrieval, and machine translation."},
+  {id:"pira2", t:"Benchmarks for Pirá 2.0, a Reading Comprehension Dataset about the Ocean, the Brazilian Coast, and Climate Change",
+   au:["Pirozelli","José","Silveira","Cação"], etal:true, ven:"Data Intelligence, 2024", vf:"Journal, volume 6, issue 1", kind:"Journal", cls:"jr", cites:17,
+   link:"https://doi.org/10.1162/dint_a_00245", lk:"official", fig:"pira2", alt:"Diagram from the paper comparing Pirá 1.0, Pirá 2.0 and the six benchmarks built on it.",
+   ab:"Pirá is a reading comprehension dataset focused on the ocean, the Brazilian coast, and climate change, built from a collection of scientific abstracts and reports on these topics. This dataset represents a versatile language resource, particularly useful for testing the ability of current machine learning models to acquire expert scientific knowledge. Despite its potential, a detailed set of baselines has not yet been developed for Pirá. By creating these baselines, researchers can more easily utilize Pirá as a resource for testing machine learning models across a wide range of question answering tasks. In this paper, we define six benchmarks over the Pirá dataset, covering closed generative question answering, machine reading comprehension, information retrieval, open question answering, answer triggering, and multiple choice question answering. As part of this effort, we have also produced a curated version of the original dataset, where we fixed a number of grammar issues, repetitions, and other shortcomings. Furthermore, the dataset has been extended in several new directions, so as to face the aforementioned benchmarks: translation of supporting texts from English into Portuguese, classification labels for answerability, automatic paraphrases of questions and answers, and multiple choice candidates. The results described in this paper provide several points of reference for researchers interested in exploring the challenges provided by the Pirá dataset."},
+  {id:"deepage", t:"DEEPAGÉ: Answering Questions in Portuguese about the Brazilian Environment",
+   au:["Cação"], etal:true, ven:"BRACIS 2021", vf:"Brazilian Conference on Intelligent Systems", kind:"Conference", cls:"conf", cites:12,
+   link:"https://doi.org/10.1007/978-3-030-91699-2_29", lk:"official", fig:"deepage", alt:"Diagram from the paper: knowledge bases built from Portuguese Wikipedia and news, and question-answer pairs filtered and translated.",
+   ab:"The challenge of climate change and biome conservation is one of the most pressing issues of our time - particularly in Brazil, where key environmental reserves are located. Given the availability of large textual databases on ecological themes, it is natural to resort to question answering (QA) systems to increase social awareness and understanding about these topics. In this work, we introduce multiple QA systems that combine in novel ways the BM25 algorithm, a sparse retrieval technique, with PTT5, a pre-trained state-of-the-art language model. Our QA systems focus on the Portuguese language, thus offering resources not found elsewhere in the literature. As training data, we collected questions from open-domain datasets, as well as content from the Portuguese Wikipedia and news from the press. We thus contribute with innovative architectures and novel applications, attaining an F1-score of 36.2 with our best model."},
+  {id:"aroeira", t:"Aroeira: A Curated Corpus for the Portuguese Language with a Large Number of Tokens",
+   au:["Lira","Cação"], etal:true, ven:"BRACIS 2024", vf:"Brazilian Conference on Intelligent Systems", kind:"Conference", cls:"conf", cites:4,
+   link:"https://doi.org/10.1007/978-3-031-79029-4_13", lk:"official", fig:"aroeira", src:"img/thumbs/pub-aroeira-figura.webp", fw:1513, fh:605, fit:true,
+   alt:"Diagram from the paper: a data pipeline (data collection, text extraction, language identification, deduplication and quality filters) followed by a content safety pipeline (sexual content, toxic data and bias filters, then categorization).",
+   ab:"The emphasis on constructing extensive datasets for training large language models (LLM) has recently increased, and current literature predominantly features datasets for high-resource languages such as English and Chinese. However, there is a notable scarcity of high-quality corpora for the Portuguese language. To address this limitation, we propose Aroeira, a curated corpus explicitly designed for training large language models in the Portuguese language, with a focus on the Brazilian Portuguese one. The Aroeira Corpus consists of 100 GB of texts from various internet platforms, processed through a comprehensive pipeline to ensure superior quality. The pipeline handles downloading, text extraction, language identification, application of quality and bias filters, and storage, all tailored for the Portuguese language. The resulting corpus contains 35.3 million documents and over 15.1 billion tokens, surpassing the largest previously available corpus in this domain."},
+  {id:"dpt", t:"DeepPolicyTracker: Tracking Changes in Environmental Policy in the Brazilian Federal Official Gazette with Deep Learning",
+   au:["Cação"], etal:true, ven:"ICML 2021 workshop", vf:"Tackling Climate Change with Machine Learning. With Política por Inteiro (Instituto Talanoa)", kind:"Workshop", cls:"ws", cites:4,
+   link:"https://www.climatechange.ai/papers/icml2021/35", lk:"official", fig:"dpt", alt:"Diagram from the paper of DeepPolicyTracker's flow, from the Federal Official Gazette to documents classified by a fine-tuned model.",
+   ab:"Even though most of its energy generation comes from renewable sources, Brazil is one of the largest emitters of greenhouse gases in the world, due to intense farming and deforestation of biomes, such as the Amazon Rainforest, whose preservation is essential for compliance with the Paris Agreement. Still, regardless of lobbies or prevailing political orientation, all government legal actions are published daily in the Federal Official Gazette. However, with hundreds of decrees issued every day by the authorities, it is absolutely burdensome to manually analyze all these processes and find out which ones can pose serious environmental hazards. In this paper, we propose the DeepPolicyTracker, a promising deep learning model that uses a state-of-the-art pre-trained natural language model to classify government acts and track harmful changes in the environmental policies. We also provide the used dataset annotated by domain experts and show some results already obtained. In the future, this system should serve to scale up the high-quality tracking of all oficial documents with a minimum of human supervision and contribute to increasing society's awareness of every government action."},
+  {id:"blab", t:"The BLue Amazon Brain (BLAB): A Modular Architecture of Services about the Brazilian Maritime Territory",
+   au:["Pirozelli","Castro","de Oliveira","Oliveira","Cação"], etal:true, ven:"IJCAI-ECAI 2022 workshop", vf:"AI: Modeling Oceans and Climate Change", kind:"Workshop", cls:"ws", cites:3,
+   link:"https://arxiv.org/abs/2209.07928", lk:"arxiv", fig:"blab", alt:"Map from the paper of the Blue Amazon, Brazil's maritime territory, with territorial waters, exclusive economic zone and continental shelf.",
+   ab:"We describe the first steps in the development of an artificial agent focused on the Brazilian maritime territory, a large region within the South Atlantic also known as the Blue Amazon. The \"BLue Amazon Brain\" (BLAB) integrates a number of services aimed at disseminating information about this region and its importance, functioning as a tool for environmental awareness. The main service provided by BLAB is a conversational facility that deals with complex questions about the Blue Amazon, called BLAB-Chat; its central component is a controller that manages several task-oriented natural language processing modules (e.g., question answering and summarizer systems). These modules have access to an internal data lake as well as to third-party databases. A news reporter (BLAB-Reporter) and a purposely-developed wiki (BLAB-Wiki) are also part of the BLAB service architecture. In this paper, we describe our current version of BLAB's architecture (interface, backend, web services, NLP modules, and resources) and comment on the challenges we have faced so far, such as the lack of training data and the scattered state of domain information. Solving these issues presents a considerable challenge in the development of artificial intelligence for technical domains."},
+  {id:"qarl", t:"Question Answering with Texts and Tables through Deep Reinforcement Learning",
+   au:["José","Cação"], etal:true, ven:"BRACIS 2024", vf:"Brazilian Conference on Intelligent Systems", kind:"Conference", cls:"conf", cites:2,
+   link:"https://arxiv.org/abs/2407.04858", lk:"arxiv", fig:"qa-rl", alt:"Figure from the paper: a question answered by retrieving a table row and a text passage, then reading the answer.",
+   ab:"This paper proposes a novel architecture to generate multi-hop answers to open domain questions that require information from texts and tables, using the Open Table-and-Text Question Answering dataset for validation and training. One of the most common ways to generate answers in this setting is to retrieve information sequentially, where a selected piece of data helps searching for the next piece. As different models can have distinct behaviors when called in this sequential information search, a challenge is how to select models at each step. Our architecture employs reinforcement learning to choose between different state-of-the-art tools sequentially until, in the end, a desired answer is generated. This system achieved an F1-score of 19.03, comparable to iterative systems in the literature."},
+  {id:"propor", t:"Tracking Environmental Policy Changes in the Brazilian Federal Official Gazette",
+   au:["Cação"], etal:true, ven:"PROPOR 2022", vf:"Computational Processing of the Portuguese Language", kind:"Conference", cls:"conf", cites:2,
+   link:"https://arxiv.org/abs/2202.10221", lk:"arxiv", fig:"propor", alt:"Bar charts from the paper: how the documents in the dataset are spread across themes and policy classes.",
+   ab:"Even though most of its energy generation comes from renewable sources, Brazil is one of the largest emitters of greenhouse gases in the world, due to intense farming and deforestation of biomes such as the Amazon Rainforest, whose preservation is essential for compliance with the Paris Agreement. Still, regardless of lobbies or prevailing political orientation, all government legal actions are published daily in the Brazilian Federal Official Gazette (BFOG, or \"Diário Oficial da União\" in Portuguese). However, with hundreds of decrees issued every day by the authorities, it is absolutely burdensome to manually analyze all these processes and find out which ones can pose serious environmental hazards. In this paper, we present a strategy to compose automated techniques and domain expert knowledge to process all the data from the BFOG. We also provide the Government Actions Tracker, a highly curated dataset, in Portuguese, annotated by domain experts, on federal government acts about the Brazilian environmental policies. Finally, we build and compared four different NLP models on the classfication task in this dataset. Our best model achieved a F1-score of 0.714 ± 0.031. In the future, this system should serve to scale up the high-quality tracking of all oficial documents with a minimum of human supervision and contribute to increasing society's awareness of government actions."},
+  {id:"eniac", t:"Interpretability of Attention Mechanisms in a Portuguese-Based Question Answering System about the Blue Amazon",
+   au:["Spindola","José","Oliveira","Cação"], etal:true, ven:"ENIAC 2021", vf:"National Meeting on Artificial and Computational Intelligence", kind:"Conference", cls:"conf", cites:2,
+   link:"https://doi.org/10.5753/eniac.2021.18302", lk:"official", fig:"eniac", alt:"Figure from the paper: a grid of attention heads by layer in a BERT model, each drawn in a different color.",
+   ab:"The Brazilian Exclusive Economic Zone, or the \"Blue Amazon\", with its extensive maritime area, is the primary means of transport for the country's foreign trade and is important due to its oil reserves, gas and other mineral resources, in addition to the significant influence on the Brazilian climate. We have manually built a question answering (QA) dataset based on crawled articles and have applied an off-the-shelf QA system based on a fine-tuned BERTimbau Model, achieving an F1-score of 47.0. More importantly, we explored how the proper visualization of attention weights can support helpful interpretations of the system's answers, which is critical in real environments."},
+  {id:"thesis", t:"A Deep Reinforcement Learning Approach to Complex Open-Domain Question Answering",
+   au:["Cação"], etal:false, ven:"MSc dissertation, USP, 2023", vf:"Polytechnic School, University of São Paulo (USP). Advised by Anna Helena Reali Costa", kind:"Thesis", cls:"ths", cites:1,
+   link:"https://doi.org/10.11606/d.3.2023.tde-10012024-092904", lk:"official", fig:"thesis", alt:"Figure from the dissertation: a virtual assistant answering a simple question and a complex question that needs two searches.",
+   ab:"Recently, models composed of only a neural Information Retrieval and a Machine Reading Comprehension/Text Generator modules based on pretrained language models have reached the state of the art in several challenging natural language processing datasets. However, there is still significant room for improvement in the reasoning capacity of these systems, especially in the realm of complex open-domain question answering (CODQA) datasets. In this project, we propose an architecture that combines the main features of these models within a Reinforcement Learning setting, with the extra ability to perform multiple hops among documents to answer to users questions. A system with this capability is critical for building conversational agents able to answer difficult questions that require multiple queries on a non-structured database. Our systems achieved a maximum F1-score of 0.13±0.3 on the test set, using on average only 47% of the total available text passages."}
+];
+const PUB_SHOW = 6;
+const pubById = Object.fromEntries(PUBS.map(p => [p.id, p]));
+const authors = p => p.au.map(a => a === "Cação" ? "<b>Cação</b>" : esc(a)).join(", ") + (p.etal ? " et al." : "");
+const pubFig = (p, big) => p.fig
+  ? '<figure class="th' + (p.fit && big ? ' fit' : '') + '"><img src="' + (p.src || 'img/thumbs/pub-' + p.fig + (big ? '-169' : '-43') + '.webp') + '" alt="' + (big ? esc(p.alt) : '') + '" width="' + (p.fw || (big ? 1200 : 800)) + '" height="' + (p.fh || (big ? 675 : 600)) + '"' + (big ? '' : ' loading="lazy"') + ' decoding="async"></figure>'
+  : '<figure class="th"><div class="typo" role="img" aria-label="' + esc(p.ven) + '"><b>BRACIS</b><span>2024</span><i></i></div></figure>';
+const goLink = p => '<a class="go" href="' + p.link + '" target="_blank" rel="noopener"><span data-i18n="' + p.lk + '">' + T(p.lk) + '</span> ' + ext + '</a>';
+const plist = document.getElementById("plist"), ppane = document.getElementById("ppane");
+plist.innerHTML = PUBS.map((p, k) =>
+  '<li class="pr' + (k >= PUB_SHOW ? ' more' : '') + '" data-id="' + p.id + '"><div class="hd">' + pubFig(p, false) +
+  '<div><h3 class="t"><a href="' + p.link + '" target="_blank" rel="noopener">' + esc(p.t) + '</a></h3>' +
+  '<span class="ven">' + esc(p.ven) + '</span><span class="au">' + authors(p) + '</span></div>' +
+  '<div class="aside"><span class="badge ' + p.cls + '">' + p.kind + '</span><span class="cites"><span data-i18n="citedBy">' + T("citedBy") + '</span> <b>' + p.cites + '</b></span></div>' +
+  '<button type="button" class="acc" aria-expanded="false" aria-controls="det-' + p.id + '"><span class="sr"><span data-i18n="showAbs">' + T("showAbs") + '</span>: ' + esc(p.t) + '</span></button></div>' +
+  '<div class="det" id="det-' + p.id + '"></div></li>'
+).join("");
+let pubActive = null;
+function renderPane(id){
+  const p = pubById[id]; pubActive = id;
+  plist.querySelectorAll(".pr").forEach(li => li.classList.toggle("on", li.dataset.id === id));
+  ppane.innerHTML = '<div class="in">' + pubFig(p, true) +
+    '<p class="cap" data-i18n="' + (p.fig ? "figCap" : "noFig") + '">' + T(p.fig ? "figCap" : "noFig") + '</p>' +
+    '<h3>' + esc(p.t) + '</h3><p class="pv"><b style="font-weight:500;color:var(--ink)">' + esc(p.ven) + '</b>, ' + esc(p.vf) + '</p>' + goLink(p) +
+    '<p class="abh" data-i18n="abstract">' + T("abstract") + '</p><p class="ab">' + esc(p.ab) + '</p></div>';
+}
+renderPane(PUBS[0].id);
+const wideQ = matchMedia("(min-width:901px)");
+const pick = e => { if (!wideQ.matches) return; const li = e.target.closest(".pr"); if (li && li.dataset.id !== pubActive) renderPane(li.dataset.id); };
+plist.addEventListener("mouseover", pick);
+plist.addEventListener("focusin", pick);
+plist.addEventListener("click", e => {
+  const b = e.target.closest(".acc"); if (!b) return;
+  const li = b.closest(".pr"), p = pubById[li.dataset.id], det = li.querySelector(".det");
+  if (!det.innerHTML) det.innerHTML = pubFig(p, true) + goLink(p) + '<p class="abh" data-i18n="abstract">' + T("abstract") + '</p><p class="ab">' + esc(p.ab) + '</p>';
+  const open = li.classList.toggle("open"); b.setAttribute("aria-expanded", open);
+});
+(() => {
+  const b = document.getElementById("pubbtn");
+  const label = () => { const open = plist.classList.contains("all"); b.firstElementChild.dataset.i18n = open ? "pubLess" : "pubMore"; b.firstElementChild.textContent = T(open ? "pubLess" : "pubMore"); };
+  b.addEventListener("click", () => {
+    const open = plist.classList.toggle("all"); b.setAttribute("aria-expanded", open); label();
+    if (open){ const first = plist.querySelector(".pr.more .t a"); if (first && wideQ.matches) first.focus({preventScroll:true}); }
+    else if (!PUBS.slice(0, PUB_SHOW).some(p => p.id === pubActive)) renderPane(PUBS[0].id);
+  });
+})();
+
+/* ---------- press (card grid, two larger stories on top) ---------- */
+const PRESS = [
+  {d:"2024-08-25", feat:true, outlet:"Folha de S.Paulo", head:"Especialistas contestam originalidade de IA 'brasileira' no radar de Lula",
+   en:"Experts question the originality of a \"Brazilian\" AI model. Comment on fine-tuning.", kind:"Quoted", link:byId.folha1.link,
+   img:"img/thumbs/press-folha-ia-brasileira-foto.webp", w:1024, h:683, pos:"50% 42%", credit:true,
+   alt:"Photo from the Folha story: a group of officials and guests at a meeting at the Ministry of Science, Technology and Innovation, in front of a Brazilian government logo."},
+  {d:"2022-09-29", feat:true, outlet:"Agência Pública", head:"Ameaça da China e ataque ao STF: o que o podcast de Steve Bannon diz sobre o Brasil",
+   en:"What Steve Bannon's podcast says about Brazil, from 923 episodes. With Laura Scofield, Natalia Viana, David Nemer and Christina Xiao.", kind:"Co-author", link:byId.bannon.link,
+   img:"img/thumbs/press-bannon-169.webp", alt:"Share image of the Agência Pública story: Steve Bannon in close-up over a collage, with the Pública logo on a yellow band."},
+  {d:"2025-09-11", outlet:"ARTIGO 19 Brasil", head:"Gênero e Número e Novelo Data lançam Radar Antigênero",
+   en:"Launch of the Anti-Gender Radar, built by Gênero e Número and Novelo Data.", kind:"Quoted", link:"https://artigo19.org/2025/09/11/genero-e-numero-e-novelo-data-lancam-radar-antigenero/",
+   img:"img/thumbs/press-artigo19-169.webp", top:true, alt:"Top of the ARTIGO 19 Brasil story, with the headline Gênero e Número e Novelo Data lançam Radar Antigênero."},
+  {d:"2025-09-04", outlet:"Gênero e Número", head:"Lançamento do Radar Antigênero",
+   en:"Public launch of the Anti-Gender Radar, where I led the AI work.", kind:"Quoted", link:"https://www.generonumero.media/artigos/lancamento-radar-antigenero/",
+   img:"img/thumbs/press-gn-169.webp", top:true, alt:"Top of the Gênero e Número story, with its headline and the Radar's illustration of video frames."},
+  {d:"2024-10-21", outlet:"Folha de S.Paulo", head:"Agentes de IA chegam a empresas, que investem em fábricas próprias de funcionários digitais",
+   en:"On AI agents arriving at companies.", kind:"Quoted", link:byId.folha2.link,
+   img:"img/thumbs/press-folha2-169.webp", alt:"Illustration from the Folha story: two hands typing on a laptop over a red background."}
+];
+document.getElementById("prgrid").innerHTML = PRESS.map((p, k) =>
+  '<article class="c rv' + (p.feat ? ' feat' : '') + '" style="--c:var(--media);transition-delay:' + ((k % 3) * 60) + 'ms">' +
+  '<figure class="th' + (p.top ? ' top' : '') + '"><img src="' + p.img + '" alt="' + esc(p.alt) + '" width="' + (p.w || 1200) + '" height="' + (p.h || 675) + '"' + (p.pos ? ' style="object-position:' + p.pos + '"' : '') + ' loading="lazy" decoding="async">' +
+  (p.credit ? '<span class="credit" data-i18n="photoCredit">' + T("photoCredit") + '</span>' : '') + '</figure>' +
+  '<div class="bd"><p class="tg"><i></i><span>' + p.outlet + '</span> <em>' + fd(p.d) + '</em></p>' +
+  '<h3 class="ttl" lang="pt"><a href="' + p.link + '" target="_blank" rel="noopener">' + esc(p.head) + '</a></h3>' +
+  '<p class="meta">' + esc(p.en) + '</p><div class="foot"><span class="badge' + (p.kind === "Co-author" ? " co" : "") + '">' + p.kind + '</span></div></div></article>'
+).join("");
+
+/* ---------- language switch ---------- */
+
+function setLang(l){
+  LANG = l; document.documentElement.lang = l;
+  document.querySelectorAll("[data-i18n]").forEach(e => { const v = T(e.dataset.i18n); if (v) e.textContent = v; });
+  document.querySelectorAll("[data-i18n-html]").forEach(e => { e.innerHTML = T(e.dataset.i18nHtml); });
+  document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === l));
+  try { localStorage.setItem("fnc-lang", l); } catch(e){}
+  requestAnimationFrame(() => { fitLabels(); drawLinks(null); });
+}
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+try { const l = localStorage.getItem("fnc-lang"); if (l === "pt") setLang("pt"); } catch(e){}
+
+/* ---------- motion ---------- */
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (!reduce && "IntersectionObserver" in window){
+  flow.classList.add("pre");
+  const fo = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting){ flow.classList.add("go"); requestAnimationFrame(() => flow.classList.remove("pre")); fo.disconnect(); }
+  }), {threshold:.15});
+  fo.observe(flow);
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }), {rootMargin:"0px 0px -6% 0px"});
+  document.querySelectorAll(".rv").forEach(el => {
+    if (el.getBoundingClientRect().top < innerHeight) el.classList.add("in"); else io.observe(el);
+  });
+} else document.querySelectorAll(".rv").forEach(el => el.classList.add("in"));
+
+/* nav state */
+const topbar = document.getElementById("top");
+const navLinks = [...document.querySelectorAll(".nav a")];
+const so = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+}), {rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section[id]").forEach(s => so.observe(s));
+addEventListener("scroll", () => topbar.classList.toggle("scrolled", scrollY > 8), {passive:true});
+
+fitLabels(); drawLinks(null);
+let rz; addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { fitLabels(); drawLinks(null); }, 120); });
+if (document.fonts) document.fonts.ready.then(() => { fitLabels(); drawLinks(null); });
+</script>
+</body>
+</html>
