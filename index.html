@@ -1676,7 +1676,7 @@ if (matchMedia("(max-width:640px)").matches) (() => {
   /* blocos */
   const h = document.createElement("p"); h.className = "hello"; h.dataset.i18n = "m_explore"; h.textContent = T("m_explore");
   const nav = document.createElement("nav"); nav.className = "tiles3"; nav.setAttribute("aria-label", "Sections");
-  nav.innerHTML = Object.keys(SEC).map((id, k) => '<button type="button" class="tl3' + (id === "work" ? " wide" : id === "writing" ? " slim wide" : "") + '" data-s="' + id + '" style="--c:' + COL[k % 4] + '"><span class="big num">' + num[id] + '</span><span><span class="nm" data-i18n="' + SEC[id] + '">' + T(SEC[id]) + '</span><span class="cp" data-i18n="' + CAP[id] + '">' + T(CAP[id]) + '</span></span></button>').join("");
+  nav.innerHTML = Object.keys(SEC).map((id, k) => '<button type="button" class="tl3' + (id === "work" ? " wide" : "") + '" data-s="' + id + '" style="--c:' + COL[k % 4] + '"><span class="big num">' + num[id] + '</span><span><span class="nm" data-i18n="' + SEC[id] + '">' + T(SEC[id]) + '</span><span class="cp" data-i18n="' + CAP[id] + '">' + T(CAP[id]) + '</span></span></button>').join("");
   ab.after(h, nav);
   /* folhas */
   const BACK = '<svg viewBox="0 0 16 16"><path d="M10 3 5 8l5 5"/></svg>';
