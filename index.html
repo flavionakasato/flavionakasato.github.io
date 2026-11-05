@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Flávio Nakasato Cação</title>
-<meta name="description" content="Entrepreneur, AI researcher and machine learning developer, building AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.">
+<meta name="description" content="Entrepreneur, AI researcher and machine learning developer who builds AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.">
 <link rel="canonical" href="https://flavionakasato.github.io/">
 <meta name="author" content="Flávio Nakasato Cação">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Flávio Nakasato Cação">
 <meta property="og:title" content="Flávio Nakasato Cação">
-<meta property="og:description" content="Entrepreneur, AI researcher and machine learning developer, building AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.">
+<meta property="og:description" content="Entrepreneur, AI researcher and machine learning developer who builds AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.">
 <meta property="og:url" content="https://flavionakasato.github.io/">
 <meta property="og:image" content="https://flavionakasato.github.io/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -19,11 +19,11 @@
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Flávio Nakasato Cação">
-<meta name="twitter:description" content="Entrepreneur, AI researcher and machine learning developer, building AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.">
+<meta name="twitter:description" content="Entrepreneur, AI researcher and machine learning developer who builds AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.">
 <meta name="twitter:image" content="https://flavionakasato.github.io/img/og-image.jpg">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Flávio Nakasato Cação", "alternateName": ["Flávio Nakasato", "Flavio Nakasato Cacao"], "url": "https://flavionakasato.github.io/", "image": "https://flavionakasato.github.io/img/profile.jpeg", "description": "Entrepreneur, AI researcher and machine learning developer, building AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.", "jobTitle": "Founder & Partner", "worksFor": {"@type": "Organization", "name": "Moiru AI", "url": "https://www.moiru.ai"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of São Paulo (USP)", "url": "https://www5.usp.br/"}, "knowsAbout": ["Artificial intelligence", "Machine learning", "Natural language processing", "Environmental enforcement", "Climate change", "Data journalism"], "sameAs": ["https://www.linkedin.com/in/flavionakasato", "https://scholar.google.com.br/citations?user=bKIJHa8AAAAJ", "https://orcid.org/0000-0003-4771-6009", "https://github.com/flavionakasato", "https://flavio-nakasato.medium.com"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Flávio Nakasato Cação", "alternateName": ["Flávio Nakasato", "Flavio Nakasato Cacao"], "url": "https://flavionakasato.github.io/", "image": "https://flavionakasato.github.io/img/profile.jpeg", "description": "Entrepreneur, AI researcher and machine learning developer who builds AI for the public interest. Founder of Moiru AI and Project Lead of Sumaúma, open-source AI for environmental enforcement in the Amazon rainforest.", "jobTitle": "Founder & Partner", "worksFor": {"@type": "Organization", "name": "Moiru AI", "url": "https://www.moiru.ai"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of São Paulo (USP)", "url": "https://www5.usp.br/"}, "knowsAbout": ["Artificial intelligence", "Machine learning", "Natural language processing", "Environmental enforcement", "Climate change", "Data journalism"], "sameAs": ["https://www.linkedin.com/in/flavionakasato", "https://scholar.google.com.br/citations?user=bKIJHa8AAAAJ", "https://orcid.org/0000-0003-4771-6009", "https://github.com/flavionakasato", "https://flavio-nakasato.medium.com"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -74,6 +74,8 @@ a{color:inherit}
 .lang button{all:unset;cursor:pointer;padding:3px 9px;border-radius:999px;color:var(--muted);transition:background .2s,color .2s}
 .lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* nine links: tighter between 901 and 1140px so the longer Portuguese labels still fit */
+@media (max-width:1140px){.nav{gap:13px;font-size:13px}.top .wrap{gap:18px}}
 @media (max-width:900px){.nav{display:none}.lang{margin-left:auto}}
 
 /* hero: portrait in columns 1-2, name in 3-8, Currently in 9-12 */
@@ -168,6 +170,10 @@ section.block{padding-top:104px}
 .grid-lines{position:absolute;inset:0;pointer-events:none}
 .grid-lines i{position:absolute;top:0;bottom:0;width:1px;background:var(--hair);opacity:.55}
 .grid-lines i.now-l{background:var(--impact);opacity:.5;width:1px}
+/* where the scale changes (2020): a dashed rule down the lanes and on the axis; the compressed years get dotted ticks */
+.grid-lines i.brk{background:repeating-linear-gradient(180deg,var(--hair-2) 0 3px,transparent 3px 6px);opacity:1}
+.tick.sq{border-left-style:dotted}
+.tick.brk{border-left:1px dashed var(--faint)}
 .it{position:absolute;height:30px;margin:0;padding:0;border:0;background:none;cursor:pointer;font:inherit;color:inherit;text-align:left;transition:opacity .35s var(--ease),filter .35s}
 .it .lab{position:absolute;left:0;right:0;top:2px;text-align:left;font:500 11.5px/1.2 var(--sans);color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.005em;pointer-events:none}
 .it .bar{position:absolute;left:0;right:0;bottom:6px;height:7px;border-radius:4px;background:var(--c);transform-origin:left center;transition:height .25s var(--ease),bottom .25s var(--ease),box-shadow .25s}
@@ -207,6 +213,7 @@ section.block{padding-top:104px}
 .k-dia{width:8px;height:8px;border-radius:1px;box-shadow:inset 0 0 0 2px var(--ink-2);transform:rotate(45deg)}
 .k-pend{width:18px;height:6px;border-radius:3px;background:repeating-linear-gradient(-45deg,var(--ink-2) 0 3px,#ccc 3px 5px)}
 .k-link{width:18px;height:0;border-top:1.5px dotted var(--ink-2)}
+.k-brk{width:0;height:12px;border-left:1px dashed var(--ink-2)}
 
 .tip{position:absolute;z-index:20;pointer-events:none;background:var(--ink);color:var(--paper);border-radius:6px;padding:9px 12px 10px;max-width:280px;font-size:12.5px;line-height:1.35;opacity:0;transform:translateY(4px);transition:opacity .18s,transform .18s var(--ease);box-shadow:0 10px 30px -10px rgba(0,0,0,.35)}
 .tip.show{opacity:1;transform:none}
@@ -361,61 +368,13 @@ section.block{padding-top:104px}
 .pgrid .typo b{font-size:clamp(19px,1.55vw,23px)}
 .pgrid .typo span{margin-top:8px;font-size:10px}
 .pgrid .typo i{margin-top:9px}
-/* cards in the same row share row tracks, so the rules above the numbers line up */
+/* cards in the same row share row tracks, so the rules above the numbers line up; every card has the same width */
 @media (min-width:641px){
   .pgrid>.c:not(.wide){display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0}
   .pgrid>.c:not(.wide) .bd{display:grid;grid-row:span 3;grid-template-rows:subgrid;row-gap:0}
   .pgrid>.c:not(.wide) .fig{margin-top:0;align-self:start}
 }
-/* the last card of a row that does not fill up takes the rest of the row, image beside the text.
-   The image keeps the width of one column, so its edge stays on the grid; --s is the span.
-   It spans the same four row tracks as its neighbours, so a row never ends with a hole.
-   (#pgrid starts with the wide card, so its small cards are shifted by one child.) */
-@media (min-width:1081px){
-  #pgrid-more>.c:last-child:nth-child(4n+1),#pgrid>.c:last-child:nth-child(4n+2){--s:4}
-  #pgrid-more>.c:last-child:nth-child(4n+2),#pgrid>.c:last-child:nth-child(4n+3){--s:3}
-  #pgrid-more>.c:last-child:nth-child(4n+3),#pgrid>.c:last-child:nth-child(4n+4){--s:2}
-  :is(#pgrid-more>.c:last-child:nth-child(4n+1),#pgrid>.c:last-child:nth-child(4n+2),#pgrid-more>.c:last-child:nth-child(4n+2),#pgrid>.c:last-child:nth-child(4n+3),#pgrid-more>.c:last-child:nth-child(4n+3),#pgrid>.c:last-child:nth-child(4n+4)){
-    grid-column:span var(--s);grid-row:span 4;display:grid;grid-template-rows:none;grid-template-columns:calc((100% + 2px - (var(--s) - 1) * var(--cg)) / var(--s)) minmax(0,1fr);
-    & .th{aspect-ratio:auto;height:100%;min-height:150px;border-bottom:0;border-right:1px solid var(--hair)}
-    & .bd{display:grid;grid-row:auto;grid-template-rows:none;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--cg);align-content:start;padding:16px 20px 14px}
-    & .cap{grid-column:1;grid-row:1}
-    & .fig{grid-column:2;grid-row:1;align-self:start}
-    & .foot{grid-column:1/-1;grid-row:2;margin-top:14px;border-top:1px solid var(--hair)}
-    & .ttl{font-size:21px}
-    & .typo b{font-size:clamp(21px,1.8vw,26px)}
-  }
-  :is(#pgrid-more>.c:last-child:nth-child(4n+3),#pgrid>.c:last-child:nth-child(4n+4)){& .bd{grid-template-columns:minmax(0,1fr)} & .fig{grid-column:1;grid-row:2} & .foot{grid-row:3}}
-}
-@media (min-width:821px) and (max-width:1080px){
-  #pgrid-more>.c:last-child:nth-child(3n+1),#pgrid>.c:last-child:nth-child(3n+2){--s:3}
-  #pgrid-more>.c:last-child:nth-child(3n+2),#pgrid>.c:last-child:nth-child(3n+3){--s:2}
-  :is(#pgrid-more>.c:last-child:nth-child(3n+1),#pgrid>.c:last-child:nth-child(3n+2),#pgrid-more>.c:last-child:nth-child(3n+2),#pgrid>.c:last-child:nth-child(3n+3)){
-    grid-column:span var(--s);grid-row:span 4;display:grid;grid-template-rows:none;grid-template-columns:calc((100% + 2px - (var(--s) - 1) * var(--cg)) / var(--s)) minmax(0,1fr);
-    & .th{aspect-ratio:auto;height:100%;min-height:150px;border-bottom:0;border-right:1px solid var(--hair)}
-    & .bd{display:grid;grid-row:auto;grid-template-rows:none;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--cg);align-content:start;padding:16px 20px 14px}
-    & .cap{grid-column:1;grid-row:1}
-    & .fig{grid-column:2;grid-row:1;align-self:start}
-    & .foot{grid-column:1/-1;grid-row:2;margin-top:14px;border-top:1px solid var(--hair)}
-    & .ttl{font-size:21px}
-    & .typo b{font-size:clamp(21px,1.8vw,26px)}
-  }
-  :is(#pgrid-more>.c:last-child:nth-child(3n+2),#pgrid>.c:last-child:nth-child(3n+3)){& .bd{grid-template-columns:minmax(0,1fr)} & .fig{grid-column:1;grid-row:2} & .foot{grid-row:3}}
-}
-@media (min-width:641px) and (max-width:820px){
-  #pgrid-more>.c:last-child:nth-child(2n+1),#pgrid>.c:last-child:nth-child(2n+2){--s:2}
-  :is(#pgrid-more>.c:last-child:nth-child(2n+1),#pgrid>.c:last-child:nth-child(2n+2)){
-    grid-column:span var(--s);grid-row:span 4;display:grid;grid-template-rows:none;grid-template-columns:calc((100% + 2px - (var(--s) - 1) * var(--cg)) / var(--s)) minmax(0,1fr);
-    & .th{aspect-ratio:auto;height:100%;min-height:150px;border-bottom:0;border-right:1px solid var(--hair)}
-    & .bd{display:grid;grid-row:auto;grid-template-rows:none;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--cg);align-content:start;padding:16px 20px 14px}
-    & .cap{grid-column:1;grid-row:1}
-    & .fig{grid-column:2;grid-row:1;align-self:start}
-    & .foot{grid-column:1/-1;grid-row:2;margin-top:14px;border-top:1px solid var(--hair)}
-    & .ttl{font-size:21px}
-    & .typo b{font-size:clamp(21px,1.8vw,26px)}
-  }
-  :is(#pgrid-more>.c:last-child:nth-child(2n+1),#pgrid>.c:last-child:nth-child(2n+2)){& .bd{grid-template-columns:minmax(0,1fr)} & .fig{grid-column:1;grid-row:2} & .foot{grid-row:3}}
-}
+/* a row that does not fill up keeps its cards at the normal size, aligned to the left */
 .pmore{display:flex;align-items:center;gap:16px;margin-top:var(--cg)}
 #pgrid-more{margin-top:var(--cg)}
 #pgrid-more[hidden]{display:none}
@@ -576,14 +535,15 @@ footer{margin-top:90px;border-top:1px solid var(--hair);padding:26px 0 40px;font
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 footer a{text-decoration:none;color:var(--ink-2)}
 footer a:hover{color:var(--ink)}
-/* back to top: bottom right, after one screen of scrolling. Where the margin is too narrow for it
-   (below 1340px) it only shows while scrolling up, so it never sits over text while reading */
-.totop{position:fixed;right:24px;bottom:24px;z-index:45;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--hair-2);background:color-mix(in srgb,var(--paper) 92%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:var(--ink);text-decoration:none;box-shadow:0 10px 26px -16px rgba(20,24,30,.45);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s linear .3s,border-color .2s,background .2s}
+/* back to top: dark, just outside the right edge of the content column (16px gap), after one screen
+   of scrolling. --tt is its size. Where the margin is too narrow (below 1340px) it sits 16px from the
+   corner and only shows while scrolling up, so it never covers text while reading */
+.totop{--tt:42px;position:fixed;right:max(16px, calc((100% - min(100%, var(--max)) + 2 * var(--gut)) / 2 - var(--tt) - 16px));bottom:24px;z-index:45;width:var(--tt);height:var(--tt);display:grid;place-items:center;border-radius:50%;border:1px solid var(--ink);background:var(--ink);color:var(--paper);text-decoration:none;box-shadow:0 10px 26px -14px rgba(20,24,30,.55);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s linear .3s,border-color .2s,background .2s}
 .totop.show{opacity:1;visibility:visible;transform:none;transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s,border-color .2s,background .2s}
-.totop:hover{border-color:var(--ink);background:var(--card)}
+.totop:hover{background:#000;border-color:#000;transform:translateY(-2px)}
 .totop:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:50%}
 .totop svg{width:16px;height:16px}
-@media (max-width:640px){.totop{right:12px;bottom:12px;width:44px;height:44px}}
+@media (max-width:640px){.totop{--tt:44px;right:16px;bottom:16px}}
 .ptnote{display:none;font-size:12px;color:var(--muted);margin:10px 0 0}
 html[lang="pt"] .ptnote{display:block}
 
@@ -618,8 +578,9 @@ html[lang="pt"] .ptnote{display:block}
       <a href="#projects" data-i18n="nProjects">Projects</a>
       <a href="#career" data-i18n="nCareer">Career</a>
       <a href="#publications" data-i18n="nPubs">Publications</a>
-      <a href="#teaching" data-i18n="nTeach">Teaching</a>
       <a href="#press" data-i18n="nPress">Press</a>
+      <a href="#teaching" data-i18n="nTeach">Teaching</a>
+      <a href="#honors" data-i18n="honors">Honors</a>
       <a href="#writing" data-i18n="nWriting">Writing</a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
@@ -645,8 +606,8 @@ html[lang="pt"] .ptnote{display:block}
       <aside class="now" aria-labelledby="now-h">
         <h2 class="lbl" id="now-h" data-i18n="now">Currently</h2>
         <dl>
-          <div><dt data-i18n="nowLead">Project Lead</dt><dd>Sumaúma<small data-i18n="nowSum">In real use by four municipal environmental departments in Pará since August 2026. Built with Imazon.</small></dd></div>
-          <div><dt data-i18n="nowFounder">Founder &amp; Partner</dt><dd>Moiru AI<small data-i18n="nowMoiru">The company that designed and built Sumaúma with Imazon.</small></dd></div>
+          <div><dt data-i18n="nowLead">Project Lead</dt><dd>Sumaúma<small data-i18n="nowSum">Open-source AI to strengthen environmental enforcement and curb deforestation in the Amazon. Built with Imazon and already in use in the field.</small></dd></div>
+          <div><dt data-i18n="nowFounder">Founder &amp; Partner</dt><dd>Moiru AI<small data-i18n="nowMoiru">The company behind Sumaúma. It builds open-source AI for the public interest.</small></dd></div>
         </dl>
       </aside>
     </div>
@@ -694,6 +655,7 @@ html[lang="pt"] .ptnote{display:block}
           <span><i class="k-sq"></i><span data-i18n="kWriting">Writing</span></span>
           <span><i class="k-pend"></i><span data-i18n="kPend">Date to confirm</span></span>
           <span><i class="k-link"></i><span data-i18n="kLink">Led to</span></span>
+          <span><i class="k-brk"></i><span data-i18n="kScale">Scale compressed before 2020</span></span>
         </div>
         <span data-i18n="kKeys">Arrow keys move through the timeline in order.</span>
       </div>
@@ -708,8 +670,8 @@ html[lang="pt"] .ptnote{display:block}
       <p class="sub" data-i18n="projSub">The role, the outcome in one number, and where to read more.</p>
     </div>
     <!-- The Sumaúma card image is <img id="sumauma-img"> (object-fit: cover, centered); to change it, swap only its src in PROJ. -->
-    <div class="cgrid pgrid" id="pgrid"><article class="c rv wide" style="--c:var(--impact);--t:var(--impact-t);transition-delay:0ms"><figure class="th"><img id="sumauma-img" class="sumauma-shot" src="img/thumbs/sumauma-composicao.webp" alt="Sumaúma's web dashboard with the week's deforestation alerts and a map, next to the field app's map screen." width="1600" height="900" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2026</em></p><h3 class="ttl"><a href="https://sumauma.app" target="_blank" rel="noopener">Sumaúma</a></h3><p class="meta">Moiru AI with Imazon</p><p class="desc">Open-source AI for environmental enforcement in the Amazon rainforest, built with four municipal departments in Pará.</p></div><div class="fig"><div class="n">4</div><p class="nl">municipal environmental departments in Pará using it in real enforcement cases since August 2026.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Project Lead</b></span><a class="lnk" href="https://sumauma.app" target="_blank" rel="noopener">sumauma.app <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"></path></svg></a><button type="button" class="showin" data-show="sumauma" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--media);--t:var(--media-t);transition-delay:60ms"><figure class="th"><img src="img/thumbs/proj-radar-169.webp" alt="Home page of the Anti-Gender Radar: the title Radar Antigênero over a collage of video frames in orange, green and violet." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_media">Media &amp; data journalism</span> <em>2024</em></p><h3 class="ttl"><a href="https://radar.org.br" target="_blank" rel="noopener">Anti-Gender Radar</a></h3><p class="meta">Gênero e Número, with JournalismAI (LSE and Google News Initiative)</p></div><div class="fig"><div class="n">20,000<sup>+</sup></div><p class="nl">videos from 7,700+ channels analyzed.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI lead</b></span><button type="button" class="showin" data-show="radar" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--impact);--t:var(--impact-t);transition-delay:120ms"><figure class="th top"><img src="img/thumbs/proj-talanoa-169.webp" alt="Política por Inteiro, Instituto Talanoa's climate policy website, on the page of its monitor of public acts." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2023–24</em></p><h3 class="ttl"><a href="#" data-open="talanoa">Climate Policy Analysis</a></h3><p class="meta">Instituto Talanoa, a climate policy think tank</p></div><div class="fig"><div class="n">60<sup>%</sup></div><p class="nl">less research time, across 10,000+ climate policy documents.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI project lead</b></span><a class="lnk" href="https://www.climatechange.ai/papers/icml2021/35" target="_blank" rel="noopener">Related paper <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"></path></svg></a><button type="button" class="showin" data-show="talanoa" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--media);--t:var(--media-t);transition-delay:180ms"><figure class="th top"><img src="img/thumbs/proj-bannon-169.webp" alt="Chart from the Agência Pública story: the days, from September 2021 to August 2022, when Steve Bannon's podcast mentioned Brazil." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_media">Media &amp; data journalism</span> <em>2022</em></p><h3 class="ttl"><a href="https://apublica.org/sentinela/2022/09/ameaca-da-china-e-ataque-ao-stf-o-que-o-podcast-de-steve-bannon-diz-sobre-o-brasil/" target="_blank" rel="noopener">Steve Bannon's podcast and Brazil</a></h3><p class="meta">Agência Pública, an investigative journalism agency</p></div><div class="fig"><div class="n">923</div><p class="nl">podcast episodes analyzed with topic modeling.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Co-author</b></span><button type="button" class="showin" data-show="bannon" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--media);--t:var(--media-t);transition-delay:0ms"><figure class="th top"><img src="img/thumbs/proj-piaui-169.webp" alt="Chart from the piauí visual analysis: mentions critical of Brazil's Supreme Court and Electoral Court on Jovem Pan, 2018 to 2022." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_media">Media &amp; data journalism</span> <em>2022</em></p><h3 class="ttl"><a href="https://piaui.folha.uol.com.br/materia/jovem-pan-e-o-golpe" target="_blank" rel="noopener">Political discourse on YouTube</a></h3><p class="meta">piauí, a Brazilian monthly magazine</p></div><div class="fig"><div class="n">1,000<sup>+</sup></div><p class="nl">episodes of Jovem Pan analyzed. Among the magazine's most-read pieces of the 2022 election.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Data analysis, with Novelo Data</b></span><button type="button" class="showin" data-show="piaui" data-i18n="showIn">Show in timeline</button></div></div></article></div>
-    <div class="cgrid pgrid" id="pgrid-more" hidden><article class="c rv in" style="--c:var(--impact);--t:var(--impact-t);transition-delay:0ms"><figure class="th ty"><div class="typo" role="img" aria-label="Funbio, 2020–21"><b>Funbio</b><span>2020–21</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2020–21</em></p><h3 class="ttl"><a href="#" data-open="funbio">Environmental News Monitoring</a></h3><p class="meta">Funbio, the Brazilian Biodiversity Fund</p></div><div class="fig"><div class="n">10,000<sup>+</sup></div><p class="nl">news articles a month from 8+ sources, monitored to track environmental threats.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI project lead</b></span><button type="button" class="showin" data-show="funbio" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--impact);--t:var(--impact-t);transition-delay:60ms"><figure class="th ty"><div class="typo" role="img" aria-label="World Animal Protection, 2024"><b>World Animal Protection</b><span>2024</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2024</em></p><h3 class="ttl"><a href="#" data-open="wap">Animal rights discourse analysis</a></h3><p class="meta">World Animal Protection</p></div><div class="fig txt"><p class="nl">Discourse analysis on animal rights.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI project lead</b></span><button type="button" class="showin" data-show="wap" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--industry);--t:var(--industry-t);transition-delay:120ms"><figure class="th ty"><div class="typo" role="img" aria-label="Itaú Unibanco, 2022–24"><b>Itaú Unibanco</b><span>2022–24</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_industry">Industry</span> <em>2022–24</em></p><h3 class="ttl"><a href="#" data-open="itau">First generative AI task force</a></h3><p class="meta">Itaú Unibanco, Brazil's largest bank</p></div><div class="fig txt"><p class="nl">Member of the first team assigned to bring generative AI into the bank.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Data Scientist</b></span><button type="button" class="showin" data-show="itau" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--industry);--t:var(--industry-t);transition-delay:180ms"><figure class="th ty"><div class="typo" role="img" aria-label="Mira Educação, 2017–19"><b>Mira Educação</b><span>2017–19</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_industry">Industry</span> <em>2017–19</em></p><h3 class="ttl"><a href="#" data-open="mira">Data and impact studies</a></h3><p class="meta">Mira Educação, an education startup</p></div><div class="fig txt"><p class="nl">Data infrastructure and impact studies as the company grew from two pilot schools to nearly one million users.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Lead &amp; Senior Data Scientist</b></span><button type="button" class="showin" data-show="mira" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--impact);--t:var(--impact-t);transition-delay:0ms"><figure class="th ty"><div class="typo" role="img" aria-label="AmazoniaHack, 2026"><b>AmazoniaHack</b><span>2026</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2026</em></p><h3 class="ttl"><a href="https://www.instagram.com/p/De-qx10DXY7/" target="_blank" rel="noopener">International edition, organizing team</a></h3><p class="meta">AmazoniaHack</p></div><div class="fig"><div class="n">7</div><p class="nl">countries and 10 solutions in the 2026 international edition.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Organizing team</b></span><button type="button" class="showin" data-show="ah26" data-i18n="showIn">Show in timeline</button></div></div></article></div>
+    <div class="cgrid pgrid" id="pgrid"><article class="c rv wide" style="--c:var(--impact);--t:var(--impact-t);transition-delay:0ms"><figure class="th"><img id="sumauma-img" class="sumauma-shot" src="img/thumbs/sumauma-composicao.webp" alt="Sumaúma's web dashboard with the week's deforestation alerts and a map, next to the field app's map screen." width="1600" height="900" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2026</em></p><h3 class="ttl"><a href="https://sumauma.app" target="_blank" rel="noopener">Sumaúma</a></h3><p class="meta">Moiru AI with Imazon</p><p class="desc">Open-source AI for environmental enforcement in the Amazon rainforest, built with four municipal departments in Pará.</p></div><div class="fig"><div class="n">4</div><p class="nl">municipal environmental departments in Pará using it in real enforcement cases since August 2026.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Project Lead</b></span><a class="lnk" href="https://sumauma.app" target="_blank" rel="noopener">sumauma.app <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"></path></svg></a><button type="button" class="showin" data-show="sumauma" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--media);--t:var(--media-t);transition-delay:60ms"><figure class="th"><img src="img/thumbs/proj-radar-169.webp" alt="Home page of the Anti-Gender Radar: the title Radar Antigênero over a collage of video frames in orange, green and violet." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_media">Media &amp; data journalism</span> <em>2024</em></p><h3 class="ttl"><a href="https://radar.org.br" target="_blank" rel="noopener">Anti-Gender Radar</a></h3><p class="meta">Gênero e Número, with JournalismAI (LSE and Google News Initiative)</p></div><div class="fig"><div class="n">20,000<sup>+</sup></div><p class="nl">videos from 7,700+ channels analyzed.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI lead</b></span><button type="button" class="showin" data-show="radar" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--impact);--t:var(--impact-t);transition-delay:120ms"><figure class="th top"><img src="img/thumbs/proj-talanoa-169.webp" alt="Política por Inteiro, Instituto Talanoa's climate policy website, on the page of its monitor of public acts." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2023–24</em></p><h3 class="ttl"><a href="#" data-open="talanoa">Climate policy analysis</a></h3><p class="meta">Instituto Talanoa, a climate policy think tank</p></div><div class="fig"><div class="n">60<sup>%</sup></div><p class="nl">less research time, across 10,000+ climate policy documents.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI project lead</b></span><a class="lnk" href="https://www.climatechange.ai/papers/icml2021/35" target="_blank" rel="noopener">Related paper <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"></path></svg></a><button type="button" class="showin" data-show="talanoa" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--media);--t:var(--media-t);transition-delay:180ms"><figure class="th top"><img src="img/thumbs/proj-bannon-169.webp" alt="Chart from the Agência Pública story: the days, from September 2021 to August 2022, when Steve Bannon's podcast mentioned Brazil." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_media">Media &amp; data journalism</span> <em>2022</em></p><h3 class="ttl"><a href="https://apublica.org/sentinela/2022/09/ameaca-da-china-e-ataque-ao-stf-o-que-o-podcast-de-steve-bannon-diz-sobre-o-brasil/" target="_blank" rel="noopener">Steve Bannon's podcast and Brazil</a></h3><p class="meta">Agência Pública, an investigative journalism agency</p></div><div class="fig"><div class="n">923</div><p class="nl">podcast episodes analyzed with topic modeling.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Co-author</b></span><button type="button" class="showin" data-show="bannon" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv" style="--c:var(--media);--t:var(--media-t);transition-delay:0ms"><figure class="th top"><img src="img/thumbs/proj-piaui-169.webp" alt="Chart from the piauí visual analysis: mentions critical of Brazil's Supreme Court and Electoral Court on Jovem Pan, 2018 to 2022." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_media">Media &amp; data journalism</span> <em>2022</em></p><h3 class="ttl"><a href="https://piaui.uol.com.br/revista/191/jovem-pan-e-o-golpe/" target="_blank" rel="noopener">Political discourse on YouTube</a></h3><p class="meta">piauí, a Brazilian monthly magazine</p></div><div class="fig"><div class="n">1,000<sup>+</sup></div><p class="nl">episodes of Jovem Pan analyzed. Among the magazine's most-read pieces of the 2022 election.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Data analysis, with Novelo Data</b></span><button type="button" class="showin" data-show="piaui" data-i18n="showIn">Show in timeline</button></div></div></article></div>
+    <div class="cgrid pgrid" id="pgrid-more" hidden><article class="c rv in" style="--c:var(--impact);--t:var(--impact-t);transition-delay:0ms"><figure class="th ty"><div class="typo" role="img" aria-label="Funbio, 2020–21"><b>Funbio</b><span>2020–21</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2020–21</em></p><h3 class="ttl"><a href="#" data-open="funbio">Environmental news monitoring</a></h3><p class="meta">Funbio, the Brazilian Biodiversity Fund</p></div><div class="fig"><div class="n">10,000<sup>+</sup></div><p class="nl">news articles a month from 8+ sources, monitored to track environmental threats.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI project lead</b></span><button type="button" class="showin" data-show="funbio" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--impact);--t:var(--impact-t);transition-delay:60ms"><figure class="th ty"><div class="typo" role="img" aria-label="World Animal Protection, 2024"><b>World Animal Protection</b><span>2024</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2024</em></p><h3 class="ttl"><a href="#" data-open="wap">Animal rights discourse analysis</a></h3><p class="meta">World Animal Protection</p></div><div class="fig txt"><p class="nl">Discourse analysis on animal rights.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>AI project lead</b></span><button type="button" class="showin" data-show="wap" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--industry);--t:var(--industry-t);transition-delay:120ms"><figure class="th ty"><div class="typo" role="img" aria-label="Itaú Unibanco, 2022–24"><b>Itaú Unibanco</b><span>2022–24</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_industry">Industry</span> <em>2022–24</em></p><h3 class="ttl"><a href="#" data-open="itau">First generative AI task force</a></h3><p class="meta">Itaú Unibanco, Brazil's largest bank</p></div><div class="fig txt"><p class="nl">Member of the first team assigned to bring generative AI into the bank.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Data Scientist</b></span><button type="button" class="showin" data-show="itau" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--industry);--t:var(--industry-t);transition-delay:180ms"><figure class="th ty"><div class="typo" role="img" aria-label="Mira Educação, 2017–19"><b>Mira Educação</b><span>2017–19</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_industry">Industry</span> <em>2017–19</em></p><h3 class="ttl"><a href="#" data-open="mira">Data and impact studies</a></h3><p class="meta">Mira Educação, an education startup</p></div><div class="fig txt"><p class="nl">Data infrastructure and impact studies as the company grew from two pilot schools to nearly one million users.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Lead &amp; Senior Data Scientist</b></span><button type="button" class="showin" data-show="mira" data-i18n="showIn">Show in timeline</button></div></div></article><article class="c rv in" style="--c:var(--impact);--t:var(--impact-t);transition-delay:0ms"><figure class="th ty"><div class="typo" role="img" aria-label="AmazoniaHack, 2026"><b>AmazoniaHack</b><span>2026</span><i></i></div></figure><div class="bd"><div class="cap"><p class="tg"><i></i><span data-i18n="tr_impact">Public-interest impact</span> <em>2026</em></p><h3 class="ttl"><a href="https://www.instagram.com/p/De-qx10DXY7/" target="_blank" rel="noopener">International edition, organizing team</a></h3><p class="meta">AmazoniaHack</p></div><div class="fig"><div class="n">7</div><p class="nl">countries and 10 solutions in the 2026 international edition.</p></div><div class="foot"><span><span data-i18n="fRole">Role</span>: <b>Organizing team</b></span><button type="button" class="showin" data-show="ah26" data-i18n="showIn">Show in timeline</button></div></div></article></div>
     <div class="pmore"><button type="button" class="btn" id="projbtn" aria-expanded="false" aria-controls="pgrid-more"><span data-i18n="projMore">Show more projects</span> <svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></button></div>
   </section>
 
@@ -752,17 +714,6 @@ html[lang="pt"] .ptnote{display:block}
     </div>
   </section>
 
-  <section class="wrap block" id="teaching" aria-labelledby="teach-h">
-    <div class="shead rv">
-      <div class="hl"><h2 id="teach-h" data-i18n="teachTitle">Teaching and talks</h2><span class="aux num">2020–2024</span></div>
-    </div>
-    <ul class="rows rv">
-      <li class="g12 row"><span class="y">2024</span><div><p class="t">Mentor, AmazoniaHack</p><p class="s">Mentor at the 2024 edition, after winning in 2023.</p></div><span class="badge">Mentoring</span></li>
-      <li class="g12 row"><span class="y">2022</span><div><p class="t">Graduate mini-course on Deep Reinforcement Learning</p><p class="s">"Introduction to Deep Reinforcement Learning with Applications", co-taught with Marcos Menon José for the Electrical Engineering graduate program at Poli-USP (PPGEE) and data scientists at Itaú Unibanco.</p></div><span class="badge">Graduate course</span></li>
-      <li class="g12 row"><span class="y">2020</span><div><p class="t">Coding Teacher, Ada</p><p class="s">Part-time teaching of Python, databases, cloud computing and neural networks.</p></div><span class="badge">Teaching</span></li>
-    </ul>
-  </section>
-
   <section class="wrap block" id="press" aria-labelledby="press-h">
     <div class="shead rv">
       <div class="hl"><h2 id="press-h" data-i18n="pressTitle">Press</h2><span class="aux num" data-i18n="pressAux">5 stories, 2022–2025</span></div>
@@ -771,16 +722,27 @@ html[lang="pt"] .ptnote{display:block}
     <div class="cgrid prgrid" id="prgrid"><article class="c rv feat" style="--c:var(--media);transition-delay:0ms"><figure class="th"><img src="img/thumbs/press-folha-ia-brasileira-foto.webp" alt="Photo from the Folha story: a group of officials and guests at a meeting at the Ministry of Science, Technology and Innovation, in front of a Brazilian government logo." width="1024" height="683" style="object-position:50% 42%" loading="lazy" decoding="async"><span class="credit" data-i18n="photoCredit">Photo: Folha de S.Paulo / reproduction</span></figure><div class="bd"><p class="tg"><i></i><span>Folha de S.Paulo</span> <em>25 Aug 2024</em></p><h3 class="ttl" lang="pt"><a href="https://www1.folha.uol.com.br/mercado/2024/08/especialistas-contestam-originalidade-de-ia-brasileira-no-radar-de-lula.shtml" target="_blank" rel="noopener">Especialistas contestam originalidade de IA 'brasileira' no radar de Lula</a></h3><p class="meta">Experts question the originality of a "Brazilian" AI model. Comment on fine-tuning.</p><div class="foot"><span class="badge">Quoted</span></div></div></article><article class="c rv feat" style="--c:var(--media);transition-delay:60ms"><figure class="th"><img src="img/thumbs/press-bannon-169.webp" alt="Share image of the Agência Pública story: Steve Bannon in close-up over a collage, with the Pública logo on a yellow band." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><p class="tg"><i></i><span>Agência Pública</span> <em>29 Sep 2022</em></p><h3 class="ttl" lang="pt"><a href="https://apublica.org/sentinela/2022/09/ameaca-da-china-e-ataque-ao-stf-o-que-o-podcast-de-steve-bannon-diz-sobre-o-brasil/" target="_blank" rel="noopener">Ameaça da China e ataque ao STF: o que o podcast de Steve Bannon diz sobre o Brasil</a></h3><p class="meta">What Steve Bannon's podcast says about Brazil, from 923 episodes. With Laura Scofield, Natalia Viana, David Nemer and Christina Xiao.</p><div class="foot"><span class="badge co">Co-author</span></div></div></article><article class="c rv" style="--c:var(--media);transition-delay:120ms"><figure class="th top"><img src="img/thumbs/press-artigo19-169.webp" alt="Top of the ARTIGO 19 Brasil story, with the headline Gênero e Número e Novelo Data lançam Radar Antigênero." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><p class="tg"><i></i><span>ARTIGO 19 Brasil</span> <em>11 Sep 2025</em></p><h3 class="ttl" lang="pt"><a href="https://artigo19.org/2025/09/11/genero-e-numero-e-novelo-data-lancam-radar-antigenero/" target="_blank" rel="noopener">Gênero e Número e Novelo Data lançam Radar Antigênero</a></h3><p class="meta">Launch of the Anti-Gender Radar, built by Gênero e Número and Novelo Data.</p><div class="foot"><span class="badge">Quoted</span></div></div></article><article class="c rv" style="--c:var(--media);transition-delay:0ms"><figure class="th top"><img src="img/thumbs/press-gn-169.webp" alt="Top of the Gênero e Número story, with its headline and the Radar's illustration of video frames." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><p class="tg"><i></i><span>Gênero e Número</span> <em>4 Sep 2025</em></p><h3 class="ttl" lang="pt"><a href="https://www.generonumero.media/artigos/lancamento-radar-antigenero/" target="_blank" rel="noopener">Lançamento do Radar Antigênero</a></h3><p class="meta">Public launch of the Anti-Gender Radar, where I led the AI work.</p><div class="foot"><span class="badge">Quoted</span></div></div></article><article class="c rv" style="--c:var(--media);transition-delay:60ms"><figure class="th"><img src="img/thumbs/press-folha2-169.webp" alt="Illustration from the Folha story: two hands typing on a laptop over a red background." width="1200" height="675" loading="lazy" decoding="async"></figure><div class="bd"><p class="tg"><i></i><span>Folha de S.Paulo</span> <em>21 Oct 2024</em></p><h3 class="ttl" lang="pt"><a href="https://www1.folha.uol.com.br/tec/2024/10/agentes-de-ia-chegam-a-empresas-que-investem-em-fabricas-proprias-de-funcionarios-digitais.shtml" target="_blank" rel="noopener">Agentes de IA chegam a empresas, que investem em fábricas próprias de funcionários digitais</a></h3><p class="meta">On AI agents arriving at companies.</p><div class="foot"><span class="badge">Quoted</span></div></div></article></div>
   </section>
 
+  <section class="wrap block" id="teaching" aria-labelledby="teach-h">
+    <div class="shead rv">
+      <div class="hl"><h2 id="teach-h" data-i18n="teachTitle">Teaching and talks</h2><span class="aux num">2020–2024</span></div>
+    </div>
+    <ul class="rows rv">
+      <li class="g12 row"><span class="y">2024</span><div><p class="t">Mentor, AmazoniaHack</p><p class="s">Mentor at the 2024 edition, after winning in 2023.</p></div><span class="badge">Mentoring</span></li>
+      <li class="g12 row"><span class="y">2022</span><div><p class="t">Graduate mini-course on deep reinforcement learning</p><p class="s">"Introduction to Deep Reinforcement Learning with Applications", co-taught with Marcos Menon José for the Electrical Engineering graduate program at Poli-USP (PPGEE) and data scientists at Itaú Unibanco.</p></div><span class="badge">Graduate course</span></li>
+      <li class="g12 row"><span class="y">2020</span><div><p class="t">Coding Teacher, Ada</p><p class="s">Part-time teaching of Python, databases, cloud computing and neural networks.</p></div><span class="badge">Teaching</span></li>
+    </ul>
+  </section>
+
   <section class="wrap block" id="honors" aria-labelledby="hon-h">
     <div class="shead rv">
       <div class="hl"><h2 id="hon-h" data-i18n="honTitle">Honors and recognition</h2><span class="aux num">2018–2026</span></div>
     </div>
     <ul class="rows rv">
-      <li class="g12 row"><span class="y">2026</span><div><p class="t">Organizing team, AmazoniaHack international edition</p><p class="s">Participants from 7 countries and 10 solutions. Also a mentor at the 2024 edition.</p></div><span class="badge">Hackathon</span></li>
+      <li class="g12 row wr"><span class="y">2026</span><div><p class="t"><a href="https://www.instagram.com/p/De-qx10DXY7/" target="_blank" rel="noopener">Organizing team, AmazoniaHack international edition</a></p><p class="s">Participants from 7 countries presented 10 solutions. Also a mentor at the 2024 edition.</p></div><span class="badge">Hackathon <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span></li>
       <li class="g12 row"><span class="y">2024</span><div><p class="t">Climate Change AI Summer School</p><p class="s">Mila, Montreal. The only participant selected from Brazil in that cohort.</p></div><span class="badge">Selection</span></li>
       <li class="g12 row"><span class="y">2023</span><div><p class="t">1st place, AmazoniaHack 2023</p><p class="s">Winning team of the 2023 edition.</p></div><span class="badge">Hackathon</span></li>
       <li class="g12 row"><span class="y">2021</span><div><p class="t">Honorable mention, WPGEC-USP'21</p><p class="s">Master's research project, Computer Engineering graduate program at USP.</p></div><span class="badge">Research</span></li>
-      <li class="g12 row"><span class="y">Since 2021</span><div><p class="t">Member, Youth Climate Leaders</p><p class="s">Youth Climate Leaders network.</p></div><span class="badge">Network</span></li>
+      <li class="g12 row wr"><span class="y">Since 2021</span><div><p class="t"><a href="https://www.redeycl.org/" target="_blank" rel="noopener">Member, Youth Climate Leaders</a></p><p class="s">A network of young professionals working on climate.</p></div><span class="badge">Network <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span></li>
       <li class="g12 row"><span class="y">2018</span><div><p class="t">Finalist, Itaú Batalha de Dados</p><p class="s">Data competition at Itaú Unibanco.</p></div><span class="badge">Competition</span></li>
     </ul>
   </section>
@@ -820,6 +782,7 @@ html[lang="pt"] .ptnote{display:block}
 // track: research | impact | industry | media
 // type: role | project | paper | press | teaching | education | honor | writing
 // start/end: "YYYY", "YYYY-MM" or "YYYY-MM-DD"; end "now" for current; no end = single event.
+// row: lowest row the item may take in its lane, so labels in the compressed years (before 2020) have room.
 const ITEMS = [
   {id:"bsc", track:"research", type:"education", start:"2011", end:"2016-06", short:"Physics, USP",
    title:"BSc in Physics", org:"University of São Paulo (USP)", note:"Institute of Physics",
@@ -831,22 +794,25 @@ const ITEMS = [
    title:"Lead & Senior Data Scientist", org:"Mira Educação", note:"an education startup",
    desc:"Data infrastructure and impact studies as the company grew from two pilot schools to nearly one million users.",
    result:"From 2 pilot schools to nearly 1 million users"},
-  {id:"batalha", track:"industry", type:"honor", start:"2018", short:"Batalha de Dados",
+  {id:"btc", track:"research", type:"education", start:"2017-01", end:"2017-07", short:"Business program", row:1,
+   title:"Business program", org:"Business Training Company", note:"São Paulo",
+   desc:"A one-semester intensive program in general business, in São Paulo."},
+  {id:"batalha", track:"industry", type:"honor", start:"2018", short:"Batalha de Dados", row:2,
    title:"Finalist, Itaú Batalha de Dados", org:"Itaú Unibanco",
    desc:"Finalist in Batalha de Dados, a data competition run by Itaú Unibanco."},
   {id:"cognitivo", track:"industry", type:"role", start:"2018-12", end:"2019-08", short:"Cognitivo.AI",
    title:"Data Science Consultant", org:"Cognitivo.AI",
    desc:"Data infrastructure and predictive models for client companies."},
-  {id:"c6", track:"industry", type:"role", start:"2019-12", end:"2020-02", short:"C6 Bank",
+  {id:"c6", track:"industry", type:"role", start:"2019-12", end:"2020-02", short:"C6 Bank", row:1,
    title:"Senior Data Engineer", org:"C6 Bank", note:"a Brazilian digital bank",
    desc:"Integration of critical databases across cloud providers."},
   {id:"ada", track:"research", type:"teaching", start:"2020-01", end:"2020-12", short:"Ada",
    title:"Coding Teacher (part-time)", org:"Ada", note:"a technology education company",
    desc:"Taught Python, databases, cloud computing and neural networks."},
   {id:"funbio", track:"impact", type:"project", start:"2020-01", end:"2021-12", short:"Funbio",
-   title:"Environmental News Monitoring", org:"Funbio", note:"the Brazilian Biodiversity Fund",
-   desc:"Automated monitoring of 10k+ news articles a month from 8+ sources to track environmental threats.",
-   result:"10k+ articles monitored a month"},
+   title:"Environmental news monitoring", org:"Funbio", note:"the Brazilian Biodiversity Fund",
+   desc:"Automated monitoring of 10,000+ news articles a month from 8+ sources to track environmental threats.",
+   result:"10,000+ articles monitored a month"},
   {id:"c2d", track:"research", type:"role", start:"2020-02", end:"2023-06", short:"C2D and C4AI, USP",
    title:"Machine Learning Researcher", org:"C2D and C4AI, USP", note:"the Center for Data Science and the IBM/USP Center for Artificial Intelligence",
    desc:"Language technologies for environmental and ocean data. This is the research behind the papers on this page."},
@@ -870,7 +836,8 @@ const ITEMS = [
    desc:"Honorable mention for the master's research project at WPGEC-USP'21, the Computer Engineering graduate program's workshop at USP."},
   {id:"ycl", track:"impact", type:"honor", start:"2021", end:"now", short:"Youth Climate Leaders",
    title:"Member, Youth Climate Leaders", org:"Youth Climate Leaders",
-   desc:"Member of the Youth Climate Leaders network since 2021."},
+   desc:"Member since 2021 of Youth Climate Leaders, a network of young professionals working on climate.",
+   link:"https://www.redeycl.org/", linkLabel:"Youth Climate Leaders"},
   {id:"dpt", track:"research", type:"paper", start:"2021-07", short:"ICML workshop",
    title:"DeepPolicyTracker", org:"Tackling Climate Change with ML workshop, ICML 2021", venue:"Workshop",
    desc:"Deep learning to track changes in environmental policy in Brazil's Federal Official Gazette. Built with Política por Inteiro, a project of the think tank Instituto Talanoa.",
@@ -882,11 +849,11 @@ const ITEMS = [
   {id:"deepage", track:"research", type:"paper", start:"2021-11-20", short:"BRACIS",
    title:"DEEPAGÉ: QA about the Brazilian environment", org:"BRACIS 2021", venue:"Conference",
    desc:"Answering questions in Portuguese about the Brazilian environment.",
-   link:"https://link.springer.com/chapter/10.1007%2F978-3-030-91699-2_29", linkLabel:"Read the paper"},
+   link:"https://doi.org/10.1007/978-3-030-91699-2_29", linkLabel:"Read the paper"},
   {id:"propor", track:"research", type:"paper", start:"2022-03", short:"PROPOR",
-   title:"Tracking Changes in Environmental Policy", org:"PROPOR 2022", venue:"Conference",
+   title:"Tracking environmental policy changes in the Federal Official Gazette", org:"PROPOR 2022", venue:"Conference",
    desc:"Tracking changes in environmental policy in the Brazilian Federal Official Gazette.",
-   link:"https://dl.acm.org/doi/10.1007/978-3-030-98305-5_24", linkLabel:"Read the paper"},
+   link:"https://doi.org/10.1007/978-3-030-98305-5_24", linkLabel:"Read the paper"},
   {id:"eniac", track:"research", type:"paper", start:"2021-11-29", short:"ENIAC",
    title:"Interpretability of attention in a QA system about the Blue Amazon", org:"ENIAC 2021", venue:"Conference",
    desc:"How attention mechanisms behave in a Portuguese question answering system about the Brazilian coast and ocean.",
@@ -896,20 +863,20 @@ const ITEMS = [
    desc:"Member of the first task force created to bring generative AI to Brazil's largest bank."},
   {id:"novelo", track:"media", type:"role", start:"2022-03", end:"2025-07", short:"Novelo Data",
    title:"Partner", org:"Novelo Data", note:"a data analysis company",
-   desc:"Political data analysis for nearly all of Brazil's major news outlets, including Folha de S.Paulo, Estadão, O Globo, Agência Pública and piauí.",
+   desc:"Political data analysis for most of Brazil's major news outlets, including Folha de S.Paulo, Estadão, O Globo, Agência Pública and piauí.",
    confirm:"End date to confirm"},
   {id:"piaui", track:"media", type:"project", start:"2022-06", end:"2022-08", short:"piauí",
-   title:"Political Discourse on YouTube", org:"piauí", note:"a Brazilian monthly magazine",
-   desc:"Analysis of 1k+ episodes of a political YouTube channel, Jovem Pan. Among the magazine's most-read pieces of the 2022 election.",
+   title:"Political discourse on YouTube", org:"piauí", note:"a Brazilian monthly magazine",
+   desc:"Analysis of 1,000+ episodes of a political YouTube channel, Jovem Pan. Among the magazine's most-read pieces of the 2022 election.",
    result:"1,000+ episodes analyzed",
-   link:"https://piaui.folha.uol.com.br/materia/jovem-pan-e-o-golpe", linkLabel:"Read the article",
-   link2:"https://piaui.folha.uol.com.br/radicalizacao-da-jovem-pan-uma-analise-visual", link2Label:"Visual analysis"},
+   link:"https://piaui.uol.com.br/revista/191/jovem-pan-e-o-golpe/", linkLabel:"Read the article",
+   link2:"https://piaui.uol.com.br/web/radicalizacao-da-jovem-pan-uma-analise-visual/", link2Label:"Visual analysis"},
   {id:"blab", track:"research", type:"paper", start:"2022-07", short:"IJCAI-ECAI workshop",
    title:"The BLue Amazon Brain (BLAB)", org:"AI: Modeling Oceans and Climate Change workshop, IJCAI-ECAI 2022", venue:"Workshop",
    desc:"The BLue Amazon Brain project at C4AI, USP, presented at a climate and ocean workshop.",
    link:"https://oceania.inria.cl/assets/pdfs/aimocc22/paper-05.pdf", linkLabel:"Read the paper"},
   {id:"minicourse", track:"research", type:"teaching", start:"2022-07", end:"2022-08", short:"Mini-course",
-   title:"Graduate mini-course on Deep Reinforcement Learning", org:"PPGEE Poli-USP and Itaú data scientists",
+   title:"Graduate mini-course on deep reinforcement learning", org:"PPGEE Poli-USP and Itaú data scientists",
    desc:"Introduction to deep reinforcement learning with applications, co-taught with Marcos Menon José for USP engineering graduate students and Itaú data scientists."},
   {id:"bannon", track:"media", type:"press", start:"2022-09-29", short:"Agência Pública",
    title:"What Steve Bannon's podcast says about Brazil", org:"Agência Pública", note:"an investigative journalism agency",
@@ -922,7 +889,7 @@ const ITEMS = [
    desc:"Master's dissertation on a deep reinforcement learning approach to complex open-domain question answering, advised by Anna Helena Reali Costa.",
    link:"https://doi.org/10.11606/d.3.2023.tde-10012024-092904", linkLabel:"Read the dissertation"},
   {id:"talanoa", track:"impact", type:"project", start:"2023-03", end:"2024-12", short:"Instituto Talanoa",
-   title:"Climate Policy Analysis", org:"Instituto Talanoa", note:"a climate policy think tank",
+   title:"Climate policy analysis", org:"Instituto Talanoa", note:"a climate policy think tank",
    desc:"AI platform to query 10,000+ climate policy documents. Research time went down 60%.",
    result:"Research time down 60%"},
   {id:"ibama", track:"impact", type:"project", start:"2023-06", end:"2023-07", short:"IBAMA",
@@ -948,7 +915,7 @@ const ITEMS = [
    desc:"Started as the climate and environment branch of Novelo Data. Moiru designed and built Sumaúma with Imazon.",
    link:"https://www.moiru.ai", linkLabel:"moiru.ai"},
   {id:"wap", track:"impact", type:"project", start:"2024-04", end:"2024-06", short:"WAP",
-   title:"Animal Rights Discourse Analysis", org:"World Animal Protection",
+   title:"Animal rights discourse analysis", org:"World Animal Protection",
    desc:"Discourse analysis on animal rights for World Animal Protection."},
   {id:"pira2", track:"research", type:"paper", start:"2024", short:"Journal",
    title:"Benchmarks for Pirá 2.0", org:"Data Intelligence (journal), 2024", venue:"Journal",
@@ -993,7 +960,7 @@ const ITEMS = [
    link:"https://sumauma.app", linkLabel:"sumauma.app"},
   {id:"ah26", track:"impact", type:"honor", start:"2026-09", short:"AmazoniaHack",
    title:"Organizing team, AmazoniaHack international edition", org:"AmazoniaHack",
-   desc:"Participants from 7 countries and 10 solutions.",
+   desc:"Participants from 7 countries presented 10 solutions.",
    link:"https://www.instagram.com/p/De-qx10DXY7/", linkLabel:"Event post"}
 ];
 const LINKS = [["ibama","sumauma"],["moiru","sumauma"],["dpt","talanoa"],["c2d","dpt"],["c2d","pira"],["c2d","deepage"],["c2d","propor"],["c2d","blab"],["pira","pira2"],["c2d","eniac"],["msc","thesis"],["c2d","qarl"],["msc","c2d"],["novelo","piaui"],["novelo","bannon"],["novelo","radar"],["radar","gnlaunch"],["radar","a19"],["itau","minicourse"],["ah23","ah24"],["ah24","ah26"],["msc","wpgec"]];
@@ -1040,7 +1007,9 @@ function range(i){
   if (i.id === "bsc") return "2011 – 2016";
   return fd(i.start) + " – " + fd(i.end);
 }
-const pct = v => ((Math.max(T0, Math.min(T1, v)) - T0) / (T1 - T0)) * 100;
+// the axis is compressed before 2020: each year from 2016 to 2019 gets SQ of the width of a later year
+const BRK = 2020, SQ = .58, SPAN = (BRK - T0) * SQ + (T1 - BRK);
+const pct = v => { const x = Math.max(T0, Math.min(T1, v)); return (x < BRK ? (x - T0) * SQ : (BRK - T0) * SQ + (x - BRK)) / SPAN * 100; };
 const isSpan = i => !!i.end;
 const chrono = [...ITEMS].sort((a,b) => tv(a.start) - tv(b.start));
 ITEMS.forEach(i => { i.s = tv(i.start); i.e = i.end ? tv(i.end, true) : i.s; });
@@ -1054,7 +1023,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":
 const flow = document.getElementById("flow"), lanesEl = document.getElementById("lanes"), tip = document.getElementById("tip"), svg = document.getElementById("links");
 const ticks = document.getElementById("ticks");
 for (let y = T0; y < T1; y++){
-  const t = document.createElement("span"); t.className = "tick"; t.style.left = pct(y) + "%"; t.textContent = y; ticks.appendChild(t);
+  const t = document.createElement("span"); t.className = "tick" + (y < BRK ? " sq" : y === BRK ? " brk" : ""); t.style.left = pct(y) + "%"; t.textContent = y; ticks.appendChild(t);
 }
 { const t = document.createElement("span"); t.className = "tick now-t"; t.style.left = pct(NOW) + "%"; t.textContent = "Now"; t.dataset.i18n = "nowTick"; ticks.appendChild(t); }
 
@@ -1066,7 +1035,7 @@ TRACKS.forEach(tr => {
   name.innerHTML = '<i class="sw"></i><span><span data-i18n="tr_' + tr.id + '">' + tr.name + '</span><small data-i18n="trs_' + tr.id + '">' + tr.sub + '</small></span>';
   const track = document.createElement("div"); track.className = "track";
   const gl = document.createElement("div"); gl.className = "grid-lines";
-  for (let y = T0; y < T1; y++){ const i = document.createElement("i"); i.style.left = pct(y) + "%"; gl.appendChild(i); }
+  for (let y = T0; y < T1; y++){ const i = document.createElement("i"); i.style.left = pct(y) + "%"; if (y === BRK) i.className = "brk"; gl.appendChild(i); }
   const nl = document.createElement("i"); nl.className = "now-l"; nl.style.left = pct(NOW) + "%"; gl.appendChild(nl);
   track.appendChild(gl);
   // greedy packing; spans first, then points
@@ -1075,14 +1044,14 @@ TRACKS.forEach(tr => {
   items.forEach(i => {
     const a = pct(i.s), b = isSpan(i) ? pct(i.e) : a;
     const lo = isSpan(i) ? a : a - 1.1, hi = isSpan(i) ? b + .4 : a + 1.1;
-    let r = 0;
+    let r = i.row || 0;
     while (rows[r] && rows[r].some(([x,y]) => lo < y && hi > x)) r++;
     (rows[r] = rows[r] || []).push([lo, hi]);
     const el = document.createElement("button");
     el.type = "button"; el.className = "it " + (isSpan(i) ? "span" : "pt");
     el.dataset.id = i.id; el.dataset.type = i.type;
     el.style.setProperty("--c", tr.c);
-    el.style.setProperty("--d", (((i.s - T0) / (T1 - T0)) * 550 | 0) + "ms");
+    el.style.setProperty("--d", (pct(i.s) * 5.5 | 0) + "ms");
     el.style.top = (6 + r * ROWH) + "px";
     el.style.left = a + "%";
     if (isSpan(i)) el.style.width = Math.max(b - a, .55) + "%";
@@ -1317,9 +1286,9 @@ const DICT = {
   en:{skip:"Skip to content",skipFlow:"Skip the timeline",nWork:"Work",nProjects:"Projects",nPubs:"Publications",nPress:"Press",nTeach:"Teaching",nAbout:"About",nCareer:"Career",nWriting:"Writing",writingTitle:"Writing",writingSub:"Explainers on machine learning, in Portuguese.",careerTitle:"Career",xpMore:"Show all 10 roles",xpLess:"Show fewer roles",toTop:"Back to top",expAux:"2016 to now",expSub:"Where I have worked, what each place is and what I did there.",projAux:"10 projects",projMore:"Show more projects",projLess:"Show fewer projects",pressAux:"5 stories, 2022–2025",place:"São Paulo, Brazil",
     tagline:"Entrepreneur, AI researcher and machine learning developer.",
     resume:"Resume",contact:"Contact",now:"Currently",nowLead:"Project Lead",nowFounder:"Founder & Partner",
-    nowSum:"In real use by four municipal environmental departments in Pará since August 2026. Built with Imazon.",nowMoiru:"The company that designed and built Sumaúma with Imazon.",
+    nowSum:"Open-source AI to strengthen environmental enforcement and curb deforestation in the Amazon. Built with Imazon and already in use in the field.",nowMoiru:"The company behind Sumaúma. It builds open-source AI for the public interest.",
     flowTitle:"The last ten years",flowSub:"Four tracks of work over the same decade. Bars are roles and projects; marks are papers, press, honors, talks and writing. Hover or focus to preview, click to open.",
-    kSpan:"Role or project",kPaper:"Paper",kEvent:"Press or event",kHonor:"Honor",kWriting:"Writing",kPend:"Date to confirm",kLink:"Led to",kKeys:"Arrow keys move through the timeline in order.",nowTick:"Now",
+    kSpan:"Role or project",kPaper:"Paper",kEvent:"Press or event",kHonor:"Honor",kWriting:"Writing",kPend:"Date to confirm",kLink:"Led to",kScale:"Scale compressed before 2020",kKeys:"Arrow keys move through the timeline in order.",nowTick:"Now",
     tr_research:"Research & teaching",tr_impact:"Public-interest impact",tr_industry:"Industry",tr_media:"Media & data journalism",
     trs_research:"USP, papers, courses",trs_impact:"Climate, Amazon, NGOs",trs_industry:"Startups and banks",trs_media:"Newsrooms and press",
     ty_all:"All",ty_role:"Roles",ty_project:"Projects",ty_paper:"Papers",ty_press:"Press",ty_teaching:"Teaching",ty_eduhonor:"Education & honors",ty_writing:"Writing",
@@ -1331,9 +1300,9 @@ const DICT = {
   pt:{skip:"Pular para o conteúdo",skipFlow:"Pular a linha do tempo",nWork:"Trajetória",nProjects:"Projetos",nPubs:"Publicações",nPress:"Imprensa",nTeach:"Ensino",nAbout:"Sobre",nCareer:"Carreira",nWriting:"Textos",writingTitle:"Textos",writingSub:"Textos de divulgação sobre aprendizado de máquina, em português.",careerTitle:"Carreira",xpMore:"Ver os 10 cargos",xpLess:"Ver menos cargos",toTop:"Voltar ao topo",expAux:"De 2016 até hoje",expSub:"Onde trabalhei, o que é cada lugar e o que fiz lá.",projAux:"10 projetos",projMore:"Ver mais projetos",projLess:"Ver menos projetos",pressAux:"5 matérias, 2022–2025",place:"São Paulo, Brasil",
     tagline:"Empreendedor, pesquisador em IA e desenvolvedor de machine learning.",
     resume:"Currículo",contact:"Contato",now:"Atualmente",nowLead:"Coordenador do projeto",nowFounder:"Fundador e sócio",
-    nowSum:"Em uso real por quatro secretarias municipais de meio ambiente do Pará desde agosto de 2026. Feito com o Imazon.",nowMoiru:"A empresa que desenhou e construiu o Sumaúma com o Imazon.",
+    nowSum:"IA de código aberto para fortalecer a fiscalização ambiental e conter o desmatamento na Amazônia. Criada com o Imazon e já em uso em campo.",nowMoiru:"A empresa por trás do Sumaúma. Desenvolve IA de código aberto de interesse público.",
     flowTitle:"Os últimos dez anos",flowSub:"Quatro trilhas na mesma década. Barras são cargos e projetos; marcas são artigos, imprensa, prêmios, palestras e textos. Passe o mouse para ver, clique para abrir.",
-    kSpan:"Cargo ou projeto",kPaper:"Artigo",kEvent:"Imprensa ou evento",kHonor:"Prêmio",kWriting:"Texto",kPend:"Data a confirmar",kLink:"Deu origem a",kKeys:"As setas do teclado percorrem a linha do tempo em ordem.",nowTick:"Hoje",
+    kSpan:"Cargo ou projeto",kPaper:"Artigo",kEvent:"Imprensa ou evento",kHonor:"Prêmio",kWriting:"Texto",kPend:"Data a confirmar",kLink:"Deu origem a",kScale:"Escala comprimida antes de 2020",kKeys:"As setas do teclado percorrem a linha do tempo em ordem.",nowTick:"Hoje",
     tr_research:"Pesquisa e ensino",tr_impact:"Impacto de interesse público",tr_industry:"Indústria",tr_media:"Mídia e jornalismo de dados",
     trs_research:"USP, artigos, cursos",trs_impact:"Clima, Amazônia, ONGs",trs_industry:"Startups e bancos",trs_media:"Redações e imprensa",
     ty_all:"Tudo",ty_role:"Cargos",ty_project:"Projetos",ty_paper:"Artigos",ty_press:"Imprensa",ty_teaching:"Ensino",ty_eduhonor:"Formação e prêmios",ty_writing:"Textos",
@@ -1363,7 +1332,7 @@ const PROJ = [
    title:"Anti-Gender Radar", org:"Gênero e Número, with JournalismAI (LSE and Google News Initiative)", n:"20,000+", nl:"videos from 7,700+ channels analyzed.", role:"AI lead", link:"https://radar.org.br"},
   {id:"talanoa", img:"img/thumbs/proj-talanoa-169.webp", pos:"top",
    alt:"Política por Inteiro, Instituto Talanoa's climate policy website, on the page of its monitor of public acts.",
-   title:"Climate Policy Analysis", org:"Instituto Talanoa, a climate policy think tank", n:"60%", nl:"less research time, across 10,000+ climate policy documents.", role:"AI project lead", extra:"https://www.climatechange.ai/papers/icml2021/35", el:"Related paper"},
+   title:"Climate policy analysis", org:"Instituto Talanoa, a climate policy think tank", n:"60%", nl:"less research time, across 10,000+ climate policy documents.", role:"AI project lead", extra:"https://www.climatechange.ai/papers/icml2021/35", el:"Related paper"},
   {id:"bannon", img:"img/thumbs/proj-bannon-169.webp", pos:"top",
    alt:"Chart from the Agência Pública story: the days, from September 2021 to August 2022, when Steve Bannon's podcast mentioned Brazil.",
    title:"Steve Bannon's podcast and Brazil", org:"Agência Pública, an investigative journalism agency", n:"923", nl:"podcast episodes analyzed with topic modeling.", role:"Co-author", link:byId.bannon.link},
@@ -1371,7 +1340,7 @@ const PROJ = [
    alt:"Chart from the piauí visual analysis: mentions critical of Brazil's Supreme Court and Electoral Court on Jovem Pan, 2018 to 2022.",
    title:"Political discourse on YouTube", org:"piauí, a Brazilian monthly magazine", n:"1,000+", nl:"episodes of Jovem Pan analyzed. Among the magazine's most-read pieces of the 2022 election.", role:"Data analysis, with Novelo Data", link:byId.piaui.link},
   {id:"funbio", typo:"Funbio",
-   title:"Environmental News Monitoring", org:"Funbio, the Brazilian Biodiversity Fund", n:"10,000+", nl:"news articles a month from 8+ sources, monitored to track environmental threats.", role:"AI project lead"},
+   title:"Environmental news monitoring", org:"Funbio, the Brazilian Biodiversity Fund", n:"10,000+", nl:"news articles a month from 8+ sources, monitored to track environmental threats.", role:"AI project lead"},
   {id:"wap", typo:"World Animal Protection",
    title:"Animal rights discourse analysis", org:"World Animal Protection", txt:"Discourse analysis on animal rights.", role:"AI project lead"},
   {id:"itau", typo:"Itaú Unibanco",
