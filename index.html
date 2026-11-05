@@ -1650,11 +1650,11 @@ if (document.fonts) document.fonts.ready.then(() => { fitLabels(); drawLinks(nul
 if (matchMedia("(max-width:640px)").matches) (() => {
   const $ = (s, r) => (r || document).querySelector(s), $$ = (s, r) => [...(r || document).querySelectorAll(s)];
   document.body.classList.add("m3");
-  Object.assign(DICT.en, {m_back:"Back", m_ind:"Industry", m_imp:"Impact", m_res:"Research", m_med:"Media", m_tap:"Tap a bar or mark to open it. Tap a column title to isolate that track.", m_readmore:"Read more", m_readless:"Show less", m_explore:"Explore",
+  Object.assign(DICT.en, {m_back:"Back", m_work:"Timeline", m_ind:"Industry", m_imp:"Impact", m_res:"Research", m_med:"Media", m_tap:"Tap a bar or mark to open it. Tap a column title to isolate that track.", m_readmore:"Read more", m_readless:"Show less", m_explore:"Explore",
     m_c_work:"items in 4 tracks", m_c_projects:"each with one number", m_c_career:"roles, 2016 to now", m_c_pubs:"academic works", m_c_press:"stories", m_c_teach:"courses and talks", m_c_hon:"awards and selections", m_c_blog:"explainers in Portuguese"});
-  Object.assign(DICT.pt, {m_back:"Voltar", m_ind:"Indústria", m_imp:"Impacto", m_res:"Pesquisa", m_med:"Mídia", m_tap:"Toque numa barra ou marca para abrir. Toque no título de uma coluna para isolar a trilha.", m_readmore:"Ler mais", m_readless:"Ver menos", m_explore:"Explore",
+  Object.assign(DICT.pt, {m_back:"Voltar", m_work:"Trajetória", m_ind:"Indústria", m_imp:"Impacto", m_res:"Pesquisa", m_med:"Mídia", m_tap:"Toque numa barra ou marca para abrir. Toque no título de uma coluna para isolar a trilha.", m_readmore:"Ler mais", m_readless:"Ver menos", m_explore:"Explore",
     m_c_work:"itens em 4 trilhas", m_c_projects:"cada um com um número", m_c_career:"cargos, 2016 até hoje", m_c_pubs:"trabalhos acadêmicos", m_c_press:"matérias", m_c_teach:"cursos e palestras", m_c_hon:"prêmios e seleções", m_c_blog:"explicações em português"});
-  const SEC = {work:"nWork", projects:"nProjects", career:"nCareer", publications:"nPubs", press:"nPress", teaching:"nTeach", honors:"honors", writing:"nWriting"};
+  const SEC = {work:"m_work", projects:"nProjects", career:"nCareer", publications:"nPubs", press:"nPress", teaching:"nTeach", honors:"honors", writing:"nWriting"};
   const CAP = {work:"m_c_work", projects:"m_c_projects", career:"m_c_career", publications:"m_c_pubs", press:"m_c_press", teaching:"m_c_teach", honors:"m_c_hon", writing:"m_c_blog"};
   const num = {work:ITEMS.length, projects:parseInt(($("#projects .aux") || {}).textContent) || PROJ.length, career:$$("#xplist li").length, publications:PUBS.length, press:PRESS.length, teaching:$$("#teaching .row").length, honors:$$("#honors .row").length, writing:$$("#writing .row").length};
   const COL = ["var(--impact)","var(--industry)","var(--media)","var(--research)"];
