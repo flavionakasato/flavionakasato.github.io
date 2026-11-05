@@ -38,7 +38,7 @@
   --serif:"Newsreader", "Iowan Old Style", Georgia, serif;
   --sans:"IBM Plex Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
   --gut:clamp(16px, 4vw, 48px);
-  --max:1240px;
+  --max:1360px; /* 1264px of content at 48px gutters: twelve 76px columns and 32px gaps */
   --cg:32px; /* column gap of the 12-column grid used by every block */
   --ease:cubic-bezier(.2,.7,.2,1);
 }
@@ -76,10 +76,12 @@ a{color:inherit}
 .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 /* nine links: tighter between 901 and 1140px so the longer Portuguese labels still fit */
 @media (max-width:1140px){.nav{gap:13px;font-size:13px}.top .wrap{gap:18px}}
+/* and tighter still just above 900px, where "Reconhecimentos" would push the language switch out */
+@media (max-width:1000px){.nav{gap:10px;font-size:12.5px}.top .wrap{gap:14px}}
 @media (max-width:900px){.nav{display:none}.lang{margin-left:auto}}
 
 /* hero: portrait in columns 1-2, name in 3-8, Currently in 9-12 */
-.hero{padding-top:48px;padding-bottom:64px}
+.hero{padding-top:48px;padding-bottom:56px}
 /* the three blocks share one top line and one bottom line: the portrait stretches to the height of
    Currently, the name sits on the top line and the buttons on the bottom line */
 .hero-grid{align-items:stretch}
@@ -125,8 +127,8 @@ h1.name{font:400 clamp(36px,3.6vw,52px)/1.02 var(--serif);letter-spacing:-.024em
 }
 
 /* section frame: a full-width rule, the title on the left and a quiet note on the right, the summary below */
-section.block{padding-top:104px}
-.shead{border-top:1px solid var(--ink);padding-top:14px;margin-bottom:30px}
+section.block{padding-top:76px}
+.shead{border-top:1px solid var(--ink);padding-top:14px;margin-bottom:24px}
 .shead .hl{display:flex;align-items:baseline;justify-content:space-between;gap:6px 24px;flex-wrap:wrap}
 .shead h2{font:400 clamp(28px,2.6vw,36px)/1.1 var(--serif);letter-spacing:-.016em;margin:0;font-variation-settings:"opsz" 48}
 .shead h2 .yr{color:var(--faint)}
@@ -134,8 +136,13 @@ section.block{padding-top:104px}
 .shead .aux a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--hair-2);display:inline-flex;align-items:center;gap:5px}
 .shead .aux a:hover{color:var(--ink);border-bottom-color:var(--ink)}
 .shead .aux svg{width:11px;height:11px}
+/* publication metrics: the number in the serif, a small label after it */
+.shead .mets{gap:4px 24px;align-items:baseline}
+.met{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.met b{font:400 27px/1 var(--serif);color:var(--ink);letter-spacing:-.012em;margin-right:6px;font-variant-numeric:lining-nums;font-variation-settings:"opsz" 36}
+.shead .mets a{align-self:baseline}
 .shead .sub{margin:8px 0 0;color:var(--muted);font-size:15px;max-width:46em}
-@media (max-width:820px){section.block{padding-top:72px}}
+@media (max-width:820px){section.block{padding-top:56px}}
 
 /* FLOW */
 #work .shead{margin-bottom:20px}
@@ -348,22 +355,30 @@ section.block{padding-top:104px}
 .c.wide{grid-column:1/-1;display:grid;grid-template-columns:calc((100% + 2px - (var(--pc) - 1) * var(--cg)) * (var(--pc) - 1) / var(--pc) + (var(--pc) - 1) * var(--cg)) minmax(0,1fr)}
 .c.wide .th{border-bottom:0;border-right:1px solid var(--hair);aspect-ratio:auto;height:100%;min-height:0;background:#D9DED8}
 .c.wide .th img{object-fit:cover;object-position:50% 50%}
+/* the text column sets the card's height, not the image: the image fills it, with a floor so the phone is not cut */
+@media (min-width:821px){.c.wide .th{min-height:510px}.c.wide .th img{position:absolute;inset:0;object-position:50% 45%}}
 .c.wide .bd{padding:20px 20px 18px}
 .c.wide .ttl{font-size:clamp(28px,2.5vw,34px);letter-spacing:-.018em}
 .c.wide .meta{margin-bottom:12px}
 .c.wide .desc{font-size:16px;line-height:1.48;margin-bottom:16px}
 .c.wide .n{font-size:52px}
 /* the small cards: a lower image, tighter padding, a smaller number */
-.pgrid>.c:not(.wide) .th{aspect-ratio:2/1}
+.pgrid>.c:not(.wide) .th{aspect-ratio:12/5}
 .pgrid>.c:not(.wide) .bd{padding:14px 16px 14px}
 .pgrid>.c:not(.wide) .tg{font-size:10.5px;letter-spacing:.1em;margin-bottom:8px}
 .pgrid>.c:not(.wide) .ttl{font-size:18.5px;line-height:1.22;margin-bottom:5px}
-.pgrid>.c:not(.wide) .meta{font-size:12.5px;line-height:1.42;margin-bottom:12px}
+.pgrid>.c:not(.wide) .meta{font-size:12.5px;line-height:1.42;margin-bottom:10px}
 .pgrid>.c:not(.wide) .fig{padding-top:10px}
 .pgrid>.c:not(.wide) .n{font-size:31px}
 .pgrid>.c:not(.wide) .nl{font-size:12.5px;margin-top:4px}
 .pgrid>.c:not(.wide) .fig.txt .nl{margin:0;font-size:15px;line-height:1.42}
 .pgrid>.c:not(.wide) .foot{padding-top:10px;font-size:12px;gap:4px 10px}
+/* the small cards' footer is always two lines (the role, then Show in timeline and any link), so every footer
+   has the same height and sits on the bottom of its card */
+.pgrid>.c:not(.wide) .foot{display:grid;grid-template-columns:auto auto;justify-content:space-between;align-content:end;align-items:baseline}
+.pgrid>.c:not(.wide) .foot>span:first-child{grid-column:1/-1}
+.pgrid>.c:not(.wide) .foot .showin{order:1;justify-self:start}
+.pgrid>.c:not(.wide) .foot .lnk{order:2;justify-self:end}
 .pgrid>.c:not(.wide) .lnk{font-size:12px}
 .pgrid .typo b{font-size:clamp(19px,1.55vw,23px)}
 .pgrid .typo span{margin-top:8px;font-size:10px}
@@ -415,8 +430,8 @@ section.block{padding-top:104px}
 .ppane{grid-column:8/span 5}
 .plist{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair)}
 .pr{border-bottom:1px solid var(--hair)}
-.pr .hd{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:18px;padding:14px 12px 14px 0;align-items:center;position:relative;transition:background .25s}
-.pr .th{margin:0;aspect-ratio:4/3;border:1px solid var(--hair-2);border-radius:3px;overflow:hidden;background:#fff;--c:var(--research);--t:var(--research-t)}
+.pr .hd{display:grid;grid-template-columns:112px minmax(0,1fr) auto;gap:20px;padding:13px 12px 13px 0;align-items:center;position:relative;transition:background .25s}
+.pr .th{margin:0;width:112px;justify-self:center;align-self:center;aspect-ratio:4/3;border:1px solid var(--hair-2);border-radius:3px;overflow:hidden;background:#fff;--c:var(--research);--t:var(--research-t)}
 .pr .th .typo b{font-size:17px}
 .pr .th .typo span{font-size:9px;margin-top:6px}
 .pr .th .typo i{display:none}
@@ -457,6 +472,8 @@ section.block{padding-top:104px}
   .pr .hd:hover,.pr.on .hd{background:linear-gradient(90deg,var(--paper-2),var(--paper-2) 82%,transparent)}
   .pr .hd:hover .t a,.pr.on .t a{background-size:100% 1px}
   .pr.on .hd{box-shadow:inset 2px 0 0 var(--research)}
+  /* room between the blue ribbon of the active paper and its thumbnail */
+  .pr .hd{padding-left:16px}
 }
 @media (max-width:900px){
   .pubs>div{grid-column:1/-1}
@@ -475,26 +492,30 @@ section.block{padding-top:104px}
 }
 @media (max-width:640px){
   .pr .hd{grid-template-columns:84px minmax(0,1fr);gap:4px 14px}
+  .pr .th{width:84px}
   .pr .aside{grid-column:2;flex-direction:row;align-items:center;gap:10px;margin-top:6px;text-align:left}
   .pr .t{font-size:17px}
 }
 
 /* lists (teaching, honors, experience): years in columns 1-2, text from column 3 */
 .rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair)}
-.row{padding:18px 0;border-bottom:1px solid var(--hair);align-items:baseline;position:relative}
+.row{padding:12px 0;border-bottom:1px solid var(--hair);align-items:baseline;position:relative}
 .row .y{grid-column:1/span 2;font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
 .row>div{grid-column:3/span 8}
-.row .t{font:400 20px/1.25 var(--serif);letter-spacing:-.008em;margin:0}
-.row .s{font-size:14px;color:var(--ink-2);margin:5px 0 0}
+.row .t{font:400 19px/1.28 var(--serif);letter-spacing:-.008em;margin:0}
+.row .s{font-size:14px;color:var(--ink-2);margin:3px 0 0}
+/* recognition: the description runs in after the title, on the same line when it fits */
+.hon .t,.hon .s{display:inline}
+.hon .s{margin:0 0 0 12px;color:var(--muted)}
 .row .badge{grid-column:11/span 2;justify-self:end}
-.xp .row{padding:16px 0}
+.xp .row{padding:12px 0}
 .xp:not(.all) .row.more{display:none}
 .xp .o{grid-column:3/span 4}
 .xp .r{grid-column:7/span 6}
 .xp b{display:block;font-weight:400}
 .xp .o b{font:400 20px/1.25 var(--serif);letter-spacing:-.008em}
 .xp .r b{font:500 14.5px/1.4 var(--sans);color:var(--ink);padding-top:3px}
-.xp .o span,.xp .r span{display:block;font-size:14px;line-height:1.45;color:var(--ink-2);margin-top:3px}
+.xp .o span,.xp .r span{display:block;font-size:13.5px;line-height:1.45;color:var(--ink-2);margin-top:2px}
 .xp .o span{color:var(--muted)}
 .wr .t a{text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .4s var(--ease)}
 .wr .t a::after{content:"";position:absolute;inset:0}
@@ -513,6 +534,8 @@ section.block{padding-top:104px}
   .row .y{display:block;margin-bottom:4px}
   .row .badge{margin-top:8px}
   .row .t,.xp .o b{font-size:18.5px}
+  .hon .t,.hon .s{display:block}
+  .hon .s{margin:3px 0 0}
   .xp .r{margin-top:6px}
 }
 
@@ -520,23 +543,27 @@ section.block{padding-top:104px}
 .about{border-top:1px solid var(--ink);padding-top:12px;align-items:start}
 .bio{grid-column:1/span 7}
 .bio .lbl,.side .lbl{margin-bottom:14px}
-.bio p{font:400 21px/1.56 var(--serif);margin:0;color:var(--ink);letter-spacing:-.003em;max-width:29.5em}
+.bio p{font:400 22px/1.56 var(--serif);margin:0;color:var(--ink);letter-spacing:-.003em;max-width:29.5em}
 .side{grid-column:9/span 4}
 .side ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--hair)}
 .side li{border-bottom:1px solid var(--hair)}
-.side li a{display:grid;grid-template-columns:18px auto minmax(0,1fr);align-items:center;gap:10px;padding:10px 0;text-decoration:none;font-size:15px;color:var(--ink);transition:color .2s}
+.side li a{display:grid;grid-template-columns:18px auto minmax(0,1fr);align-items:center;gap:10px;padding:9px 0;text-decoration:none;font-size:15px;color:var(--ink);transition:color .2s}
 .side li a .v{color:var(--muted);font-size:13px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .side .ic{width:16px;height:16px;color:var(--muted);transition:color .2s}
 .side li a:hover,.side li a:hover .ic{color:var(--accent)}
+/* where he is based and the languages he works in, under the links */
+.side .facts{margin-top:12px}
+.side .facts li>div{display:grid;grid-template-columns:18px auto minmax(0,1fr);align-items:center;gap:10px;padding:9px 0;font-size:15px;color:var(--ink)}
+.side .facts .v{color:var(--muted);font-size:13px;text-align:right}
 @media (max-width:1080px){.bio{grid-column:1/span 8}.side{grid-column:1/span 8;margin-top:40px}}
 @media (max-width:820px){.bio{grid-column:1/-1}}
 @media (max-width:640px){.bio,.side{grid-column:1/-1}.bio p{font-size:18px;line-height:1.6}}
-footer{margin-top:90px;border-top:1px solid var(--hair);padding:26px 0 40px;font-size:13px;color:var(--muted)}
+footer{margin-top:72px;border-top:1px solid var(--hair);padding:26px 0 40px;font-size:13px;color:var(--muted)}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 footer a{text-decoration:none;color:var(--ink-2)}
 footer a:hover{color:var(--ink)}
 /* back to top: dark, just outside the right edge of the content column (16px gap), after one screen
-   of scrolling. --tt is its size. Where the margin is too narrow (below 1340px) it sits 16px from the
+   of scrolling. --tt is its size. Where the margin is too narrow (below 1420px) it sits 16px from the
    corner and only shows while scrolling up, so it never covers text while reading */
 .totop{--tt:42px;position:fixed;right:max(16px, calc((100% - min(100%, var(--max)) + 2 * var(--gut)) / 2 - var(--tt) - 16px));bottom:24px;z-index:45;width:var(--tt);height:var(--tt);display:grid;place-items:center;border-radius:50%;border:1px solid var(--ink);background:var(--ink);color:var(--paper);text-decoration:none;box-shadow:0 10px 26px -14px rgba(20,24,30,.55);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s linear .3s,border-color .2s,background .2s}
 .totop.show{opacity:1;visibility:visible;transform:none;transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s,border-color .2s,background .2s}
@@ -580,7 +607,7 @@ html[lang="pt"] .ptnote{display:block}
       <a href="#publications" data-i18n="nPubs">Publications</a>
       <a href="#press" data-i18n="nPress">Press</a>
       <a href="#teaching" data-i18n="nTeach">Teaching</a>
-      <a href="#honors" data-i18n="honors">Honors</a>
+      <a href="#honors" data-i18n="honors">Recognition</a>
       <a href="#writing" data-i18n="nWriting">Writing</a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
@@ -617,7 +644,7 @@ html[lang="pt"] .ptnote{display:block}
     <div class="g12 about rv">
       <div class="bio">
         <h2 class="lbl" id="about-h" data-i18n="nAbout">About</h2>
-        <p>Flávio Nakasato Cação is an entrepreneur building AI for the public interest, with about ten years of work in data and AI. He is the founder and a partner of Moiru AI and leads Sumaúma, an open-source AI platform for environmental enforcement in the Amazon rainforest, developed with the research institute Imazon. Since August 2026, four municipal environmental departments in Pará, including Altamira and Paragominas, have used it in real enforcement cases. He holds a degree in Physics and a master's in Machine Learning from the University of São Paulo (USP), with papers at ACM CIKM, BRACIS and PROPOR and at climate workshops at ICML and IJCAI-ECAI. At Itaú Unibanco, Brazil's largest bank, he was part of the first team assigned to bring generative AI into the bank. He has also led AI projects for the climate policy think tank Instituto Talanoa, the Brazilian Biodiversity Fund (Funbio) and World Animal Protection, and done political data analysis for most of Brazil's major news outlets through Novelo Data.</p>
+        <p>Flávio Nakasato Cação is an entrepreneur building AI for the public interest. He founded Moiru AI and leads Sumaúma, an open-source platform that helps environmental agencies turn deforestation alerts into enforcement in the Amazon, built with the research institute Imazon. He trained in Physics and Machine Learning at the University of São Paulo (USP), with papers at ACM CIKM, BRACIS and PROPOR and at climate workshops at ICML and IJCAI-ECAI. In industry, he went from an education startup that grew to nearly one million users to the first generative AI team at Itaú Unibanco. He has led AI work for Instituto Talanoa, Funbio, World Animal Protection and Brazilian newsrooms.</p>
       </div>
       <div class="side">
         <h3 class="lbl" data-i18n="elsewhere">Elsewhere</h3>
@@ -628,6 +655,10 @@ html[lang="pt"] .ptnote{display:block}
           <li><a href="https://orcid.org/0000-0003-4771-6009" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M8.5 10.5v6M11.5 10.5v6h2a3 3 0 0 0 0-6z"/><circle cx="8.5" cy="7.7" r=".6" fill="currentColor"/></svg><span>ORCID</span><span class="v">0000-0003-4771-6009</span></a></li>
           <li><a href="https://github.com/flavionakasato" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>GitHub</span><span class="v">flavionakasato</span></a></li>
           <li><a href="https://flavio-nakasato.medium.com" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="12" r="5"/><ellipse cx="16.2" cy="12" rx="2.4" ry="4.8"/><path d="M21 7.6v8.8"/></svg><span>Medium</span><span class="v">flavio-nakasato</span></a></li>
+        </ul>
+        <ul class="facts">
+          <li><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-6.1-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.9 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.3"/></svg><span data-i18n="fPlace">Based in</span><span class="v" data-i18n="place">São Paulo, Brazil</span></div></li>
+          <li><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 5.5h10a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H9l-3.5 3v-3h-1a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z"/><path d="M16.5 9.5h3a2 2 0 0 1 2 2v4.5a2 2 0 0 1-2 2h-.5v2.5l-3-2.5h-3.5a2 2 0 0 1-1.6-.8"/></svg><span data-i18n="fLangs">Languages</span><span class="v" data-i18n="langs">Portuguese, English, Spanish, French</span></div></li>
         </ul>
       </div>
     </div>
@@ -681,11 +712,11 @@ html[lang="pt"] .ptnote{display:block}
       <p class="sub" data-i18n="expSub">Where I have worked, what each place is and what I did there.</p>
     </div>
     <ol class="rows xp rv" id="xplist">
-      <li class="g12 row"><span class="y">2024–now</span><div class="o"><b>Moiru AI</b><span>Company that builds open-source AI tools for environmental enforcement</span></div><div class="r"><b>Founder &amp; Partner</b><span>Designed and built Sumaúma with Imazon.</span></div></li>
+      <li class="g12 row"><span class="y">2024–now</span><div class="o"><b>Moiru AI</b><span>Open-source AI company for environmental enforcement</span></div><div class="r"><b>Founder &amp; Partner</b><span>Designed and built Sumaúma with Imazon.</span></div></li>
       <li class="g12 row"><span class="y">2022–2025</span><div class="o"><b>Novelo Data</b><span>Data analysis company for newsrooms, NGOs and companies</span></div><div class="r"><b>Partner</b><span>Political data analysis for most of Brazil's major news outlets; AI lead of the Anti-Gender Radar.</span></div></li>
       <li class="g12 row"><span class="y">2025</span><div class="o"><b>ADP (Automatic Data Processing)</b><span>US multinational in payroll and HR solutions</span></div><div class="r"><b>Data Scientist</b><span>Theme detection in tens of thousands of survey responses.</span></div></li>
       <li class="g12 row"><span class="y">2022–2024</span><div class="o"><b>Itaú Unibanco</b><span>Brazil's largest bank</span></div><div class="r"><b>Data Scientist</b><span>Part of the first task force created to bring generative AI to the bank.</span></div></li>
-      <li class="g12 row"><span class="y">2020–2023</span><div class="o"><b>C2D and C4AI, University of São Paulo (USP)</b><span>USP's Center for Data Science and the IBM/USP Center for Artificial Intelligence</span></div><div class="r"><b>Machine Learning Researcher</b><span>Language technologies for environmental and ocean data; the research behind the publications.</span></div></li>
+      <li class="g12 row"><span class="y">2020–2023</span><div class="o"><b>C2D and C4AI, University of São Paulo (USP)</b><span>USP's data science center and the IBM/USP center for AI</span></div><div class="r"><b>Machine Learning Researcher</b><span>Language technologies for environmental and ocean data; the research behind the publications.</span></div></li>
       <li class="g12 row more"><span class="y">2020</span><div class="o"><b>Ada</b><span>Technology education company</span></div><div class="r"><b>Coding Teacher (part-time)</b><span>Python, databases, cloud computing and neural networks.</span></div></li>
       <li class="g12 row more"><span class="y">2019–2020</span><div class="o"><b>C6 Bank</b><span>Brazilian digital bank</span></div><div class="r"><b>Senior Data Engineer</b><span>Integration of critical databases across cloud providers.</span></div></li>
       <li class="g12 row more"><span class="y">2018–2019</span><div class="o"><b>Cognitivo.AI</b><span>Brazilian data and AI company</span></div><div class="r"><b>Data Science Consultant</b><span>Data infrastructure and predictive models for client companies.</span></div></li>
@@ -702,7 +733,7 @@ html[lang="pt"] .ptnote{display:block}
          Abstracts are copied from arXiv, SBC (ENIAC), climatechange.ai (DeepPolicyTracker),
          OpenAlex (Aroeira, Springer) and the USP thesis repository. -->
     <div class="shead rv">
-      <div class="hl"><h2 id="pub-h" data-i18n="pubTitle">Publications</h2><span class="aux"><span><span class="num">82</span> <span data-i18n="mCit">citations</span></span><span class="num">h-index 4</span><span class="num">i10-index 3</span><a href="https://scholar.google.com.br/citations?user=bKIJHa8AAAAJ" target="_blank" rel="noopener">Google Scholar <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a></span></div>
+      <div class="hl"><h2 id="pub-h" data-i18n="pubTitle">Publications</h2><span class="aux mets"><span class="met"><b>82</b><span data-i18n="mCit">citations</span></span><span class="met"><b>4</b>h-index</span><span class="met"><b>3</b>i10-index</span><a href="https://scholar.google.com.br/citations?user=bKIJHa8AAAAJ" target="_blank" rel="noopener">Google Scholar <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a></span></div>
       <p class="sub" data-i18n="pubSub">Mostly from the research at USP's Center for Data Science and C4AI, on question answering, Portuguese language resources and environmental data. Sorted by Google Scholar citations (November 2026); select a paper to read its abstract.</p>
     </div>
     <div class="g12 pubs rv">
@@ -735,14 +766,14 @@ html[lang="pt"] .ptnote{display:block}
 
   <section class="wrap block" id="honors" aria-labelledby="hon-h">
     <div class="shead rv">
-      <div class="hl"><h2 id="hon-h" data-i18n="honTitle">Honors and recognition</h2><span class="aux num">2018–2026</span></div>
+      <div class="hl"><h2 id="hon-h" data-i18n="honTitle">Recognition</h2><span class="aux num">2018–2026</span></div>
     </div>
-    <ul class="rows rv">
+    <ul class="rows hon rv">
       <li class="g12 row wr"><span class="y">2026</span><div><p class="t"><a href="https://www.instagram.com/p/De-qx10DXY7/" target="_blank" rel="noopener">Organizing team, AmazoniaHack international edition</a></p><p class="s">Participants from 7 countries presented 10 solutions. Also a mentor at the 2024 edition.</p></div><span class="badge">Hackathon <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span></li>
       <li class="g12 row"><span class="y">2024</span><div><p class="t">Climate Change AI Summer School</p><p class="s">Mila, Montreal. The only participant selected from Brazil in that cohort.</p></div><span class="badge">Selection</span></li>
       <li class="g12 row"><span class="y">2023</span><div><p class="t">1st place, AmazoniaHack 2023</p><p class="s">Winning team of the 2023 edition.</p></div><span class="badge">Hackathon</span></li>
       <li class="g12 row"><span class="y">2021</span><div><p class="t">Honorable mention, WPGEC-USP'21</p><p class="s">Master's research project, Computer Engineering graduate program at USP.</p></div><span class="badge">Research</span></li>
-      <li class="g12 row wr"><span class="y">Since 2021</span><div><p class="t"><a href="https://www.redeycl.org/" target="_blank" rel="noopener">Member, Youth Climate Leaders</a></p><p class="s">A network of young professionals working on climate.</p></div><span class="badge">Network <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span></li>
+      <li class="g12 row wr"><span class="y">2021</span><div><p class="t"><a href="https://www.redeycl.org/" target="_blank" rel="noopener">Member, Youth Climate Leaders</a></p><p class="s">A network of young professionals working on climate.</p></div><span class="badge">Network <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span></li>
       <li class="g12 row"><span class="y">2018</span><div><p class="t">Finalist, Itaú Batalha de Dados</p><p class="s">Data competition at Itaú Unibanco.</p></div><span class="badge">Competition</span></li>
     </ul>
   </section>
@@ -1296,7 +1327,7 @@ const DICT = {
     projTitle:"Selected projects",projSub:"The role, the outcome in one number, and where to read more.",pubTitle:"Publications",pubSub:"Mostly from the research at USP's Center for Data Science and C4AI, on question answering, Portuguese language resources and environmental data. Sorted by Google Scholar citations (November 2026); select a paper to read its abstract.",pubMore:"Show all 10",pubLess:"Show fewer",mCit:"citations",mSrc:"Google Scholar, November 2026",citedBy:"Cited by",
     pressTitle:"Press",pressSub:"Reporting I co-authored and stories where I was interviewed. Headlines in Portuguese, with a short English summary.",teachTitle:"Teaching and talks",
     mCitV:"82 citations",official:"Official page",arxiv:"Read on arXiv",abstract:"Abstract",showAbs:"Show abstract",figCap:"Figure from the paper",noFig:"No open figure available",photoCredit:"Photo: Folha de S.Paulo / reproduction",
-    elsewhere:"Elsewhere",honors:"Honors",honTitle:"Honors and recognition",updated:"Updated November 2026",fRole:"Role",fResult:"Result",connected:"Connected",tipHint:"Click to open",showIn:"Show in timeline",ptnote:""},
+    elsewhere:"Elsewhere",honors:"Recognition",honTitle:"Recognition",fPlace:"Based in",fLangs:"Languages",langs:"Portuguese, English, Spanish, French",updated:"Updated November 2026",fRole:"Role",fResult:"Result",connected:"Connected",tipHint:"Click to open",showIn:"Show in timeline",ptnote:""},
   pt:{skip:"Pular para o conteúdo",skipFlow:"Pular a linha do tempo",nWork:"Trajetória",nProjects:"Projetos",nPubs:"Publicações",nPress:"Imprensa",nTeach:"Ensino",nAbout:"Sobre",nCareer:"Carreira",nWriting:"Textos",writingTitle:"Textos",writingSub:"Textos de divulgação sobre aprendizado de máquina, em português.",careerTitle:"Carreira",xpMore:"Ver os 10 cargos",xpLess:"Ver menos cargos",toTop:"Voltar ao topo",expAux:"De 2016 até hoje",expSub:"Onde trabalhei, o que é cada lugar e o que fiz lá.",projAux:"10 projetos",projMore:"Ver mais projetos",projLess:"Ver menos projetos",pressAux:"5 matérias, 2022–2025",place:"São Paulo, Brasil",
     tagline:"Empreendedor, pesquisador em IA e desenvolvedor de machine learning.",
     resume:"Currículo",contact:"Contato",now:"Atualmente",nowLead:"Coordenador do projeto",nowFounder:"Fundador e sócio",
@@ -1310,7 +1341,7 @@ const DICT = {
     projTitle:"Projetos em destaque",projSub:"O papel, o resultado em um número e onde ler mais.",pubTitle:"Publicações",pubSub:"Em sua maioria da pesquisa no Centro de Ciência de Dados da USP e no C4AI, sobre resposta a perguntas, recursos de língua portuguesa e dados ambientais. Em ordem de citações no Google Scholar (novembro de 2026); escolha um artigo para ler o resumo.",pubMore:"Ver os 10",pubLess:"Ver menos",mCit:"citações",mSrc:"Google Scholar, novembro de 2026",citedBy:"Citado por",
     pressTitle:"Imprensa",pressSub:"Reportagens que escrevi junto e matérias em que fui entrevistado.",teachTitle:"Ensino e palestras",
     mCitV:"82 citações",official:"Página oficial",arxiv:"Ler no arXiv",abstract:"Resumo",showAbs:"Ver resumo",figCap:"Figura do artigo",noFig:"Sem figura aberta disponível",photoCredit:"Foto: Folha de S.Paulo / reprodução",
-    elsewhere:"Links",honors:"Prêmios",honTitle:"Prêmios e reconhecimento",updated:"Atualizado em novembro de 2026",fRole:"Papel",fResult:"Resultado",connected:"Ligado a",tipHint:"Clique para abrir",showIn:"Ver na linha do tempo",ptnote:"Os textos detalhados deste site estão em inglês."}
+    elsewhere:"Links",honors:"Reconhecimentos",honTitle:"Reconhecimentos",fPlace:"Mora em",fLangs:"Idiomas",langs:"Português, inglês, espanhol, francês",updated:"Atualizado em novembro de 2026",fRole:"Papel",fResult:"Resultado",connected:"Ligado a",tipHint:"Clique para abrir",showIn:"Ver na linha do tempo",ptnote:"Os textos detalhados deste site estão em inglês."}
 };
 let LANG = "en";
 const T = k => (DICT[LANG][k] ?? DICT.en[k] ?? k);
@@ -1558,7 +1589,7 @@ addEventListener("scroll", () => topbar.classList.toggle("scrolled", scrollY > 8
 
 /* back to top: after one screen; on narrow margins only while scrolling up */
 (() => {
-  const b = document.getElementById("totop"), roomy = matchMedia("(min-width:1340px)");
+  const b = document.getElementById("totop"), roomy = matchMedia("(min-width:1420px)");
   let lastY = scrollY, ticking = false;
   const update = () => {
     ticking = false;
